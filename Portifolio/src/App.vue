@@ -1,64 +1,95 @@
 <template>
   <div class="body">
-    <div class="apresentacao"><img class="foto" src="./assets/img/logo.jpeg" alt="" />   
+    <div class="apresentacao">
+      <img class="foto" src="./assets/img/logo.jpeg" alt="" />
       <div class="sobre">
+        <p>Olá, meu nome é</p>
+        <h1>Garbson Souza</h1>
         <h1>Sou um desenvolvedor FRONT-END</h1>
         <p>
-          Meu amor pela programação começou desde cedo, e ao longo dos anos,
-          <p>aprimorei minhas habilidades através de cursos e projetos
-          desafiadores.</p>
+          Sou apaixonado por programação e desafios, 
+          <br>
+          e estou sempre em busca de conhecimento.
         </p>
       </div>
-    </div>
-      <h1 class="meu-nome">GARBSON SOUZA</h1>
-    <header>
-      <div class="div-content">
+      <div class="redes">
+        <a href="https://www.instagram.com/dev_garbson/"><img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
+        <a href=""><img src="./assets/img/whatsapp-svgrepo-com.svg" alt="whatsap" /></a>
+        <a href="https://github.com/Garbson"><img src="./assets/img/github-142-svgrepo-com.svg" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a/">
+          <img src="./assets/img/linkedin-svgrepo-com.svg" alt="linkedli" />
+        </a>
       </div>
-    </header>
+    </div>
+ 
     <h1 class="portfolio">Portfolio:</h1>
     <div class="container">
       <div class="con">
-        <div class="projeto">
-          <a href="https://bitcoin-27r.pages.dev/" target="_blank">
-            <img src="./assets/img/bitcoin.jpeg" alt="Bitcoin" />
-            <h3>Bitcoin</h3>
-            <p>Site com o valor em tempo real de moedas digitais</p>
-          </a>
-        </div>
-        <div class="projeto">
-          <a href="https://temperature-9ta.pages.dev/" target="_blank">
-            <img src="./assets/img/temperatures.jpeg" alt="temperature" />
-            <h3>Temperature</h3>
-            <p>Site feito para ver a temperatura em tempo real.</p>
-          </a>
-        </div>
-        <div class="projeto">
-          <a href="https://currency-converter-cgn.pages.dev/" target="_blank">
-            <img src="./assets/img/Conversor.jpeg" alt="Conversor" />
-            <h3>Conversor</h3>
-            <p>Conversor para o cambio de moedas</p>
-          </a>
-        </div>
-        <div class="projeto">
-          <a href="https://brasileiro.ninja/" target="_blank">
-            <img src="./assets/img/Brasileiro.png" alt="Brasileiro.ninja" />
-            <h3>Brasileiro.ninja</h3>
-            <p>Conversor para o cambio de moedas</p>
-          </a>
-        </div>
+
+        <BaseCard
+          title="Brasileiro.ninja"
+          description="Informações nacionais como ISBN, CEP, DDD..."
+          img="src/assets/img/brasileiroo.jpeg"
+          vue
+          css
+          javascript
+          github="https://github.com/arnonrdp/Brasileiro-Ninja"
+          link="https://brasileiro.ninja/"/>
+
+        <BaseCard
+          title="Bitcoin"
+          description="Site com o valor em tempo real de moedas digitais"
+          img="src/assets/img/bitcoin.jpeg"
+          html
+          css
+          javascript
+          github="https://github.com/Garbson/bitcoin"
+          link= "https://bitcoin-27r.pages.dev/"
+        />
+
+        <BaseCard
+          title="Temperature"
+          description="Site feito para ver a temperatura em tempo real."
+          img="src/assets/img/temperatures.jpeg"
+          html
+          css
+          javascript
+          github="https://github.com/Garbson/projeto-site-pra-ver-a-temperatura"
+          link= "https://temperature-9ta.pages.dev/"
+        />
+
+        <BaseCard
+          title="Conversor"
+          description="Conversor para o cambio de moedas de todo o mundo"
+          img="src/assets/img/Conversor.jpeg"
+          html
+          css
+          javascript
+          github="https://github.com/Garbson/Currency-Converter"
+          link= "https://currency-converter-cgn.pages.dev/"
+        />
+
+
+        
       </div>
     </div>
   </div>
 </template>
-<script></script>
+
+<script setup>
+import BaseCard from './components/BaseCard.vue'
+</script>
+
 <style>
 body {
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%236F0611'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-size: cover;
+  background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #09090AFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #000000FF 0%, #2000FFFF 12%, #073AFFFF 100%);
+  object-fit: contain;
   margin: 0;
   padding: 0;
 }
+
 header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 20px;
@@ -69,12 +100,34 @@ header {
   /* Center the header itself horizontally */
 }
 
-.meu-nome{
+/* .meu-nome {
   margin-left: 10px;
   padding: 10px;
+} */
+
+.redes {
+  display: flex;
+  /* Display redes in a column */
+  justify-content: center;
+  /* Center items vertically */
+  align-items: flex-end;
+  /* Align redes items to the right */
+  max-width: 200px;
+  /* Adjust as needed */
+  margin-top: 10px;
+  margin-left: 10px;
+  /* Adjust spacing from sobre text */
 }
 
-.apresentacao{
+.redes img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  /* Adjust margin between images */
+  border-radius: 50%;
+}
+
+.apresentacao {
   margin-left: 30px;
   display: flex;
 }
@@ -86,79 +139,83 @@ header {
   margin-top: 20px;
 }
 
-.sobre{
-display: flex;
-    flex-direction: column;
-    margin-top: 140px;
-    margin-left: 20px;
-    font-size: 20px;
-
+.sobre {
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #ffffff;
 }
-.meu-nome{
+
+.meu-nome {
   margin-left: 50px;
 }
 
-
+.descricao {
+  font-family: math;
+  margin-left: 100px;
+  font-size: 17px;
+}
 
 .portfolio {
-  color: #800505;
+  color: #fffdfd;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100px;
+  margin-top: 15px;
 }
+
 .div-content {
   text-align: center;
 }
 
 .container {
-  margin: 0 auto; /* Center the container horizontally */
-  max-width: 100%; /* Take up 100% of the width */
-  width: 1200px; /* You can adjust the width to your desired value */
+  margin: 0 auto;
+  
+  max-width: 100%;
+
+  width: 100%;
+ 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: flex-start; 
 }
+
 .con {
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: center;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 0 100px
+}
+@media screen and (max-width: 800px) {
+  .apresentacao {
+    /* coloque aqui os estilos que você quer aplicar */
+    flex-direction: column;
+    align-items: center;
+  }
+  .foto {
+    width: 50%;
+  }
+  .sobre {
+    text-align: center;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.projetos {
-  display: flex;
-  justify-content: center;
-}
 
-.projeto {
-  margin: 15px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: calc(30% - 30px);
-}
 
-.projeto img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  cursor: pointer;
-}
 
-/* To center the content of each project (text) */
-.projeto a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 400px;
-}
 </style>
