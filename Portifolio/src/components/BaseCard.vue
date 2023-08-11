@@ -3,7 +3,7 @@
     <a :href="link" target="_blank">
       <img :src="img" :alt="title" />
       <h3>{{ title }}</h3>
-      <p>{{ description }}</p>
+      <p class="description">{{ description }}</p>
       <div class="linguaguens-projeto">
         <div>
           <img v-if="html" src="src/assets/img/html-5-svgrepo-com.svg" alt="HTML" />
@@ -41,6 +41,10 @@ defineProps({
   flex-direction: column;
   width: calc(33% - 30px);
   height: 100%;
+}
+
+.description{
+ color: aliceblue;
 }
 
 .projeto img {
@@ -97,7 +101,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #3ccac3;
+  background-color: #10319e;
 }
 
 .linguaguens-projeto {
@@ -136,6 +140,7 @@ defineProps({
 
 h3{
   font-weight: bolder;
+  color: aliceblue;
 }
 
 

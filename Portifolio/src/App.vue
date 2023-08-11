@@ -88,6 +88,7 @@ background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100
   object-fit: contain;
   margin: 0;
   padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 header {
@@ -148,6 +149,7 @@ header {
   padding-right: 20px;
   font-size: 20px;
   color: #ffffff;
+  font-family: 'Oswald', sans-serif;
 }
 
 .meu-nome {
