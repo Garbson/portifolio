@@ -28,7 +28,7 @@
         <BaseCard
           title="Brasileiro.ninja"
           description="Informações nacionais como ISBN, CEP, DDD..."
-          img="../public/img/brasileiroo.jpeg"
+          img="src/public/img/brasileiroo.jpeg"
           vue
           css
           javascript
@@ -39,7 +39,7 @@
         <BaseCard
           title="Bitcoin"
           description="Site com o valor em tempo real de moedas digitais"
-          img="../public/img/bitcoin.jpeg"
+          img="src/public/img/bitcoin.jpeg"
           html
           css
           javascript
@@ -50,7 +50,7 @@
         <BaseCard
           title="Temperature"
           description="Site feito para ver a temperatura em tempo real."
-          img="../public/img/temperatures.jpeg"
+          img="src/public/img/temperatures.jpeg"
           html
           css
           javascript
@@ -61,7 +61,7 @@
         <BaseCard
           title="Conversor"
           description="Conversor para o cambio de moedas de todo o mundo"
-          img="../public/img/Conversor.jpeg"
+          img="src/public/img/Conversor.jpeg"
           html
           css
           javascript
