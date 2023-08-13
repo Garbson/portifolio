@@ -7,8 +7,8 @@
         <h1>Garbson Souza</h1>
         <h1>Sou um desenvolvedor FRONT-END</h1>
         <p>
-          Sou apaixonado por programação e desafios, 
-          <br>
+          Sou apaixonado por programação e desafios,
+          <br />
           e estou sempre em busca de conhecimento.
         </p>
       </div>
@@ -21,56 +21,53 @@
         </a>
       </div>
     </div>
- 
+
     <h1 class="portfolio">Portfolio:</h1>
     <div class="container">
       <div class="con">
-
         <BaseCard
           title="Brasileiro.ninja"
           description="Informações nacionais como ISBN, CEP, DDD..."
-          img="src/assets/img/brasileiroo.jpeg"
+          img="@/assets/img/brasileiroo.jpeg"
           vue
           css
           javascript
           github="https://github.com/arnonrdp/Brasileiro-Ninja"
-          link="https://brasileiro.ninja/"/>
+          link="https://brasileiro.ninja/"
+        />
 
         <BaseCard
           title="Bitcoin"
           description="Site com o valor em tempo real de moedas digitais"
-          img="src/assets/img/bitcoin.jpeg"
+          img="@/assets/img/bitcoin.jpeg"
           html
           css
           javascript
           github="https://github.com/Garbson/bitcoin"
-          link= "https://bitcoin-27r.pages.dev/"
+          link="https://bitcoin-27r.pages.dev/"
         />
 
         <BaseCard
           title="Temperature"
           description="Site feito para ver a temperatura em tempo real."
-          img="src/assets/img/temperatures.jpeg"
+          img="@/assets/img/temperatures.jpeg"
           html
           css
           javascript
           github="https://github.com/Garbson/projeto-site-pra-ver-a-temperatura"
-          link= "https://temperature-9ta.pages.dev/"
+          link="https://temperature-9ta.pages.dev/"
         />
 
         <BaseCard
           title="Conversor"
           description="Conversor para o cambio de moedas de todo o mundo"
-          img="src/assets/img/Conversor.jpeg"
+          img="@/assets/img/Conversor.jpeg"
           html
           css
           javascript
           github="https://github.com/Garbson/Currency-Converter"
-          link= "https://currency-converter-cgn.pages.dev/"
+          link="https://currency-converter-cgn.pages.dev/"
         />
-
-
-        
       </div>
     </div>
   </div>
@@ -83,8 +80,11 @@ import BaseCard from './components/BaseCard.vue'
 <style>
 body {
   background-size: 100% 100%;
-background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #09090AFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #000000FF 0%, #2000FFFF 12%, #073AFFFF 100%);
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
+    radial-gradient(99% 99% at 109% 2%, #09090aff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #000000ff 0%, #2000ffff 12%, #073affff 100%);
   object-fit: contain;
   margin: 0;
   padding: 0;
@@ -178,15 +178,15 @@ header {
 
 .container {
   margin: 0 auto;
-  
+
   max-width: 100%;
 
   width: 100%;
- 
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
-  align-items: flex-start; 
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .con {
@@ -197,7 +197,7 @@ header {
   text-align: center;
   justify-content: center;
   flex-direction: row;
-  margin: 0 100px
+  margin: 0 100px;
 }
 @media screen and (max-width: 800px) {
   .apresentacao {
@@ -216,8 +216,4 @@ header {
     justify-content: center;
   }
 }
-
-
-
-
 </style>
