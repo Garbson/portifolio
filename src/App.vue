@@ -156,7 +156,6 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 140px;
-  margin-left: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-right: 20px;
