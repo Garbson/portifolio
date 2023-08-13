@@ -7,11 +7,15 @@
       <div class="linguaguens-projeto">
         <div>
           <img v-if="html" src="@/assets/img/html.svg" alt="HTML" />
-          <img v-if="vue" src="@/assets/img/vue-svgrepo-com.svg" alt="">
+          <img v-if="vue" src="@/assets/img/vue-svgrepo-com.svg" alt="" />
           <img v-if="css" src="@/assets/img/css-3-svgrepo-com.svg" alt="CSS" />
-          <img v-if="javascript" src="@/assets/img/kisspng-javascript-programmer-node-js-web-application-vector-markup-language-5b173fc201e143.7543356315282503060077.png" alt="JavaScript" />
+          <img
+            v-if="javascript"
+            src="@/assets/img/kisspng-javascript-programmer-node-js-web-application-vector-markup-language-5b173fc201e143.7543356315282503060077.png"
+            alt="JavaScript"
+          />
         </div>
-          <a :href="github"><img src="@/assets/img/github-142-svgrepo-com.svg" alt="" /></a>
+        <a :href="github"><img src="@/assets/img/github-142-svgrepo-com.svg" alt="" /></a>
       </div>
     </a>
   </div>
@@ -32,7 +36,7 @@ defineProps({
 </script>
 
 <style scoped>
-.projeto {   
+.projeto {
   margin: 15px;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -43,8 +47,8 @@ defineProps({
   height: 100%;
 }
 
-.description{
- color: aliceblue;
+.description {
+  color: aliceblue;
 }
 
 .projeto img {
@@ -134,14 +138,11 @@ defineProps({
 @media (max-width: 700px) {
   .projeto {
     width: 100%;
-  
   }
 }
 
-h3{
+h3 {
   font-weight: bolder;
   color: aliceblue;
 }
-
-
 </style>
