@@ -145,7 +145,7 @@ header {
 }
 
 .foto {
-  width: 300px;
+  width: 400px;
   height: 100%;
   border-radius: 50%;
   margin-top: 20px;
@@ -157,6 +157,7 @@ header {
   margin-top: 140px;
   margin-left: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-right: 20px;
   font-size: 20px;
   color: #ffffff;
@@ -236,6 +237,44 @@ header {
   .con .BaseCard {
     width: 100%; /* Make each card take full width on smaller screens */
     margin-bottom: 20px; /* Add some space between stacked cards */
+  }
+}
+@media screen and (max-width: 600px) {
+  .apresentacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto {
+    width: 70%;
+    max-width: 300px;
+    margin-left: 0; /* Remova a margem da esquerda */
+    margin-right: 0; /* Remova a margem da direita */
+  }
+
+  .sobre {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .redes {
+    margin-top: 20px;
+  }
+
+  .redes img {
+    margin-bottom: 10px;
+  }
+
+  .portfolio {
+    margin-top: 20px;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .con {
+    margin: 0;
   }
 }
 </style>
