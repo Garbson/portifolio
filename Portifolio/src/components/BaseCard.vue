@@ -6,12 +6,12 @@
       <p class="description">{{ description }}</p>
       <div class="linguaguens-projeto">
         <div>
-          <img v-if="html" src="src/assets/img/html-5-svgrepo-com.svg" alt="HTML" />
-          <img v-if="vue" src="src/assets/img/vue-svgrepo-com.svg" alt="">
-          <img v-if="css" src="src/assets/img/css-3-svgrepo-com.svg" alt="CSS" />
-          <img v-if="javascript" src="src/assets/img/kisspng-javascript-programmer-node-js-web-application-vector-markup-language-5b173fc201e143.7543356315282503060077.png" alt="JavaScript" />
+          <img v-if="html" src="@/assets/img/html.svg" alt="HTML" />
+          <img v-if="vue" src="@/assets/img/vue-svgrepo-com.svg" alt="">
+          <img v-if="css" src="@/assets/img/css-3-svgrepo-com.svg" alt="CSS" />
+          <img v-if="javascript" src="@/assets/img/kisspng-javascript-programmer-node-js-web-application-vector-markup-language-5b173fc201e143.7543356315282503060077.png" alt="JavaScript" />
         </div>
-          <a :href="github"><img src="src/assets/img/github-142-svgrepo-com.svg" alt="" /></a>
+          <a :href="github"><img src="@/assets/img/github-142-svgrepo-com.svg" alt="" /></a>
       </div>
     </a>
   </div>
