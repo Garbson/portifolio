@@ -37,6 +37,17 @@
         />
 
         <BaseCard
+          title="Portifolio"
+          description="Site com projetos que construí e mantenho ativo"
+          img="portifolio.jpeg"
+          vue
+          css
+          javascript
+          github="https://github.com/Garbson/portifolio"
+          link="https://portifolio-by1.pages.dev"
+        />
+
+        <BaseCard
           title="Bitcoin"
           description="Site com o valor em tempo real de moedas digitais"
           img="bitcoin.jpeg"
@@ -49,7 +60,7 @@
 
         <BaseCard
           title="Temperature"
-          description="Site feito para ver a temperatura em tempo real."
+          description="Site feito para ver a temperatura de qualquel cidade"
           img="temperatures.jpeg"
           html
           css
@@ -60,7 +71,7 @@
 
         <BaseCard
           title="Conversor"
-          description="Conversor para o cambio de moedas de todo o mundo"
+          description="Conversor para o cambio de moedas do mundo"
           img="Conversor.jpeg"
           html
           css
@@ -190,14 +201,14 @@ header {
 }
 
 .con {
-  max-width: 100%;
+  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: center;
   flex-direction: row;
-  margin: 0 100px;
+  margin: 0 40px; /* Adjust this margin for better spacing on small screens */
 }
 @media screen and (max-width: 800px) {
   .apresentacao {
@@ -214,6 +225,17 @@ header {
   .redes {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .con {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .con .BaseCard {
+    width: 100%; /* Make each card take full width on smaller screens */
+    margin-bottom: 20px; /* Add some space between stacked cards */
   }
 }
 </style>
