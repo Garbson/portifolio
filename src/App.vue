@@ -140,7 +140,6 @@ header {
 }
 
 .apresentacao {
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
