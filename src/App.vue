@@ -202,7 +202,7 @@ header {
 }
 
 .con {
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -229,9 +229,12 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .con {
-    flex-direction: column; /* Stack cards vertically */
+    /* Stack cards vertically */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .con .BaseCard {
@@ -239,10 +242,11 @@ header {
     margin-bottom: 20px; /* Add some space between stacked cards */
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .apresentacao {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
   }
 
   .foto {

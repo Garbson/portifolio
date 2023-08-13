@@ -138,11 +138,7 @@ defineProps({
 @media (max-width: 700px) {
   .projeto {
     width: 100%;
+    height: 100%;
   }
-}
-
-h3 {
-  font-weight: bolder;
-  color: aliceblue;
 }
 </style>
