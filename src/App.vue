@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="apresentacao">
-      <img class="foto" src="./assets/img/logo.jpeg" alt="" />
+      <img class="foto" src="public/img/logo.jpeg" alt="" />
       <div class="sobre">
         <p>Olá, meu nome é</p>
         <h1>Garbson Souza</h1>
@@ -13,11 +13,11 @@
         </p>
       </div>
       <div class="redes">
-        <a href="https://www.instagram.com/dev_garbson/"><img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
-        <a href=""><img src="./assets/img/whatsapp-svgrepo-com.svg" alt="whatsap" /></a>
-        <a href="https://github.com/Garbson"><img src="./assets/img/github-142-svgrepo-com.svg" alt="Github" /></a>
+        <a href="https://www.instagram.com/dev_garbson/"><img src="public/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
+        <a href=""><img src="public/img/whatsapp-svgrepo-com.svg" alt="whatsap" /></a>
+        <a href="https://github.com/Garbson"><img src="public/img/github-142-svgrepo-com.svg" alt="Github" /></a>
         <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a/">
-          <img src="./assets/img/linkedin-svgrepo-com.svg" alt="linkedli" />
+          <img src="public/img/linkedin-svgrepo-com.svg" alt="linkedli" />
         </a>
       </div>
     </div>
