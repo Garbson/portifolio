@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="apresentacao">
-      <img class="foto" src="./assets/img/logo.jpg" alt="" />
+      <img class="foto" src="./assets/img/logo.jpeg" alt="" />
       <div class="sobre">
         <p>Olá, meu nome é</p>
         <h1>Garbson Souza</h1>
