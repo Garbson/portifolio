@@ -1,5 +1,5 @@
 <template>
-  <div class="body bg-gradient-to-b from-blue-500 to-teal-600">
+  <div class="body bg-gradient-to-b from-teal-600 to-blue-600">
     <div class="apresentacao flex flex-col items-center md:flex-row justify-center">
       <img class="foto w-60 h-82 md:w-70 md:h-70 rounded-full" src="./assets/img/logo.png" alt="Minha Foto" />
       <div class="text-center md:text-left md:ml-8 mt-4 md:mt-0">
