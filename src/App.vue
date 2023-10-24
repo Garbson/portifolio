@@ -2,6 +2,13 @@
   <div class="body">
     <div class="apresentacao">
       <img class="foto" src="./assets/img/logo.jpeg" alt="" />
+      <div class="redes">
+        <a href="https://www.instagram.com/dev_garbson/"><img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
+        <a href="https://github.com/Garbson"><img src="./assets/img/github-142-svgrepo-com.svg" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a/">
+          <img src="./assets/img/linkedin-svgrepo-com.svg" alt="linkedli" />
+        </a>
+      </div>
       <div class="sobre">
         <p>Olá, meu nome é</p>
         <h1>Garbson Souza</h1>
@@ -11,13 +18,6 @@
           <br />
           e estou sempre em busca de conhecimento.
         </p>
-      </div>
-      <div class="redes">
-        <a href="https://www.instagram.com/dev_garbson/"><img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
-        <a href="https://github.com/Garbson"><img src="./assets/img/github-142-svgrepo-com.svg" alt="Github" /></a>
-        <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a/">
-          <img src="./assets/img/linkedin-svgrepo-com.svg" alt="linkedli" />
-        </a>
       </div>
     </div>
 
@@ -99,9 +99,8 @@ import BaseCard from './components/BaseCard.vue'
 
 <style>
 body {
-  background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: url(../public/background.svg);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(118, 10, 10, 1) 100%);
   object-fit: contain;
   margin: 0;
   padding: 0;
@@ -123,46 +122,49 @@ header {
   margin-left: 10px;
   padding: 10px;
 } */
+.apresentacao {
+  display: flex;
+  flex-direction: column; /* Altere para uma coluna */
+  align-items: center; /* Centralize horizontalmente */
+}
+
+.foto-container {
+  display: flex;
+  justify-content: center; /* Centralize horizontalmente */
+  align-items: center; /* Centralize verticalmente */
+}
+
+.foto {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
 
 .redes {
-  display: flex;
-  /* Display redes in a column */
-  justify-content: center;
-  /* Center items vertically */
-  align-items: flex-end;
-  /* Align redes items to the right */
-  max-width: 200px;
-  /* Adjust as needed */
   margin-top: 10px;
-  margin-left: 10px;
-  /* Adjust spacing from sobre text */
+  display: flex;
+}
+
+.redes a {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 10px; /* Adicione espaço entre os ícones */
 }
 
 .redes img {
   width: 30px;
   height: auto;
   margin-right: 10px;
-  /* Adjust margin between images */
   border-radius: 50%;
-}
-
-.apresentacao {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.foto {
-  width: 400px;
-  height: 100%;
-  border-radius: 50%;
-  margin-top: 20px;
 }
 
 .sobre {
   display: flex;
   flex-direction: column;
-  margin-top: 140px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   padding-right: 20px;
