@@ -48,7 +48,7 @@
         <BaseCard
           title="Portifolio"
           description="Site com projetos que construí e mantenho ativo"
-          img="portifolio.jpeg"
+          img="portfolio.png"
           vue
           css
           javascript
@@ -106,6 +106,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
 header {

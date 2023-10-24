@@ -107,7 +107,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #610404;
+  background-color: #6b0f0f;
 }
 
 .linguaguens-projeto {
