@@ -9,6 +9,7 @@
           <img v-if="html" src="@/assets/img/html.svg" alt="HTML" />
           <img v-if="vue" src="@/assets/img/vue-svgrepo-com.svg" alt="" />
           <img v-if="css" src="@/assets/img/css-3-svgrepo-com.svg" alt="CSS" />
+          <img v-if="tailwind" src="@/assets/img/tailwind.svg" alt="" />
           <img
             v-if="javascript"
             src="@/assets/img/kisspng-javascript-programmer-node-js-web-application-vector-markup-language-5b173fc201e143.7543356315282503060077.png"
@@ -30,6 +31,7 @@ defineProps({
   css: Boolean,
   javascript: Boolean,
   vue: Boolean,
+  tailwind: Boolean,
   link: String,
   github: String
 })
@@ -105,7 +107,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #10319e;
+  background-color: #610404;
 }
 
 .linguaguens-projeto {

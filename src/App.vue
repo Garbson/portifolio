@@ -14,7 +14,6 @@
       </div>
       <div class="redes">
         <a href="https://www.instagram.com/dev_garbson/"><img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram" /></a>
-        <a href=""><img src="./assets/img/whatsapp-svgrepo-com.svg" alt="whatsap" /></a>
         <a href="https://github.com/Garbson"><img src="./assets/img/github-142-svgrepo-com.svg" alt="Github" /></a>
         <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a/">
           <img src="./assets/img/linkedin-svgrepo-com.svg" alt="linkedli" />
@@ -22,9 +21,19 @@
       </div>
     </div>
 
-    <h1 class="portfolio">Portfolio:</h1>
     <div class="container">
       <div class="con">
+        <BaseCard
+          title="Gerenciador de tarefas"
+          description="Gerenciador de tarefas, metas e calendario"
+          img="gerenciador.png"
+          vue
+          tailwind
+          javascript
+          github="https://github.com/Garbson/GER"
+          link="https://ger-8tm.pages.dev/home"
+        />
+
         <BaseCard
           title="Brasileiro.ninja"
           description="Informações nacionais como ISBN, CEP, DDD..."
@@ -92,10 +101,7 @@ import BaseCard from './components/BaseCard.vue'
 body {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
-    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
-    radial-gradient(99% 99% at 109% 2%, #09090aff 0%, #073aff00 100%),
-    radial-gradient(160% 154% at 711px -303px, #000000ff 0%, #2000ffff 12%, #073affff 100%);
+  background-image: url(../public/background.jpg);
   object-fit: contain;
   margin: 0;
   padding: 0;
