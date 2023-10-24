@@ -101,7 +101,7 @@ import BaseCard from './components/BaseCard.vue'
 body {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: url(../public/background.jpg);
+  background-image: url(../public/background.svg);
   object-fit: contain;
   margin: 0;
   padding: 0;

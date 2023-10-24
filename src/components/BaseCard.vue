@@ -2,7 +2,7 @@
   <div class="projeto">
     <a :href="link" target="_blank">
       <img :src="img" :alt="title" />
-      <h3>{{ title }}</h3>
+      <h3 class="titulo">{{ title }}</h3>
       <p class="description">{{ description }}</p>
       <div class="linguaguens-projeto">
         <div>
@@ -99,6 +99,10 @@ defineProps({
   border-radius: 10px;
   cursor: pointer;
 }
+.titulo {
+  font-weight: bolder;
+  color: #fff;
+}
 
 /* To center the content of each project (text) */
 .projeto a {
@@ -107,7 +111,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #6b0f0f;
+  background-color: #3a0808;
 }
 
 .linguaguens-projeto {
