@@ -25,7 +25,7 @@
 
     <div class="biografia bg-blue-900 text-white p-4 md:p-8 mx-4 md:mx-32 my-4 rounded-lg flex flex-col md:flex-row">
       <div class="w-full md:w-1/2">
-        <img src="../public/biografia.jpg" alt="" class="w-full rounded-lg" />
+        <img src="../public/biografia.jpg" alt="" class="w-full rounded-lg mt-2" />
       </div>
       <div class="w-full md:w-1/2 mt-4 md:mt-0 ml-0 md:ml-4">
         <p class="text-xl md:text-2xl font-semibold mb-4">Biografia</p>
