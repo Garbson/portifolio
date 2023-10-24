@@ -31,7 +31,7 @@
           tailwind
           javascript
           github="https://github.com/Garbson/GER"
-          link="https://ger-8tm.pages.dev/home"
+          link="https://ger-8tm.pages.dev/"
         />
 
         <BaseCard
