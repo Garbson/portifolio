@@ -7,7 +7,7 @@
           Olá, sou Garbson!
           <img src="@/assets/img/programador.svg" alt="Emoji de Programador" class="w-8 h-8 inline-block ml-2" />
         </h2>
-        <p class="text-base md:text-xl text-white mt-2 md:mt-4">Desenvolvedor Front-End Brasileiro</p>
+        <p class="text-base md:text-xl text-white mt-2 md:mt-4">Desenvolvedor Front-End</p>
       </div>
     </div>
 
