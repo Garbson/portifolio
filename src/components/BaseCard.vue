@@ -55,7 +55,7 @@ const projects = [
     description: 'Site com projetos que construí e mantenho ativo',
     img: 'portfolio.png',
     vue: true,
-    css: true,
+    tailwind: true,
     javascript: true,
     github: 'https://github.com/Garbson/portifolio',
     link: 'https://portifolio-by1.pages.dev'
