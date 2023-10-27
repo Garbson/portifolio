@@ -31,6 +31,16 @@
 <script setup>
 const projects = [
   {
+    title: 'Calculadora',
+    description: 'Feita com o intuito de desenvolver o conhecimento em Pinia',
+    img: 'Calculadora.png',
+    vue: true,
+    tailwind: true,
+    javascript: true,
+    github: 'https://github.com/Garbson/calculadora',
+    link: 'https://calculadora-e7p.pages.dev/'
+  },
+  {
     title: 'Gerenciador de tarefas',
     description: 'Gerenciador de tarefas, metas e calendário',
     img: 'gerenciador.png',
