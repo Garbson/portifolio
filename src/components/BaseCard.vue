@@ -13,6 +13,7 @@
         </div>
         <div class="linguagens-projeto flex justify-between items-center p-4 border-t border-white">
           <div class="flex space-x-2">
+            <img v-if="project.firebase" src="@/assets/img/firebase.svg" alt="HTML" class="w-6 h-6" />
             <img v-if="project.html" src="@/assets/img/html.svg" alt="HTML" class="w-6 h-6" />
             <img v-if="project.vue" src="@/assets/img/vue-svgrepo-com.svg" alt="Vue" class="w-6 h-6" />
             <img v-if="project.css" src="@/assets/img/css-3-svgrepo-com.svg" alt="CSS" class="w-6 h-6" />
@@ -29,7 +30,19 @@
 </template>
 
 <script setup>
+// const onde é adcionado sempre cada pojeto novo, lembre de olhar as props
 const projects = [
+  {
+    title: 'Crypto Tracker',
+    description: 'Site de criptomoedas, com variação diária dos preços das moedas.',
+    img: 'Crypto.png',
+    vue: true,
+    tailwind: true,
+    javascript: true,
+    firebase: true,
+    github: 'https://github.com/leonardo-cordeiro/CryptoTracker/tree/Garbson',
+    link: 'https://cryptotracker-5hk.pages.dev/'
+  },
   {
     title: 'Calculadora',
     description: 'Feita com o intuito de desenvolver o conhecimento em Pinia',
