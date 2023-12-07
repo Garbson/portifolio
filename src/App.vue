@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="redes mt-4 md:mt-5 flex justify-center items-center space-x-4 md:space-x-8">
+    <div class="redes mb-5 mt-4 md:mt-5 flex justify-center items-center space-x-4 md:space-x-8">
       <a href="https://www.instagram.com/dev_garbson/" class="text-white hover:text-blue-300">
         <img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram" class="w-12 h-12" />
       </a>
@@ -23,7 +23,7 @@
       </a>
     </div>
 
-    <div class="biografia bg-blue-900 text-white p-4 md:p-8 mx-4 md:mx-32 my-4 rounded-lg flex flex-col md:flex-row">
+    <div class="biografia mx-auto bg-blue-900 text-white p-4 md:p-8 md:mx-32 my-4 rounded-lg flex flex-col md:flex-row">
       <div class="w-full md:w-1/2">
         <img src="../public/biografia.jpg" alt="" class="w-full rounded-lg mt-2" />
       </div>
@@ -54,3 +54,14 @@
 <script setup>
 import BaseCard from './components/BaseCard.vue'
 </script>
+<style scoped>
+.biografia {
+  width: 78%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .biografia {
+    width: 98%;
+  }
+}
+</style>

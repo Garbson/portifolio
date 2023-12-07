@@ -141,4 +141,9 @@ const projects = [
   width: 80%;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
 </style>
