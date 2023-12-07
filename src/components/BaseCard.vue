@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div class="content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <div
       v-for="project in projects"
       :key="project.title"
@@ -33,6 +33,16 @@
 <script setup>
 // const onde é adcionado sempre cada pojeto novo, lembre de olhar as props
 const projects = [
+  {
+    title: 'AmazonNanoForest',
+    description: 'Nanobiotecnologia na Amazônia: transformando ativos naturais em inovações sustentáveis.',
+    img: 'NanoForest.png',
+    vue: true,
+    tailwind: true,
+    Quasar: true,
+    github: 'https://github.com/Garbson/AMAZON-NANO-FOREST',
+    link: 'https://amazon-nano-forest.pages.dev/'
+  },
   {
     title: 'Golfim',
     description: 'Consertos, Pinturas e Reformas de Piscinas com profissionais',
@@ -126,3 +136,9 @@ const projects = [
   }
 ]
 </script>
+<style scoped>
+.content {
+  width: 80%;
+  margin-bottom: 50px;
+}
+</style>

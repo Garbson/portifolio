@@ -27,7 +27,7 @@
       <div class="w-full md:w-1/2">
         <img src="../public/biografia.jpg" alt="" class="w-full rounded-lg mt-2" />
       </div>
-      <div class="w-full md:w-1/2 mt-4 md:mt-0 ml-0 md:ml-4">
+      <div class="md:w-1/2 mt-4 md:mt-0 ml-0 md:ml-4">
         <p class="text-xl md:text-2xl font-semibold mb-4">Biografia</p>
         <p class="text-base md:text-lg">
           Olá, sou Garbson, um desenvolvedor front-end brasileiro. Desde os 16 anos, sou apaixonado por programação e atualmente estudo
@@ -53,5 +53,4 @@
 
 <script setup>
 import BaseCard from './components/BaseCard.vue'
-
 </script>
