@@ -41,7 +41,7 @@ const projects = [
     tailwind: true,
     Quasar: true,
     github: 'https://github.com/Garbson/AMAZON-NANO-FOREST',
-    link: 'https://amazon-nano-forest.pages.dev/'
+    link: 'amazonnanoforest.com'
   },
   {
     title: 'Golfim',
