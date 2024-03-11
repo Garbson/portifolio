@@ -1,52 +1,45 @@
 <template>
-  <div class="body bg-gradient-to-b from-teal-600 to-blue-600">
-    <div class="apresentacao flex flex-col items-center md:flex-row justify-center">
-      <img class="foto w-60 h-82 md:w-70 md:h-70 rounded-full" src="./assets/img/logo.png" alt="Minha Foto" />
-      <div class="text-center md:text-left md:ml-8 mt-4 md:mt-0">
-        <h2 class="text-3xl md:text-5xl font-semibold text-white">
-          Olá, sou Garbson!
-          <img src="@/assets/img/programador.svg" alt="Emoji de Programador" class="w-8 h-8 inline-block ml-2" />
-        </h2>
-        <p class="text-base md:text-xl text-white mt-2 md:mt-4">Desenvolvedor Front-End</p>
+  <div class="body bg-gradient-to-t from-teal-400 to-blue-900">
+    <!-- Apresentação -->
+    <div class="md:w-[72%] mx-auto">
+      <div class="apresentacao flex flex-col items-center md:flex-row justify-left md:w-[100%]">
+        <img class="foto w-64 h-82 md:w-70 md:h-70 rounded-full" src="./assets/img/ddd.png" alt="Minha Foto" />
+        <div class="bb md:text-left">
+          <h2 class="text-3xl md:text-5xl font-semibold text-white">Olá, sou Garbson Souza!</h2>
+          <p class="text-2xl text-white mt-2 md:mt-4">Desenvolvedor Front-End</p>
+        </div>
       </div>
     </div>
 
-    <div class="redes mb-5 mt-4 md:mt-5 flex justify-center items-center space-x-4 md:space-x-8">
-      <a href="https://www.instagram.com/dev_garbson/" class="text-white hover:text-blue-300">
-        <img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram" class="w-12 h-12" />
-      </a>
-      <a href="https://github.com/Garbson" class="text-white hover:text-blue-300">
-        <img src="./assets/img/github-142-svgrepo-com.svg" alt="GitHub" class="w-12 h-12" />
-      </a>
-      <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a" class="text-white hover:text-blue-300">
-        <img src="./assets/img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="w-12 h-12" />
-      </a>
-    </div>
-
-    <div class="biografia mx-auto bg-blue-900 text-white p-4 md:p-8 md:mx-32 my-4 rounded-lg flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2">
-        <img src="../public/biografia.jpg" alt="" class="w-full rounded-lg mt-2" />
-      </div>
-      <div class="md:w-1/2 mt-4 md:mt-0 ml-0 md:ml-4">
-        <p class="text-xl md:text-2xl font-semibold mb-4">Biografia</p>
-        <p class="text-base md:text-lg">
-          Olá, sou Garbson, um desenvolvedor front-end brasileiro. Desde os 16 anos, sou apaixonado por programação e atualmente estudo
-          Sistemas de Informação na Universidade Federal do Acre.
-        </p>
-        <p class="text-base md:text-lg mt-4">
-          Nasci e cresci na região norte do Brasil e cursei o ensino médio no Colégio Militar. Sou um desenvolvedor comunicativo,
-          competitivo e proativo, sempre disposto a abraçar novos desafios. 👨‍💻
-        </p>
-        <p class="text-base md:text-lg mt-4">
-          Além disso, sou dedicado e sempre interessado em aprender coisas novas, resolver problemas e enfrentar desafios complexos. 💪
-        </p>
+    <!-- card sobre mim -->
+    <div class="biografia w-full md:w-[72%] mx-auto bg-blue-900 text-white p-5 rounded-lg flex flex-col items-center justify-center mt-5">
+      <h1 class="text-2xl md:text-3xl font-bold mb-4">Sobre mim</h1>
+      <p class="text-base md:text-lg">
+        Olá, sou Garbson, um desenvolvedor front-end brasileiro. Desde os 16 anos, sou apaixonado por programação e atualmente estudo
+        Sistemas de Informação na Universidade Federal do Acre.
+        <br />
+        Nasci e cresci na região norte do Brasil e cursei o ensino médio no Colégio Militar. Sou um desenvolvedor comunicativo, competitivo
+        e proativo, sempre disposto a abraçar novos desafios.
+        <br />
+        Além disso, sou dedicado e sempre interessado em aprender coisas novas, resolver problemas e enfrentar desafios complexos. 💪
+      </p>
+      <div class="redes flex items-center mt-3">
+        <a href="https://api.whatsapp.com/send?phone=5568992490198" class="text-white hover:text-blue-300">
+          <img src="./assets/img/whatsapp-svgrepo-com.svg" alt="WhatsApp" class="w-8 h-8 mr-4" />
+        </a>
+        <a href="https://www.instagram.com/dev_garbson/" class="text-white hover:text-blue-300">
+          <img src="./assets/img/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram" class="w-8 h-8 mr-4" />
+        </a>
+        <a href="https://github.com/Garbson" class="text-white hover:text-blue-300">
+          <img src="./assets/img/github-142-svgrepo-com.svg" alt="GitHub" class="w-8 h-8 mr-4" />
+        </a>
+        <a href="https://www.linkedin.com/in/garbson-souza-santos-0744a825a" class="text-white hover:text-blue-300">
+          <img src="./assets/img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="w-9 h-9" />
+        </a>
       </div>
     </div>
-
-    <div class="container mx-auto">
-      <div class="con flex flex-wrap justify-center gap-5 md:gap-8 mt-10">
-        <BaseCard></BaseCard>
-      </div>
+    <div class="flex flex-wrap mt-10">
+      <BaseCard></BaseCard>
     </div>
   </div>
 </template>
@@ -55,13 +48,12 @@
 import BaseCard from './components/BaseCard.vue'
 </script>
 <style scoped>
-.biografia {
-  width: 78%;
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .biografia {
-    width: 98%;
+    width: 90%;
+  }
+  .bb {
+    margin-top: 20px;
   }
 }
 </style>
