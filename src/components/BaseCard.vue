@@ -98,7 +98,7 @@ const projects = [
   },
   {
     title: 'Crypto Tracker',
-    description: 'Acompanhe a flutuação diária das criptomoedas.',
+    description: 'Acompanhe a flutuação diária de criptomoedas.',
     img: 'Crypto.png',
     vue: true,
     tailwind: true,
