@@ -168,14 +168,14 @@ const projects = [
     link: 'https://currency-converter-cgn.pages.dev/'
   },
   {
-    title: 'Dangerous Dragons',
-    description: 'Jogo RPG, feito com javasScript puro.',
-    img: 'dangerous.png',
+    title: 'City Skyline',
+    description: 'diminua o tamanho da janela da pagina e veja a magica.',
+    img: 'city.png',
     html: true,
     css: true,
     javascript: true,
-    github: 'https://github.com/Garbson/Dangerous-dragon',
-    link: 'https://dangerous-dragon.pages.dev'
+    github: 'https://github.com/Garbson/city',
+    link: 'https://city-du9.pages.dev'
   }
 ]
 </script>
