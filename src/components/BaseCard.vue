@@ -166,6 +166,16 @@ const projects = [
     javascript: true,
     github: 'https://github.com/Garbson/Currency-Converter',
     link: 'https://currency-converter-cgn.pages.dev/'
+  },
+  {
+    title: 'Dangerous Dragons',
+    description: 'Jogo RPG, feito com javasScript puro.',
+    img: 'dangerous.png',
+    html: true,
+    css: true,
+    javascript: true,
+    github: 'https://github.com/Garbson/Dangerous-dragon',
+    link: 'https://dangerous-dragon.pages.dev'
   }
 ]
 </script>
