@@ -30,7 +30,7 @@
               <img v-if="project.javascript" src="@/assets/img/javascript.svg.png" alt="JavaScript" class="w-6 h-6" title="JavaScript" />
               <img v-if="project.Quasar" src="@/assets/img/Quasar.svg" alt="Quasar" class="w-6 h-6" title="Quasar" />
               <img v-if="project.node" src="@/assets/img/node.svg" alt="Node.js" class="w-6 h-6" title="Node.js" />
-              <img v-if="project.node" src="@/assets/img/nuxt.png" alt="Nuxt.js" class="w-6 h-6" title="Nuxt.js" />
+              <img v-if="project.nuxt" src="@/assets/img/nuxt.png" alt="Nuxt.js" class="w-6 h-6" title="Nuxt.js" />
             </div>
             <a :href="project.github">
               <img src="@/assets/img/github-142-svgrepo-com.svg" alt="GitHub" class="w-6 h-6" title="GitHub" />
@@ -43,141 +43,14 @@
 </template>
 
 <script setup>
-const projects = [
-  {
-    title: 'Feedel',
-    description: 'Loja de Vendas, em escala mundial.',
-    img: 'feedel.png',
-    vue: true,
-    Quasar: true,
-    node: true,
-    nuxt: true,
-    github: 'https://github.com/hellenictechnologies/feedel-dashboard-garbson',
-    link: 'https://feedel.app/login'
-  },
-  {
-    title: 'Dangerous Dragons',
-    description: 'Jogo RPG, feito com javasScript puro.',
-    img: 'dangerous.png',
-    html: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/Dangerous-dragon',
-    link: 'https://dangerous-dragon.pages.dev'
-  },
-  {
-    title: 'Hostel Pachacuteq',
-    description: 'Hotel em Cusco, Peru, para descanso e aventuras.',
-    img: 'pachacuteq.png',
-    vue: true,
-    tailwind: true,
-    Quasar: true,
-    node: true,
-    github: 'https://github.com/Garbson/pachacuteq',
-    link: 'https://pachacuteq.pages.dev/'
-  },
-  {
-    title: 'AmazonNanoForest',
-    description: 'Biotecnologia na Amazônia: natureza e inovação.',
-    img: 'NanoForest.png',
-    vue: true,
-    tailwind: true,
-    Quasar: true,
-    github: 'https://github.com/Garbson/AMAZON-NANO-FOREST',
-    link: 'https://amazonnanoforest.com/'
-  },
-  {
-    title: 'Golfim',
-    description: 'Conserto de piscinas e restauração por especialistas.',
-    img: 'Golfim.png',
-    vue: true,
-    javascript: true,
-    Quasar: true,
-    github: 'hthttps://github.com/leonardo-cordeiro/golfim',
-    link: 'https://golfim.pages.dev/'
-  },
-  {
-    title: 'Crypto Tracker',
-    description: 'Acompanhe a flutuação diária de criptomoedas.',
-    img: 'Crypto.png',
-    vue: true,
-    tailwind: true,
-    javascript: true,
-    firebase: true,
-    github: 'https://github.com/leonardo-cordeiro/CryptoTracker/tree/Garbson',
-    link: 'https://cryptotracker-5hk.pages.dev/'
-  },
-  {
-    title: 'Calculadora',
-    description: 'Ferramenta em Pinia para cálculos precisos e rápidos.',
-    img: 'Calculadora.png',
-    vue: true,
-    tailwind: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/calculadora',
-    link: 'https://calculadora-e7p.pages.dev/'
-  },
-  {
-    title: 'To Do list',
-    description: 'Organize suas tarefas diárias em um quadro intuitivo.',
-    img: 'Todolist.png',
-    vue: true,
-    tailwind: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/To-do-list',
-    link: 'https://to-do-list-aky.pages.dev/'
-  },
-  {
-    title: 'Brasileiro.ninja',
-    description: 'Base de dados nacional: CEP, ISBN, DDD, NCM, CNPJ e mais.',
-    img: 'Brasileiro.jpeg',
-    vue: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/arnonrdp/Brasileiro-Ninja',
-    link: 'https://brasileiro.ninja/'
-  },
-  {
-    title: 'Portfólio',
-    description: 'Exibição dos meus projetos para apresentação e referência.',
-    img: 'portfolio.png',
-    vue: true,
-    tailwind: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/portifolio',
-    link: 'https://portifolio-by1.pages.dev'
-  },
-  {
-    title: 'Temperature',
-    description: 'Consulte a temperatura global em apenas alguns cliques.',
-    img: 'temperatures.jpeg',
-    html: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/projeto-site-pra-ver-a-temperatura',
-    link: 'https://temperature-9ta.pages.dev/'
-  },
-  {
-    title: 'Conversor',
-    description: 'Troque moedas com facilidade e precisão mundial.',
-    img: 'Conversor.jpeg',
-    html: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/Currency-Converter',
-    link: 'https://currency-converter-cgn.pages.dev/'
-  },
-  {
-    title: 'City Skyline',
-    description: 'diminua o tamanho da janela da pagina e veja a magica.',
-    img: 'city.png',
-    html: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/city',
-    link: 'https://city-du9.pages.dev'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  projects: {
+    type: Array,
+    required: true
   }
-]
+})
 </script>
 
 <style scoped>
