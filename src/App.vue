@@ -12,12 +12,15 @@
     </div>
 
     <!-- card sobre mim -->
-    <div class="biografia w-full md:w-[72%] mx-auto bg-blue-900 text-white p-5 rounded-lg flex flex-col items-center justify-center mt-5">
+    <div
+      v-if="!isMobile"
+      class="biografia w-full md:w-[72%] mx-auto bg-blue-900 text-white p-5 rounded-lg flex flex-col items-center justify-center mt-5"
+    >
       <h1 class="text-2xl md:text-3xl font-bold mb-4">Sobre mim</h1>
       <p class="text-base md:text-lg">
-        👋 Olá, sou Garbson Souza, um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas.
-        Com uma sólida base em tecnologias modernas, Vue.js, Quasar, Node.js, Nuxt.js, Vuex e Pinia, transformo ideias em experiências
-        digitais excepcionais. 💡
+        👋 Olá, sou Garbson Souza, um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas. Com uma
+        sólida base em tecnologias modernas, Vue.js, Quasar, Node.js, Nuxt.js, Vuex e Pinia, transformo ideias em experiências digitais
+        excepcionais. 💡
         <br />
         Desde os 16 anos, tenho me aprofundado no universo da programação, acumulando uma vasta experiência em projetos freelancer que
         abrangem diferentes setores e geografias. Já trabalhei com uma empresa americana, desenvolvendo soluções inovadoras, e colaborei com
@@ -45,6 +48,25 @@
         </a>
       </div>
     </div>
+
+    <div
+      v-if="isMobile"
+      class="biografia w-full md:w-[72%] mx-auto bg-blue-900 text-white p-6 rounded-lg flex flex-col items-center justify-center mt-5"
+    >
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center">Sobre Mim</h1>
+      <p class="text-lg md:text-xl mb-4 text-center">
+        Olá, meu nome é
+        <strong>Garbson</strong>
+        . Tenho
+        <strong>19 anos</strong>
+        e sou desenvolvedor frontend pleno.
+      </p>
+      <p class="text-lg md:text-xl text-center">
+        Atualmente, trabalho na
+        <strong>KNN Idiomas</strong>
+        .
+      </p>
+    </div>
     <div class="flex flex-wrap mt-10">
       <BaseCard :projects="projects"></BaseCard>
     </div>
@@ -52,7 +74,23 @@
 </template>
 
 <script setup>
-import BaseCard from './components/BaseCard.vue'
+import { onMounted, onUnmounted, ref } from 'vue';
+import BaseCard from './components/BaseCard.vue';
+
+const isMobile = ref(window.matchMedia('(max-width: 768px)').matches)
+
+const updateIsMobile = () => {
+  isMobile.value = window.matchMedia('(max-width: 768px)').matches
+}
+
+onMounted(() => {
+  window.addEventListener('resize', updateIsMobile)
+  updateIsMobile()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateIsMobile)
+})
 
 const socialLinks = {
   whatsapp: 'https://api.whatsapp.com/send?phone=5568992490198',
@@ -61,7 +99,7 @@ const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/garbson-souza-0744a825a/'
 }
 const projects = [
-{
+  {
     title: 'Feedel',
     description: 'Loja de Vendas, em escala mundial.',
     img: 'feedel.png',
@@ -103,16 +141,7 @@ const projects = [
     github: 'hthttps://github.com/leonardo-cordeiro/golfim',
     link: 'https://golfim.pages.dev/'
   },
-  {
-    title: 'Dangerous Dragons',
-    description: 'Jogo RPG, feito com javasScript puro.',
-    img: 'dangerous.png',
-    html: true,
-    css: true,
-    javascript: true,
-    github: 'https://github.com/Garbson/Dangerous-dragon',
-    link: 'https://dangerous-dragon.pages.dev'
-  },
+
 
   {
     title: 'Crypto Tracker',
@@ -194,8 +223,17 @@ const projects = [
     javascript: true,
     github: 'https://github.com/Garbson/city',
     link: 'https://city-du9.pages.dev'
-  }
-
+  },
+  {
+    title: 'Dangerous Dragons',
+    description: 'Jogo RPG, feito com javasScript puro.',
+    img: 'dangerous.png',
+    html: true,
+    css: true,
+    javascript: true,
+    github: 'https://github.com/Garbson/Dangerous-dragon',
+    link: 'https://dangerous-dragon.pages.dev'
+  },
 ]
 </script>
 
