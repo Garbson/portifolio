@@ -1,10 +1,10 @@
 <template>
   <nav class="fixed top-0 left-0 w-full bg-blue-900 text-white p-4 shadow-lg z-50 flex items-center justify-between">
     <!-- Logo -->
-    <div class="hidden mobile:block text-xl font-bold">dev_garbson</div>
+    <div class="hidden sm:block text-xl font-bold">dev_garbson</div>
 
     <!-- Menu Hambúrguer (Somente para Telas Pequenas, width <= 777px) -->
-    <button @click="toggleMenu" class=" mobile:hidden flex items-center justify-center w-10 h-10 rounded hover:bg-teal-500 transition">
+    <button @click="toggleMenu" class="sm:hidden flex items-center justify-center w-10 h-10 rounded hover:bg-teal-500 transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
