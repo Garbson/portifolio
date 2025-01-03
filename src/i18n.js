@@ -15,17 +15,17 @@ const messages = {
     biography: {
       title: "About Me",
       description: `
-        👋 Hello, I'm Garbson Souza Santos, a front-end developer passionate about creating intuitive and responsive user interfaces.
-        With a solid foundation in modern technologies like Vue.js, Quasar, Node.js, Nuxt.js, Vuex, and Pinia, I turn ideas into
-        exceptional digital experiences. 💡 Since I was 16, I've been diving deep into the world of programming, accumulating vast
-        experience in freelance projects spanning different sectors and geographies. I've worked with an American company developing
-        innovative solutions, collaborated with biotech companies, and even contributed to a hotel in Cusco, Peru, always focused on
-        delivering high-quality, value-added products. 🌍 Currently, I'm freelancing with Hellenic Technologies, a Greek company,
-        where I continue to apply and expand my skills. My expertise includes consuming APIs to create robust and responsive web
-        applications, ensuring optimized performance and an excellent user experience (UX). 🚀 Alongside my practical experience,
-        I'm studying Information Systems at the Federal University of Acre, which allows me to align theoretical and practical
-        knowledge while staying updated with the latest trends and innovations in the technology market. 🎓
-      `,
+      👋 Hello, I'm Garbson Souza Santos, a front-end developer passionate about creating intuitive and responsive user interfaces.
+      With a solid foundation in modern technologies like Vue.js, Quasar, Node.js, Nuxt.js, Vuex, and Pinia, I turn ideas into
+      exceptional digital experiences. 💡 Since I was 16, I've been diving deep into the world of programming, accumulating vast
+      experience in freelance projects spanning different sectors and geographies. I've worked with an American company developing
+      innovative solutions, collaborated with biotech companies, and even contributed to a hotel in Cusco, Peru, always focused on
+      delivering high-quality, value-added products. 🌍 Currently, I work as a developer for Hellenic Technologies, a Greek company,
+      and for KNN Group, where I continue to apply and expand my skills. My expertise includes consuming APIs to create robust and
+      responsive web applications, ensuring optimized performance and an excellent user experience (UX). 🚀 Alongside my practical
+      experience, I'm studying Information Systems at the Federal University of Acre, which allows me to align theoretical and practical
+      knowledge while staying updated with the latest trends and innovations in the technology market. 🎓
+    `,
     },
     projects: [
       {
@@ -184,17 +184,17 @@ const messages = {
     biography: {
       title: "Sobre mim",
       description: `
-        👋 Olá, sou Garbson Souza Santos, um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas.
-        Com uma sólida base em tecnologias modernas, Vue.js, Quasar, Node.js, Nuxt.js, Vuex e Pinia, transformo ideias em experiências
-        digitais excepcionais. 💡 Desde os 16 anos, tenho me aprofundado no universo da programação, acumulando uma vasta experiência em
-        projetos freelancer que abrangem diferentes setores e geografias. Já trabalhei com uma empresa americana, desenvolvendo soluções
-        inovadoras, e colaborei com empresas de biotecnologia, além de um hotel em Cusco, no Peru, sempre focado em entregar produtos de
-        alta qualidade e valor agregado. 🌍 Atualmente, estou contribuindo como freelancer na Hellenic Technologies, uma empresa grega,
-        onde continuo a aplicar e expandir minhas competências. Minha expertise inclui o consumo de APIs para a criação de aplicações
-        web robustas e responsivas, garantindo uma performance otimizada e uma experiência de usuário (UX) de excelência. 🚀 Além da
-        minha experiência prática, estou cursando Sistemas de Informação na Universidade Federal do Acre, o que me permite alinhar
-        conhecimentos teóricos e práticos, mantendo-me atualizado com as últimas tendências e inovações do mercado de tecnologia. 🎓
-      `,
+      👋 Olá, sou Garbson Souza Santos, um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas.
+      Com uma sólida base em tecnologias modernas, Vue.js, Quasar, Node.js, Nuxt.js, Vuex e Pinia, transformo ideias em experiências
+      digitais excepcionais. 💡 Desde os 16 anos, tenho me aprofundado no universo da programação, acumulando uma vasta experiência em
+      projetos freelancer que abrangem diferentes setores e geografias. Já trabalhei com uma empresa americana, desenvolvendo soluções
+      inovadoras, e colaborei com empresas de biotecnologia, além de um hotel em Cusco, no Peru, sempre focado em entregar produtos de
+      alta qualidade e valor agregado. 🌍 Atualmente, trabalho como desenvolvedor para a Hellenic Technologies, uma empresa grega, e para
+      o KNN Group, onde continuo a aplicar e expandir minhas competências. Minha expertise inclui o consumo de APIs para a criação de
+      aplicações web robustas e responsivas, garantindo uma performance otimizada e uma experiência de usuário (UX) de excelência. 🚀
+      Além da minha experiência prática, estou cursando Sistemas de Informação na Universidade Federal do Acre, o que me permite alinhar
+      conhecimentos teóricos e práticos, mantendo-me atualizado com as últimas tendências e inovações do mercado de tecnologia. 🎓
+    `,
     },
     projects: [
       {
@@ -353,17 +353,16 @@ const messages = {
     biography: {
       title: "Sobre Mí",
       description: `
-        👋 Hola, soy Garbson Souza Santos, un desarrollador front-end apasionado por crear interfaces de usuario intuitivas y responsivas.
-        Con una sólida base en tecnologías modernas como Vue.js, Quasar, Node.js, Nuxt.js, Vuex y Pinia, transformo ideas en experiencias
-        digitales excepcionales. 💡 Desde los 16 años, me he sumergido en el mundo de la programación, acumulando una vasta experiencia en
-        proyectos freelance que abarcan diferentes sectores y geografías. He trabajado con una empresa estadounidense desarrollando
-        soluciones innovadoras, he colaborado con empresas de biotecnología y también con un hotel en Cusco, Perú, siempre enfocado en
-        entregar productos de alta calidad y valor agregado. 🌍 Actualmente, estoy contribuyendo como freelancer en Hellenic Technologies,
-        una empresa griega, donde sigo aplicando y ampliando mis competencias. Mi experiencia incluye el consumo de APIs para la creación
-        de aplicaciones web robustas y responsivas, garantizando un rendimiento optimizado y una experiencia de usuario (UX) de excelencia.
-        🚀 Además de mi experiencia práctica, estoy cursando Sistemas de Información en la Universidad Federal de Acre, lo que me permite
-        alinear conocimientos teóricos y prácticos, manteniéndome actualizado con las últimas tendencias e innovaciones del mercado
-        tecnológico. 🎓
+      👋 Hola, soy Garbson Souza Santos, un desarrollador front-end apasionado por crear interfaces de usuario intuitivas y responsivas.
+      Con una sólida base en tecnologías modernas como Vue.js, Quasar, Node.js, Nuxt.js, Vuex y Pinia, transformo ideas en experiencias
+      digitales excepcionales. 💡 Desde los 16 años, me he sumergido en el mundo de la programación, acumulando una vasta experiencia en
+      proyectos freelance que abarcan diferentes sectores y geografías. He trabajado con una empresa estadounidense, desarrollando soluciones
+      innovadoras, y he colaborado con empresas de biotecnología, además de un hotel en Cusco, Perú, siempre enfocado en entregar productos de
+      alta calidad y valor añadido. 🌍 Actualmente, trabajo como desarrollador para Hellenic Technologies, una empresa griega, y para el
+      KNN Group, donde sigo aplicando y expandiendo mis competencias. Mi experiencia incluye el consumo de APIs para la creación de aplicaciones
+      web robustas y responsivas, garantizando un rendimiento optimizado y una excelente experiencia de usuario (UX). 🚀 Junto a mi experiencia
+      práctica, estoy estudiando Sistemas de Información en la Universidad Federal de Acre, lo que me permite alinear conocimientos teóricos y
+      prácticos, manteniéndome actualizado con las últimas tendencias e innovaciones del mercado tecnológico. 🎓
       `,
     },
     projects: [
@@ -523,14 +522,18 @@ const messages = {
     biography: {
       title: "Обо мне",
       description: `
-        👋 Привет, я Гарбсон Соуза Сантос, front-end разработчик, увлеченный созданием интуитивно понятных и отзывчивых пользовательских
-        интерфейсов. С твердой базой в современных технологиях, таких как Vue.js, Quasar, Node.js, Nuxt.js, Vuex и Pinia, я превращаю
-        идеи в исключительные цифровые впечатления. 💡 С 16 лет я погружаюсь в мир программирования, накапливая огромный опыт в
-        фриланс-проектах, охватывающих различные секторы и регионы. Я работал с американской компанией, разрабатывал инновационные
-        решения, сотрудничал с биотехнологическими компаниями, а также с отелем в Куско, Перу, всегда сосредотачиваясь на предоставлении
-        продуктов высокого качества и ценности. 🌍 В настоящее время я работаю фрилансером в Hellenic Technologies, греческой компании,
-        где я продолжаю применять и расширять свои навыки. 🚀
+      👋 Привет, меня зовут Гарбсон Соуза Сантос, я front-end разработчик, увлеченный созданием интуитивно понятных и отзывчивых
+      пользовательских интерфейсов. С крепкой базой в современных технологиях, таких как Vue.js, Quasar, Node.js, Nuxt.js, Vuex и Pinia, я
+      превращаю идеи в исключительный цифровой опыт. 💡 С 16 лет я погружаюсь в мир программирования, накопив огромный опыт в проектах на
+      фрилансе, охватывающих различные отрасли и географические регионы. Я работал с американской компанией, разрабатывая инновационные
+      решения, сотрудничал с биотехнологическими компаниями, а также с отелем в Куско, Перу, всегда сосредотачиваясь на предоставлении
+      высококачественных и ценных продуктов. 🌍 В настоящее время я работаю разработчиком в Hellenic Technologies, греческой компании, а также
+      в KNN Group, где продолжаю применять и развивать свои навыки. Мой опыт включает использование API для создания мощных и отзывчивых
+      веб-приложений, обеспечивая оптимизированную производительность и превосходный пользовательский опыт (UX). 🚀 Наряду с практическим
+      опытом, я изучаю Информационные Системы в Федеральном Университете Акри, что позволяет мне совмещать теоретические и практические знания,
+      оставаясь в курсе последних тенденций и инноваций на технологическом рынке. 🎓
       `,
+
     },
     projects: [
       {
@@ -689,14 +692,17 @@ const messages = {
     biography: {
       title: "Σχετικά με μένα",
       description: `
-        👋 Γεια σας! Είμαι ο Garbson Souza Santos, ένας προγραμματιστής front-end που παθιάζεται με τη δημιουργία διαισθητικών και ευαίσθητων 
-        διεπαφών χρήστη. Με ισχυρή βάση στις σύγχρονες τεχνολογίες, όπως Vue.js, Quasar, Node.js, Nuxt.js, Vuex και Pinia, μετατρέπω 
-        ιδέες σε εξαιρετικές ψηφιακές εμπειρίες. 💡 Από την ηλικία των 16 ετών, βυθίζομαι στον κόσμο του προγραμματισμού, αποκτώντας 
-        μεγάλη εμπειρία σε έργα ελεύθερων επαγγελματιών που καλύπτουν διάφορους τομείς και γεωγραφικές περιοχές. Έχω συνεργαστεί με 
-        μια αμερικανική εταιρεία αναπτύσσοντας καινοτόμες λύσεις, με εταιρείες βιοτεχνολογίας, καθώς και με ένα ξενοδοχείο στο Κούσκο του 
-        Περού, εστιάζοντας πάντα στην παροχή προϊόντων υψηλής ποιότητας και προστιθέμενης αξίας. 🌍 Προς το παρόν, συνεργάζομαι ως 
-        ελεύθερος επαγγελματίας με την Hellenic Technologies, μια ελληνική εταιρεία, όπου συνεχίζω να εφαρμόζω και να επεκτείνω τις 
-        δεξιότητές μου. 🚀
+      👋 Γεια σας, είμαι ο Garbson Souza Santos, ένας front-end προγραμματιστής με πάθος για τη δημιουργία διαισθητικών και ανταποκρινόμενων
+      διεπαφών χρήστη. Με ισχυρό υπόβαθρο σε σύγχρονες τεχνολογίες όπως Vue.js, Quasar, Node.js, Nuxt.js, Vuex και Pinia, μετατρέπω ιδέες
+      σε εξαιρετικές ψηφιακές εμπειρίες. 💡 Από την ηλικία των 16 ετών, έχω βυθιστεί στον κόσμο του προγραμματισμού, αποκτώντας μεγάλη εμπειρία
+      σε freelance έργα που καλύπτουν διάφορους τομείς και γεωγραφίες. Έχω συνεργαστεί με μια αμερικανική εταιρεία, αναπτύσσοντας καινοτόμες
+      λύσεις, και έχω συνεργαστεί με εταιρείες βιοτεχνολογίας καθώς και με ένα ξενοδοχείο στο Κούσκο του Περού, εστιάζοντας πάντα στην παροχή
+      προϊόντων υψηλής ποιότητας και προστιθέμενης αξίας. 🌍 Επί του παρόντος, εργάζομαι ως προγραμματιστής για την Hellenic Technologies,
+      μια ελληνική εταιρεία, και για το KNN Group, όπου συνεχίζω να εφαρμόζω και να διευρύνω τις δεξιότητές μου. Η εξειδίκευσή μου περιλαμβάνει
+      τη χρήση APIs για τη δημιουργία ισχυρών και ανταποκρινόμενων web εφαρμογών, διασφαλίζοντας βελτιστοποιημένη απόδοση και εξαιρετική
+      εμπειρία χρήστη (UX). 🚀 Παράλληλα με την πρακτική μου εμπειρία, σπουδάζω Πληροφοριακά Συστήματα στο Ομοσπονδιακό Πανεπιστήμιο του Acre,
+      γεγονός που μου επιτρέπει να συνδυάζω θεωρητική και πρακτική γνώση, ενώ παραμένω ενημερωμένος για τις τελευταίες τάσεις και καινοτομίες
+      της τεχνολογικής αγοράς. 🎓
       `,
     },
     projects: [
