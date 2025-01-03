@@ -4,7 +4,7 @@
       <div
         v-for="project in projects"
         :key="project.title"
-        class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transform transition-transform duration-300 hover:scale-105"
+        class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transform transition-transform duration-300 hover:scale-105 flex flex-col justify-between"
       >
         <a :href="project.link" target="_blank" class="flex flex-col h-full w-full">
           <img
@@ -13,15 +13,15 @@
             class="w-full h-40 object-cover rounded-t-lg cursor-pointer shadow-xl"
             :title="project.title"
           />
-          <div class="p-5">
+          <div class="p-5 flex-grow">
             <h3 class="titulo text-lg font-semibold mt-2">{{ project.title }}</h3>
             <p class="border-t-2"></p>
             <div class="h-full">
               <p class="description text-sm h-[100%] mt-2">{{ project.description }}</p>
             </div>
           </div>
-          <div class="linguagens-projeto flex justify-between p-4 border-black">
-            <div class="flex space-x-2 bottom-0">
+          <div class="linguagens-projeto flex justify-between items-center p-4 border-black mt-auto">
+            <div class="flex space-x-2">
               <img v-if="project.firebase" src="@/assets/img/firebase.svg" alt="Firebase" class="w-6 h-6" title="Firebase" />
               <img v-if="project.html" src="@/assets/img/html.svg" alt="HTML" class="w-6 h-6" title="HTML" />
               <img v-if="project.vue" src="@/assets/img/vue-svgrepo-com.svg" alt="Vue" class="w-6 h-6" title="Vue.js" />
@@ -43,20 +43,30 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
+// Recebe os projetos como prop do componente pai
 const props = defineProps({
   projects: {
     type: Array,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 </script>
 
 <style scoped>
 .content {
   width: 72%;
   margin-bottom: 50px;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {

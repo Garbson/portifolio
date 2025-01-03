@@ -2,28 +2,18 @@ module.exports = {
   mode: 'jit',
   content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
-    extend: {
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif']
-      }
-    }
-  },
-  plugins: [],
-  extend: {
-    theme: {
-      extend: {
-        fontFamily: {
-          montserrat: ['Montserrat', 'sans-serif']
-        }
-      }
+    screens: {
+      sm: '777px', // Substitui o valor padrão do breakpoint `sm`
+      md: '1024px', // Outros breakpoints permanecem iguais, mas você pode ajustá-los conforme necessário
+      lg: '1280px',
+      xl: '1440px',
+      '2xl': '1536px',
     },
-    // Adicione uma seção para estilos personalizados do FontAwesome
     extend: {
-      // Adicione classes personalizadas para ícones FontAwesome
       fontFamily: {
-        fontawesome: ['Font Awesome 5 Free']
+        montserrat: ['Montserrat', 'sans-serif'],
+        fontawesome: ['Font Awesome 5 Free'], // Adiciona fonte para ícones FontAwesome
       },
-      // Adicione classes personalizadas para ícones FontAwesome
       fontSize: {
         xs: '.75rem',
         sm: '.875rem',
@@ -34,30 +24,27 @@ module.exports = {
         '3xl': '1.875rem',
         '4xl': '2.25rem',
         '5xl': '3rem',
-        '6xl': '4rem'
+        '6xl': '4rem',
       },
-      // Adicione classes personalizadas para ícones FontAwesome
-      extend: {
-        colors: {
-          'fontawesome-gray': {
-            100: '#f8f9fa',
-            200: '#e9ecef',
-            300: '#dee2e6',
-            400: '#ced4da',
-            500: '#adb5bd',
-            600: '#6c757d',
-            700: '#495057',
-            800: '#343a40',
-            900: '#212529'
-          }
+      colors: {
+        'fontawesome-gray': {
+          100: '#f8f9fa',
+          200: '#e9ecef',
+          300: '#dee2e6',
+          400: '#ced4da',
+          500: '#adb5bd',
+          600: '#6c757d',
+          700: '#495057',
+          800: '#343a40',
+          900: '#212529',
         },
-        // Adicione classes personalizadas para ícones FontAwesome
-        spacing: {
-          72: '18rem',
-          84: '21rem',
-          96: '24rem'
-        }
-      }
-    }
-  }
-}
+      },
+      spacing: {
+        72: '18rem',
+        84: '21rem',
+        96: '24rem',
+      },
+    },
+  },
+  plugins: [],
+};
