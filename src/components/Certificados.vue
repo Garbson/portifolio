@@ -1,85 +1,38 @@
 <template>
-  <nav class="fixed top-0 left-0 w-full bg-blue-900 text-white p-4 shadow-lg z-50 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="hidden sm:block text-xl font-bold">dev_garbson</div>
-
-    <!-- Menu Hambúrguer (Somente para Telas Pequenas, width <= 777px) -->
-    <button @click="toggleMenu" class="block sm:hidden flex items-center justify-center w-10 h-10 rounded hover:bg-teal-500 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Navegação -->
-    <ul
-      :class="{'hidden': !isMenuOpen, 'flex': isMenuOpen}" 
-      ref="menu"
-      class="absolute top-full left-0 w-1/2 rounded-xl bg-blue-600 text-white shadow-lg z-50 flex-col items-start p-4 sm:static sm:flex sm:flex-row sm:space-x-6 sm:justify-center sm:w-auto sm:p-0 sm:h-auto"
-    >
+  <section id="certificates" class="w-[90%] md:w-[72%] mx-auto mt-10 bg-blue-900 text-white p-6 rounded-lg">
+    <h1 class="text-2xl md:text-3xl font-bold mb-4">{{ $t("certificates.title") }}</h1>
+    <ul class="list-disc pl-5">
       <li>
-        <a href="#about" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.about') }}</a>
+        <a 
+          href="https://www.freecodecamp.org/portuguese/certification/garbson_souza/responsive-web-design" 
+          class="text-blue-300 underline hover:text-blue-400">
+          {{ $t("certificates.items.responsiveWebDesign") }}
+        </a>
+        - <strong>FreeCodeCamp</strong>
       </li>
       <li>
-        <a href="#projects" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.projects') }}</a>
+        <a 
+          href="https://www.freecodecamp.org/certification/garbson_souza/javascript-algorithms-and-data-structures" 
+          class="text-blue-300 underline hover:text-blue-400">
+          {{ $t("certificates.items.jsAlgorithms") }}
+        </a>
+        - <strong>FreeCodeCamp</strong>
       </li>
       <li>
-        <a href="#certificates" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.certificates') }}</a>
+        <a 
+          href="https://www.linkedin.com/in/garbson-souza-0744a825a/overlay/1635529817666/single-media-viewer/?profileId=ACoAAD_J8FgB8waCdbKs9jUYL414eL1ggGo9gMw" 
+          class="text-blue-300 underline hover:text-blue-400">
+          {{ $t("certificates.items.cs50") }}
+        </a>
+        - <strong>Harvard University</strong>
       </li>
     </ul>
-
-    <!-- Idiomas -->
-    <div class="flex space-x-4 sm:static">
-      <button @click="setLanguage('en')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
-        <img src="/estados-unidos.png" alt="English" class="w-6 h-6" />
-      </button>
-      <button @click="setLanguage('pt')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
-        <img src="/brasil.png" alt="Português" class="w-6 h-6" />
-      </button>
-      <button @click="setLanguage('es')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
-        <img src="/espanha.png" alt="Español" class="w-6 h-6" />
-      </button>
-      <button @click="setLanguage('ru')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
-        <img src="/russia.png" alt="Русский" class="w-6 h-6" />
-      </button>
-      <button @click="setLanguage('gr')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
-        <img src="/grecia.png" alt="Ελληνικά" class="w-6 h-6" />
-      </button>
-    </div>
-  </nav>
+  </section>
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { useI18n } from 'vue-i18n'
-
-const { locale } = useI18n()
-
-const setLanguage = (lang) => {
-  locale.value = lang // Atualiza o idioma
-}
-
-const isMenuOpen = ref(false)
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
-
-// Fecha o menu ao clicar fora
-const closeMenuOnOutsideClick = (event) => {
-  if (isMenuOpen.value && !event.target.closest('nav')) {
-    isMenuOpen.value = false
-  }
-}
-
-onMounted(() => {
-  document.addEventListener('click', closeMenuOnOutsideClick)
-})
-
-onBeforeUnmount(() => {
-  document.removeEventListener('click', closeMenuOnOutsideClick)
-})
 </script>
 
 <style scoped>
-/* Adicione estilizações adicionais, se necessário */
+/* Estilize conforme necessário */
 </style>
