@@ -34,6 +34,20 @@
                 title="Firebase"
               />
               <img
+                v-if="project.react"
+                src="@/assets/img/react.svg"
+                alt="React"
+                class="w-6 h-6"
+                title="React"
+              />
+              <img
+                v-if="project.nextjs"
+                src="@/assets/img/nextjs.svg"
+                alt="Next.js"
+                class="w-6 h-6"
+                title="Next.js"
+              />
+              <img
                 v-if="project.html"
                 src="@/assets/img/html.svg"
                 alt="HTML"
