@@ -69,7 +69,7 @@ export default {
     {
       title: "Clube da Luta CT",
       description: "Uma plataforma de clube de treinamento de combate construída com tecnologias modernas.",
-      img: "/public/CtClube.png",
+      img: "CtClube.png",
       firebase: true,
       typescript: true,
       react: true,
@@ -85,7 +85,7 @@ export default {
     {
       title: "Feedel",
       description: "Um marketplace global que conecta vendedores e clientes ao redor do mundo.",
-      img: "/public/feedel.png",
+      img: "feedel.png",
       vue: true,
       Quasar: true,
       node: true,
@@ -101,7 +101,7 @@ export default {
     {
       title: "Duolingo Clone",
       description: "Uma plataforma de aprendizado de idiomas inspirada no Duolingo.",
-      img: "/public/duolingo-clone.jpeg",
+      img: "duolingo-clone.jpeg",
       vue: true,
       javascript: true,
       bootstrap: true,
@@ -115,7 +115,7 @@ export default {
     {
       title: "Wedding Memories",
       description: "Um site para guardar e compartilhar lembranças marcantes com fotos.",
-      img: "/public/memories.jpeg",
+      img: "memories.jpeg",
       vue: true,
       typescript: true,
       tailwind: true,
@@ -130,7 +130,7 @@ export default {
     {
       title: "AmazonNanoForest",
       description: "Uma iniciativa de biotecnologia que combina natureza e inovação na Amazônia.",
-      img: "/public/NanoForest.png",
+      img: "NanoForest.png",
       vue: true,
       tailwind: true,
       Quasar: true,
@@ -145,7 +145,7 @@ export default {
     {
       title: "Golfim",
       description: "Plataforma para serviços de reparo e restauração de piscinas.",
-      img: "/public/Golfim.png",
+      img: "Golfim.png",
       vue: true,
       javascript: true,
       Quasar: true,
@@ -155,7 +155,7 @@ export default {
     {
       title: "Hostel Pachacuteq",
       description: "Site para um hotel no Peru, projetado para viajantes que buscam aventura e conforto.",
-      img: "/public/pachacuteq.png",
+      img: "pachacuteq.png",
       vue: true,
       tailwind: true,
       Quasar: true,
@@ -166,7 +166,7 @@ export default {
     {
       title: "Crypto Tracker",
       description: "Ferramenta para monitorar flutuações diárias de criptomoedas em tempo real.",
-      img: "/public/Crypto.png",
+      img: "Crypto.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -177,7 +177,7 @@ export default {
     {
       title: "Calculadora",
       description: "Aplicação simples e funcional para cálculos rápidos, desenvolvida com Pinia.",
-      img: "/public/Calculadora.png",
+      img: "Calculadora.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -187,7 +187,7 @@ export default {
     {
       title: "To Do List",
       description: "Gerenciador de tarefas intuitivo para organização diária.",
-      img: "/public/Todolist.png",
+      img: "Todolist.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -197,7 +197,7 @@ export default {
     {
       title: "Brasileiro.ninja",
       description: "Base de dados nacional com informações úteis como CEP, ISBN, DDD e CNPJ.",
-      img: "/public/Brasileiro.jpeg",
+      img: "Brasileiro.jpeg",
       vue: true,
       css: true,
       javascript: true,
@@ -207,7 +207,7 @@ export default {
     {
       title: "Portfólio",
       description: "Meu portfólio pessoal, exibindo projetos e habilidades tecnológicas.",
-      img: "/public/portfolio.png",
+      img: "portfolio.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -217,7 +217,7 @@ export default {
     {
       title: "Temperature",
       description: "Consulta global de temperatura de maneira prática e simples.",
-      img: "/public/temperatures.jpeg",
+      img: "temperatures.jpeg",
       html: true,
       css: true,
       javascript: true,
@@ -227,7 +227,7 @@ export default {
     {
       title: "Conversor",
       description: "Ferramenta eficiente para conversão de moedas internacionais.",
-      img: "/public/Conversor.jpeg",
+      img: "Conversor.jpeg",
       html: true,
       css: true,
       javascript: true,
@@ -237,7 +237,7 @@ export default {
     {
       title: "City Skyline",
       description: "Experiência visual interativa ao redimensionar a janela do navegador.",
-      img: "/public/city.png",
+      img: "city.png",
       html: true,
       css: true,
       javascript: true,
@@ -247,7 +247,7 @@ export default {
     {
       title: "Dangerous Dragons",
       description: "Um jogo RPG desenvolvido com JavaScript puro.",
-      img: "/public/dangerous.png",
+      img: "dangerous.png",
       html: true,
       css: true,
       javascript: true,
