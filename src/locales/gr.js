@@ -3,10 +3,14 @@ export default {
     about: "Σχετικά με μένα",
     projects: "Έργα",
     certificates: "Πιστοποιητικά",
+    skills: "Δεξιότητες",
+    experience: "Εμπειρία",
+    testimonials: "Μαρτυρίες"
   },
   introduction: {
     greeting: "Γεια σας! Είμαι ο Garbson Souza",
     role: "Προγραμματιστής Front-End",
+    cta: "Κατεβάστε το Βιογραφικό"
   },
   biography: {
     title: "Σχετικά με μένα",
@@ -198,4 +202,73 @@ export default {
       cs50: "CS50: Εισαγωγή στην Επιστήμη Υπολογιστών",
     },
   },
+  skills: {
+    title: "Οι Δεξιότητές μου",
+    categories: [
+      {
+        name: "Front-end",
+        items: [
+          { name: "Vue.js", level: 90, icon: "vue-svgrepo-com.svg", description: "Framework Vue.js για δημιουργία διαδραστικών διεπαφών" },
+          { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Framework Quasar για εφαρμογές Vue πολλαπλών πλατφορμών" },
+          { name: "React", level: 75, icon: "react.svg", description: "Βιβλιοθήκη React.js για δημιουργία διεπαφών χρήστη" },
+          { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Framework Next.js για εφαρμογές React" },
+          { name: "HTML5", level: 95, icon: "html.svg", description: "Γλώσσα σήμανσης HTML5 για περιεχόμενο ιστού" },
+          { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 και SCSS για στυλιστική επεξεργασία εφαρμογών ιστού" },
+          { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Framework Tailwind CSS utility-first" },
+          { name: "JavaScript", level: 90, icon: "javascript-svgrepo-com.svg", description: "Γλώσσα προγραμματισμού JavaScript" },
+          { name: "TypeScript", level: 80, icon: "typescript.png", description: "TypeScript, υπερσύνολο της JavaScript με τύπους" }
+        ]
+      },
+      {
+        name: "Back-end & Εργαλεία",
+        items: [
+          { name: "Node.js", level: 75, icon: "node.svg", description: "Περιβάλλον εκτέλεσης Node.js για JavaScript" },
+          { name: "Firebase", level: 80, icon: "firebase.svg", description: "Πλατφόρμα Firebase για ανάπτυξη εφαρμογών" },
+          { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Σύστημα ελέγχου εκδόσεων Git και πλατφόρμα GitHub" },
+          { name: "RESTful APIs", level: 85, description: "Σχεδιασμός και κατανάλωση RESTful APIs" },
+          { name: "Responsive Design", level: 95, description: "Δημιουργία αποκρίσιμων διατάξεων για όλες τις συσκευές" },
+          { name: "Nuxt.js", level: 75, icon: "nuxt.png", description: "Framework Nuxt.js για εφαρμογές Vue" },
+          { name: "UI/UX Design", level: 70, description: "Αρχές σχεδιασμού διεπαφής και εμπειρίας χρήστη" }
+        ]
+      }
+    ]
+  },
+  experience: {
+    title: "Επαγγελματική Εμπειρία",
+    items: [
+      {
+        role: "Προγραμματιστής Front-end",
+        company: "Hellenic Technologies",
+        period: "2022 - Παρόν",
+        description: "Ανάπτυξη διεπαφών για την παγκόσμια αγορά Feedel, χρησιμοποιώντας Vue.js, Quasar και Node.js."
+      },
+      {
+        role: "Προγραμματιστής Front-end",
+        company: "KNN Group",
+        period: "2023 - Παρόν",
+        description: "Υλοποίηση προσαρμοσμένων λύσεων για διαφορετικούς πελάτες χρησιμοποιώντας σύγχρονες τεχνολογίες front-end."
+      },
+      {
+        role: "Freelancer",
+        company: "Διάφορα Έργα",
+        period: "2021 - Παρόν",
+        description: "Ανάπτυξη ιστοσελίδων και διαδικτυακών εφαρμογών για διεθνείς πελάτες, συμπεριλαμβανομένων εταιρειών βιοτεχνολογίας και ξενοδοχείων."
+      }
+    ]
+  },
+  testimonials: {
+    title: "Μαρτυρίες",
+    items: [
+      {
+        name: "Carlos Silva",
+        role: "CEO, Amazon Nano Forest",
+        text: "Ο Garbson ανέπτυξε την πλατφόρμα μας με αριστεία, ξεπερνώντας όλες τις προσδοκίες μας. Το αποτέλεσμα ήταν μια διαισθητική και επαγγελματική διεπαφή."
+      },
+      {
+        name: "Maria Santos",
+        role: "Διευθύντρια Έργων, KNN Group",
+        text: "Δουλεύοντας με τον Garbson, παρατηρήσαμε τη δέσμευσή του στις προθεσμίες και την ποιότητα. Η τεχνική του ικανότητα και η δυνατότητα επίλυσης σύνθετων προβλημάτων είναι εντυπωσιακές."
+      }
+    ]
+  }
 };

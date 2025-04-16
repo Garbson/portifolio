@@ -3,10 +3,14 @@ export default {
     about: "Обо мне",
     projects: "Проекты",
     certificates: "Сертификаты",
+    skills: "Навыки",
+    experience: "Опыт",
+    testimonials: "Отзывы"
   },
   introduction: {
     greeting: "Привет, я Гарбсон Соуза!",
     role: "Front-End Разработчик",
+    cta: "Скачать Резюме"
   },
   biography: {
     title: "Обо мне",
@@ -197,4 +201,73 @@ export default {
       cs50: "CS50: Введение в компьютерные науки",
     },
   },
+  skills: {
+    title: "Мои Навыки",
+    categories: [
+      {
+        name: "Front-end",
+        items: [
+          { name: "Vue.js", level: 90, icon: "vue-svgrepo-com.svg", description: "Фреймворк Vue.js для создания интерактивных интерфейсов" },
+          { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Фреймворк Quasar для кросс-платформенных Vue приложений" },
+          { name: "React", level: 75, icon: "react.svg", description: "Библиотека React.js для создания пользовательских интерфейсов" },
+          { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Фреймворк Next.js для React приложений" },
+          { name: "HTML5", level: 95, icon: "html.svg", description: "Язык разметки HTML5 для веб-контента" },
+          { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 и SCSS для стилизации веб-приложений" },
+          { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Utility-first фреймворк Tailwind CSS" },
+          { name: "JavaScript", level: 90, icon: "javascript-svgrepo-com.svg", description: "Язык программирования JavaScript" },
+          { name: "TypeScript", level: 80, icon: "typescript.png", description: "TypeScript, надмножество JavaScript с типами" }
+        ]
+      },
+      {
+        name: "Back-end и Инструменты",
+        items: [
+          { name: "Node.js", level: 75, icon: "node.svg", description: "Среда выполнения Node.js для JavaScript" },
+          { name: "Firebase", level: 80, icon: "firebase.svg", description: "Платформа Firebase для разработки приложений" },
+          { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Система контроля версий Git и платформа GitHub" },
+          { name: "RESTful APIs", level: 85, description: "Проектирование и потребление RESTful API" },
+          { name: "Responsive Design", level: 95, description: "Создание адаптивных макетов для всех устройств" },
+          { name: "Nuxt.js", level: 75, icon: "nuxt.png", description: "Фреймворк Nuxt.js для Vue приложений" },
+          { name: "UI/UX Design", level: 70, description: "Принципы дизайна интерфейса и пользовательского опыта" }
+        ]
+      }
+    ]
+  },
+  experience: {
+    title: "Профессиональный Опыт",
+    items: [
+      {
+        role: "Front-end Разработчик",
+        company: "Hellenic Technologies",
+        period: "2022 - Настоящее время",
+        description: "Разработка интерфейсов для глобального маркетплейса Feedel с использованием Vue.js, Quasar и Node.js."
+      },
+      {
+        role: "Front-end Разработчик",
+        company: "KNN Group",
+        period: "2023 - Настоящее время",
+        description: "Реализация индивидуальных решений для различных клиентов с использованием современных front-end технологий."
+      },
+      {
+        role: "Фрилансер",
+        company: "Различные Проекты",
+        period: "2021 - Настоящее время",
+        description: "Разработка веб-сайтов и веб-приложений для международных клиентов, включая биотехнологические компании и отели."
+      }
+    ]
+  },
+  testimonials: {
+    title: "Отзывы",
+    items: [
+      {
+        name: "Carlos Silva",
+        role: "CEO, Amazon Nano Forest",
+        text: "Гарбсон разработал нашу платформу с отличным качеством, превзойдя все наши ожидания. Результатом стал интуитивно понятный и профессиональный интерфейс."
+      },
+      {
+        name: "Maria Santos",
+        role: "Менеджер проектов, KNN Group",
+        text: "Работая с Гарбсоном, мы заметили его приверженность срокам и качеству. Его технические способности и умение решать сложные проблемы впечатляют."
+      }
+    ]
+  }
 };

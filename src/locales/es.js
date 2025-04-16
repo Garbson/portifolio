@@ -3,10 +3,14 @@ export default {
     about: "Sobre Mí",
     projects: "Proyectos",
     certificates: "Certificados",
+    skills: "Habilidades",
+    experience: "Experiencia",
+    testimonials: "Testimonios"
   },
   introduction: {
     greeting: "¡Hola! Soy Garbson Souza",
     role: "Desarrollador Front-End",
+    cta: "Descargar Currículum"
   },
   biography: {
     title: "Sobre Mí",
@@ -197,4 +201,73 @@ export default {
       cs50: "CS50: Introducción a la Ciencia de la Computación",
     },
   },
+  skills: {
+    title: "Mis Habilidades",
+    categories: [
+      {
+        name: "Front-end",
+        items: [
+          { name: "Vue.js", level: 90, icon: "vue-svgrepo-com.svg", description: "Framework Vue.js para construir interfaces interactivas" },
+          { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Framework Quasar para aplicaciones Vue multiplataforma" },
+          { name: "React", level: 75, icon: "react.svg", description: "Biblioteca React.js para construir interfaces de usuario" },
+          { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Framework Next.js para aplicaciones React" },
+          { name: "HTML5", level: 95, icon: "html.svg", description: "Lenguaje de marcado HTML5 para contenido web" },
+          { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 y SCSS para estilizar aplicaciones web" },
+          { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Framework Tailwind CSS utility-first" },
+          { name: "JavaScript", level: 90, icon: "javascript-svgrepo-com.svg", description: "Lenguaje de programación JavaScript" },
+          { name: "TypeScript", level: 80, icon: "typescript.png", description: "Superconjunto de JavaScript con tipos" }
+        ]
+      },
+      {
+        name: "Back-end y Herramientas",
+        items: [
+          { name: "Node.js", level: 75, icon: "node.svg", description: "Entorno de ejecución Node.js para JavaScript" },
+          { name: "Firebase", level: 80, icon: "firebase.svg", description: "Plataforma Firebase para desarrollo de aplicaciones" },
+          { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Sistema de control de versiones Git y plataforma GitHub" },
+          { name: "RESTful APIs", level: 85, description: "Diseño y consumo de APIs RESTful" },
+          { name: "Responsive Design", level: 95, description: "Creación de diseños responsivos para todos los dispositivos" },
+          { name: "Nuxt.js", level: 75, icon: "nuxt.png", description: "Framework Nuxt.js para aplicaciones Vue" },
+          { name: "UI/UX Design", level: 70, description: "Principios de diseño de interfaz y experiencia de usuario" }
+        ]
+      }
+    ]
+  },
+  experience: {
+    title: "Experiencia Profesional",
+    items: [
+      {
+        role: "Desarrollador Front-end",
+        company: "Hellenic Technologies",
+        period: "2022 - Presente",
+        description: "Desarrollo de interfaces para el marketplace global Feedel, utilizando Vue.js, Quasar y Node.js."
+      },
+      {
+        role: "Desarrollador Front-end",
+        company: "KNN Group",
+        period: "2023 - Presente",
+        description: "Implementación de soluciones personalizadas para diferentes clientes utilizando tecnologías modernas de front-end."
+      },
+      {
+        role: "Freelancer",
+        company: "Proyectos Diversos",
+        period: "2021 - Presente",
+        description: "Desarrollo de sitios web y aplicaciones web para clientes internacionales, incluyendo empresas de biotecnología y hotelería."
+      }
+    ]
+  },
+  testimonials: {
+    title: "Testimonios",
+    items: [
+      {
+        name: "Carlos Silva",
+        role: "CEO, Amazon Nano Forest",
+        text: "Garbson desarrolló nuestra plataforma con excelencia, superando todas nuestras expectativas. El resultado fue una interfaz intuitiva y profesional."
+      },
+      {
+        name: "Maria Santos",
+        role: "Gerente de Proyectos, KNN Group",
+        text: "Trabajando con Garbson, notamos su compromiso con los plazos y la calidad. Su capacidad técnica y habilidad para resolver problemas complejos son impresionantes."
+      }
+    ]
+  }
 };

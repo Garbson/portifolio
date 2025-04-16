@@ -3,10 +3,14 @@ export default {
     about: "Sobre Mim",
     projects: "Projetos",
     certificates: "Certificados",
+    skills: "Habilidades",
+    experience: "Experiência",
+    testimonials: "Depoimentos"
   },
   introduction: {
     greeting: "Olá, sou Garbson Souza!",
     role: "Desenvolvedor Front-End",
+    cta: "Baixar Currículo"
   },
   biography: {
     title: "Sobre mim",
@@ -23,6 +27,37 @@ export default {
     conhecimentos teóricos e práticos, mantendo-me atualizado com as últimas tendências e inovações do mercado de tecnologia. 🎓
   `,
   },
+  skills: {
+    title: "Minhas Habilidades",
+    categories: [
+      {
+        name: "Front-end",
+        items: [
+          { name: "Vue.js", level: 90 },
+          { name: "Quasar", level: 85 },
+          { name: "React", level: 75 },
+          { name: "Next.js", level: 70 },
+          { name: "HTML5", level: 95 },
+          { name: "CSS3/SCSS", level: 90 },
+          { name: "Tailwind CSS", level: 85 },
+          { name: "JavaScript", level: 90 },
+          { name: "TypeScript", level: 80 }
+        ]
+      },
+      {
+        name: "Back-end & Ferramentas",
+        items: [
+          { name: "Node.js", level: 75 },
+          { name: "Firebase", level: 80 },
+          { name: "Git/GitHub", level: 85 },
+          { name: "RESTful APIs", level: 85 },
+          { name: "Responsive Design", level: 95 },
+          { name: "Nuxt.js", level: 75 },
+          { name: "UI/UX Design", level: 70 }
+        ]
+      }
+    ]
+  },
   projects: [
     {
       title: "Clube da Luta CT",
@@ -34,6 +69,11 @@ export default {
       nextjs: true,
       github: "https://github.com/Garbson/grecieCT",
       link: "https://github.com/Garbson/grecieCT",
+      metrics: [
+        "50+ usuários ativos",
+        "Aumento de 30% na retenção de clientes",
+        "Sistema de agendamento reduziu faltas em 25%"
+      ]
     },
     {
       title: "Feedel",
@@ -45,6 +85,11 @@ export default {
       nuxt: true,
       github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
       link: "https://feedel.app/login",
+      metrics: [
+        "120+ vendedores cadastrados",
+        "Tempo de carregamento reduzido em 40%",
+        "Interface otimizada para 5 idiomas diferentes"
+      ]
     },
     {
       title: "Duolingo Clone",
@@ -55,6 +100,10 @@ export default {
       bootstrap: true,
       github: "https://github.com/Garbson/duolingo-clone",
       link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
+      metrics: [
+        "Implementação de 15+ exercícios interativos",
+        "Sistema de streak e pontuação gamificada"
+      ]
     },
     {
       title: "Wedding Memories",
@@ -65,6 +114,11 @@ export default {
       tailwind: true,
       github: "https://github.com/Garbson/wedding-memories",
       link: "https://wedding-memories.pages.dev/",
+      metrics: [
+        "1000+ fotos armazenadas",
+        "Compartilhamento automático via redes sociais",
+        "Cache otimizado para carregamento rápido"
+      ]
     },
     {
       title: "AmazonNanoForest",
@@ -75,6 +129,11 @@ export default {
       Quasar: true,
       github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
       link: "https://amazonnanoforest.com/",
+      metrics: [
+        "Aumento de 70% no tráfego orgânico",
+        "20+ contatos de parceiros internacionais",
+        "Tempo na página aumentou 45%"
+      ]
     },
     {
       title: "Golfim",
@@ -197,4 +256,42 @@ export default {
       cs50: "CS50: Introdução à Ciência da Computação",
     },
   },
+  experience: {
+    title: "Experiência Profissional",
+    items: [
+      {
+        role: "Desenvolvedor Front-end",
+        company: "Hellenic Technologies",
+        period: "2022 - Presente",
+        description: "Desenvolvimento de interfaces para o marketplace global Feedel, utilizando Vue.js, Quasar e Node.js."
+      },
+      {
+        role: "Desenvolvedor Front-end",
+        company: "KNN Group",
+        period: "2023 - Presente",
+        description: "Implementação de soluções personalizadas para diferentes clientes usando tecnologias modernas de front-end."
+      },
+      {
+        role: "Freelancer",
+        company: "Diversos Projetos",
+        period: "2021 - Presente",
+        description: "Desenvolvimento de websites e aplicações web para clientes internacionais, incluindo empresas de biotecnologia e hotelaria."
+      }
+    ]
+  },
+  testimonials: {
+    title: "Depoimentos",
+    items: [
+      {
+        name: "Carlos Silva",
+        role: "CEO, Amazon Nano Forest",
+        text: "O Garbson desenvolveu nossa plataforma com excelência, superando todas as nossas expectativas. O resultado foi uma interface intuitiva e profissional."
+      },
+      {
+        name: "Maria Santos",
+        role: "Gerente de Projetos, KNN Group",
+        text: "Trabalhando com o Garbson, notamos seu compromisso com prazos e qualidade. Sua habilidade técnica e capacidade de resolver problemas complexos são impressionantes."
+      }
+    ]
+  }
 };

@@ -20,7 +20,16 @@
         <a href="#about" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.about') }}</a>
       </li>
       <li>
+        <a href="#skills" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.skills') }}</a>
+      </li>
+      <li>
+        <a href="#experience" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.experience') }}</a>
+      </li>
+      <li>
         <a href="#projects" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.projects') }}</a>
+      </li>
+      <li>
+        <a href="#testimonials" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.testimonials') }}</a>
       </li>
       <li>
         <a href="#certificates" class="block py-2 px-4 hover:text-teal-400">{{ $t('navbar.certificates') }}</a>
@@ -29,19 +38,34 @@
 
     <!-- Idiomas -->
     <div class="flex space-x-4 sm:static">
-      <button @click="setLanguage('en')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
+      <button @click="setLanguage('en')" :class="[
+          'flex items-center justify-center w-8 h-8 rounded transition',
+          locale === 'en' ? 'bg-teal-500 ring-2 ring-white' : 'hover:bg-teal-500'
+        ]">
         <img src="/estados-unidos.png" alt="English" class="w-6 h-6" />
       </button>
-      <button @click="setLanguage('pt')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
+      <button @click="setLanguage('pt')" :class="[
+          'flex items-center justify-center w-8 h-8 rounded transition',
+          locale === 'pt' ? 'bg-teal-500 ring-2 ring-white' : 'hover:bg-teal-500'
+        ]">
         <img src="/brasil.png" alt="Português" class="w-6 h-6" />
       </button>
-      <button @click="setLanguage('es')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
+      <button @click="setLanguage('es')" :class="[
+          'flex items-center justify-center w-8 h-8 rounded transition',
+          locale === 'es' ? 'bg-teal-500 ring-2 ring-white' : 'hover:bg-teal-500'
+        ]">
         <img src="/espanha.png" alt="Español" class="w-6 h-6" />
       </button>
-      <button @click="setLanguage('ru')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
+      <button @click="setLanguage('ru')" :class="[
+          'flex items-center justify-center w-8 h-8 rounded transition',
+          locale === 'ru' ? 'bg-teal-500 ring-2 ring-white' : 'hover:bg-teal-500'
+        ]">
         <img src="/russia.png" alt="Русский" class="w-6 h-6" />
       </button>
-      <button @click="setLanguage('gr')" class="flex items-center justify-center w-8 h-8 rounded hover:bg-teal-500 transition">
+      <button @click="setLanguage('gr')" :class="[
+          'flex items-center justify-center w-8 h-8 rounded transition',
+          locale === 'gr' ? 'bg-teal-500 ring-2 ring-white' : 'hover:bg-teal-500'
+        ]">
         <img src="/grecia.png" alt="Ελληνικά" class="w-6 h-6" />
       </button>
     </div>

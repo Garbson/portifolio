@@ -4,9 +4,11 @@
       class="content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto"
     >
       <div
-        v-for="project in projects"
+        v-for="(project, index) in projects"
         :key="project.title"
         class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transform transition-transform duration-300 hover:scale-105 flex flex-col justify-between"
+        data-aos="flip-up"
+        :data-aos-delay="index * 100"
       >
         <a :href="project.link" target="_blank" class="flex flex-col h-full w-full">
           <img
@@ -20,6 +22,14 @@
             <p class="border-t-2"></p>
             <div class="h-full">
               <p class="description text-sm h-[100%] mt-2">{{ project.description }}</p>
+              
+              <!-- Métricas do projeto (se existirem) -->
+              <div v-if="project.metrics" class="mt-2 bg-blue-800 rounded p-2">
+                <h4 class="text-xs font-bold text-blue-300 mb-1">IMPACTO:</h4>
+                <ul class="list-disc list-inside text-xs text-blue-100 space-y-1">
+                  <li v-for="metric in project.metrics" :key="metric">{{ metric }}</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div

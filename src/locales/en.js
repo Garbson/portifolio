@@ -3,10 +3,14 @@ export default {
     about: "About Me",
     projects: "Projects",
     certificates: "Certificates",
+    skills: "Skills",
+    experience: "Experience",
+    testimonials: "Testimonials"
   },
   introduction: {
     greeting: "Hello, I'm Garbson Souza!",
     role: "Front-End Developer",
+    cta: "Download Resume"
   },
   biography: {
     title: "About Me",
@@ -197,4 +201,73 @@ export default {
       cs50: "CS50's Introduction to Computer Science",
     },
   },
+  skills: {
+    title: "My Skills",
+    categories: [
+      {
+        name: "Front-end",
+        items: [
+          { name: "Vue.js", level: 90, icon: "vue-svgrepo-com.svg", description: "Vue.js framework for building interactive UIs" },
+          { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Quasar framework for cross-platform Vue applications" },
+          { name: "React", level: 75, icon: "react.svg", description: "React.js library for building user interfaces" },
+          { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Next.js framework for React applications" },
+          { name: "HTML5", level: 95, icon: "html.svg", description: "HTML5 markup language for web content" },
+          { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 and SCSS for styling web applications" },
+          { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Tailwind CSS utility-first framework" },
+          { name: "JavaScript", level: 90, icon: "javascript-svgrepo-com.svg", description: "JavaScript programming language" },
+          { name: "TypeScript", level: 80, icon: "typescript.png", description: "TypeScript superset of JavaScript with types" }
+        ]
+      },
+      {
+        name: "Back-end & Tools",
+        items: [
+          { name: "Node.js", level: 75, icon: "node.svg", description: "Node.js runtime environment for JavaScript" },
+          { name: "Firebase", level: 80, icon: "firebase.svg", description: "Firebase platform for app development" },
+          { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Git version control system and GitHub platform" },
+          { name: "RESTful APIs", level: 85, description: "Design and consumption of RESTful APIs" },
+          { name: "Responsive Design", level: 95, description: "Creating responsive layouts for all devices" },
+          { name: "Nuxt.js", level: 75, icon: "nuxt.png", description: "Nuxt.js framework for Vue applications" },
+          { name: "UI/UX Design", level: 70, description: "User interface and experience design principles" }
+        ]
+      }
+    ]
+  },
+  experience: {
+    title: "Professional Experience",
+    items: [
+      {
+        role: "Front-end Developer",
+        company: "Hellenic Technologies",
+        period: "2022 - Present",
+        description: "Development of interfaces for the global marketplace Feedel, using Vue.js, Quasar, and Node.js."
+      },
+      {
+        role: "Front-end Developer",
+        company: "KNN Group",
+        period: "2023 - Present",
+        description: "Implementation of customized solutions for different clients using modern front-end technologies."
+      },
+      {
+        role: "Freelancer",
+        company: "Various Projects",
+        period: "2021 - Present",
+        description: "Development of websites and web applications for international clients, including biotech companies and hotels."
+      }
+    ]
+  },
+  testimonials: {
+    title: "Testimonials",
+    items: [
+      {
+        name: "Carlos Silva",
+        role: "CEO, Amazon Nano Forest",
+        text: "Garbson developed our platform with excellence, exceeding all our expectations. The result was an intuitive and professional interface."
+      },
+      {
+        name: "Maria Santos",
+        role: "Project Manager, KNN Group",
+        text: "Working with Garbson, we noticed his commitment to deadlines and quality. His technical ability and capacity to solve complex problems are impressive."
+      }
+    ]
+  }
 };

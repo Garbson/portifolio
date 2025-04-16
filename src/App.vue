@@ -5,8 +5,11 @@
       <Apresentacao />
     </div>
     <SobreMim />
+    <Habilidades />
+    <Experiencia />
     <SocialLinks :links="socialLinks" />
     <Projetos />
+    <Depoimentos />
     <Certificados />
   </div>
 </template>
@@ -14,6 +17,9 @@
 <script setup>
 import Apresentacao from "./components/Apresentacao.vue";
 import Certificados from "./components/Certificados.vue";
+import Depoimentos from "./components/Depoimentos.vue";
+import Experiencia from "./components/Experiencia.vue";
+import Habilidades from "./components/Habilidades.vue";
 import NavBarComponent from "./components/NavBar.vue";
 import Projetos from "./components/Projetos.vue";
 import SobreMim from "./components/SobreMim.vue";
