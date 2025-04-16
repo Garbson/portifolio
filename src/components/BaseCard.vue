@@ -23,13 +23,7 @@
             <div class="h-full">
               <p class="description text-sm h-[100%] mt-2">{{ project.description }}</p>
               
-              <!-- Métricas do projeto (se existirem) -->
-              <div v-if="project.metrics" class="mt-2 bg-blue-800 rounded p-2">
-                <h4 class="text-xs font-bold text-blue-300 mb-1">IMPACTO:</h4>
-                <ul class="list-disc list-inside text-xs text-blue-100 space-y-1">
-                  <li v-for="metric in project.metrics" :key="metric">{{ metric }}</li>
-                </ul>
-              </div>
+              <!-- Seção de métricas removida conforme solicitado -->
             </div>
           </div>
           <div

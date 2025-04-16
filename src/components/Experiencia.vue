@@ -3,13 +3,13 @@
     <h1 class="text-2xl md:text-3xl font-bold mb-6">{{ $t("experience.title") }}</h1>
     
     <div class="space-y-6">
-      <div v-for="(job, index) in $t('experience.items')" :key="index" 
+      <div v-for="(job, index) in experienceItems" :key="index" 
            class="job-item p-4 border-l-4 border-blue-500 bg-blue-800 rounded-r-lg hover:bg-blue-700 transition-all duration-300"
            data-aos="fade-left"
            :data-aos-delay="index * 100">
         <div class="flex flex-col md:flex-row md:justify-between md:items-center">
           <h3 class="text-xl font-bold">{{ job.role }}</h3>
-          <span class="text-blue-300 text-sm md:text-base">{{ job.period }}</span>
+          <span class="text-blue-300 text-sm md:text-base mt-1 md:mt-0">{{ job.period }}</span>
         </div>
         <p class="text-lg text-blue-200 mt-1">{{ job.company }}</p>
         <p class="mt-2 text-gray-200">{{ job.description }}</p>
@@ -19,7 +19,19 @@
 </template>
 
 <script setup>
-// Sem lógica adicional necessária
+import { computed, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { tm, locale } = useI18n();
+
+// Para debug no console
+onMounted(() => {
+  console.log("Idioma atual para experiências:", locale.value);
+  console.log("Experiências obtidas via tm():", tm('experience.items'));
+});
+
+// Usar tm() para acessar corretamente os arrays de experiência
+const experienceItems = computed(() => tm('experience.items'));
 </script>
 
 <style scoped>

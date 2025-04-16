@@ -3,7 +3,7 @@
     <h1 class="text-2xl md:text-3xl font-bold mb-6">{{ $t("testimonials.title") }}</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div v-for="(testimonial, index) in $t('testimonials.items')" :key="index" 
+      <div v-for="(testimonial, index) in testimonialItems" :key="index" 
            class="bg-blue-800 p-5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
            data-aos="zoom-in"
            :data-aos-delay="index * 150">
@@ -23,7 +23,19 @@
 </template>
 
 <script setup>
-// Sem lógica adicional necessária
+import { computed, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { tm, locale } = useI18n();
+
+// Para debug no console
+onMounted(() => {
+  console.log("Idioma atual para depoimentos:", locale.value);
+  console.log("Depoimentos obtidos via tm():", tm('testimonials.items'));
+});
+
+// Usar tm() para acessar corretamente os arrays de depoimentos
+const testimonialItems = computed(() => tm('testimonials.items'));
 </script>
 
 <style scoped>

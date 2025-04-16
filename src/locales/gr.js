@@ -212,6 +212,7 @@ export default {
           { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Framework Quasar για εφαρμογές Vue πολλαπλών πλατφορμών" },
           { name: "React", level: 75, icon: "react.svg", description: "Βιβλιοθήκη React.js για δημιουργία διεπαφών χρήστη" },
           { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Framework Next.js για εφαρμογές React" },
+          { name: "Bootstrap", level: 85, icon: "bootstrap.png", description: "Framework CSS Bootstrap για αποκρίσιμη ανάπτυξη ιστού" },
           { name: "HTML5", level: 95, icon: "html.svg", description: "Γλώσσα σήμανσης HTML5 για περιεχόμενο ιστού" },
           { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 και SCSS για στυλιστική επεξεργασία εφαρμογών ιστού" },
           { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Framework Tailwind CSS utility-first" },
@@ -223,6 +224,12 @@ export default {
         name: "Back-end & Εργαλεία",
         items: [
           { name: "Node.js", level: 75, icon: "node.svg", description: "Περιβάλλον εκτέλεσης Node.js για JavaScript" },
+          { name: "PHP", level: 70, icon: "php.svg", description: "Γλώσσα προγραμματισμού PHP για ανάπτυξη ιστοσελίδων" },
+          { name: "Python", level: 65, icon: "python.svg", description: "Γλώσσα προγραμματισμού Python για διάφορους σκοπούς" },
+          { name: "Bash", level: 60, icon: "bash.svg", description: "Shell script Bash για αυτοματοποίηση εργασιών" },
+          { name: "MySQL", level: 75, icon: "mysql.svg", description: "Σύστημα διαχείρισης σχεσιακών βάσεων δεδομένων MySQL" },
+          { name: "PostgreSQL", level: 70, icon: "postgresql.svg", description: "Σύστημα σχεσιακών βάσεων δεδομένων PostgreSQL" },
+          { name: "Docker", level: 65, icon: "docker.svg", description: "Πλατφόρμα εμπορευματοκιβωτίων Docker" },
           { name: "Firebase", level: 80, icon: "firebase.svg", description: "Πλατφόρμα Firebase για ανάπτυξη εφαρμογών" },
           { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Σύστημα ελέγχου εκδόσεων Git και πλατφόρμα GitHub" },
           { name: "RESTful APIs", level: 85, description: "Σχεδιασμός και κατανάλωση RESTful APIs" },
@@ -238,21 +245,33 @@ export default {
     items: [
       {
         role: "Προγραμματιστής Front-end",
-        company: "Hellenic Technologies",
-        period: "2022 - Παρόν",
-        description: "Ανάπτυξη διεπαφών για την παγκόσμια αγορά Feedel, χρησιμοποιώντας Vue.js, Quasar και Node.js."
+        company: "KNN Idiomas Brasil",
+        period: "Οκτ 2024 - Παρόν",
+        description: "Στην KNN Idiomas Brasil, εργάζομαι ως προγραμματιστής Front-end, κυρίως χρησιμοποιώντας Vue.js (v2, v3) με Vuetify (v2, v3), καθώς και με REST APIs."
       },
       {
         role: "Προγραμματιστής Front-end",
-        company: "KNN Group",
-        period: "2023 - Παρόν",
-        description: "Υλοποίηση προσαρμοσμένων λύσεων για διαφορετικούς πελάτες χρησιμοποιώντας σύγχρονες τεχνολογίες front-end."
+        company: "Hellenic Technologies",
+        period: "Απρ 2024 - Παρόν",
+        description: "Ανάπτυξη με Vue.js και Nuxt.js, ενσωμάτωση REST API, διαχείριση καταστάσεων με Pinia, υλοποίηση σύνθετων λειτουργικοτήτων JavaScript, επίλυση προβλημάτων και βελτιστοποίηση απόδοσης, συνεργασία με σχεδιαστές και προγραμματιστές back-end για την παροχή υψηλής ποιότητας εμπειριών χρήστη."
       },
       {
-        role: "Freelancer",
-        company: "Διάφορα Έργα",
-        period: "2021 - Παρόν",
-        description: "Ανάπτυξη ιστοσελίδων και διαδικτυακών εφαρμογών για διεθνείς πελάτες, συμπεριλαμβανομένων εταιρειών βιοτεχνολογίας και ξενοδοχείων."
+        role: "Προγραμματιστής Front-end",
+        company: "NeuroAEye (Freelance)",
+        period: "Απρ 2024 - Αυγ 2024",
+        description: "Ανάπτυξη με Vue.js, ενσωμάτωση REST API, JavaScript, Pixi.js για γραφικά 2D υψηλής απόδοσης, και επίλυση σφαλμάτων για τη βελτιστοποίηση της απόδοσης της εφαρμογής."
+      },
+      {
+        role: "Προγραμματιστής Front-end",
+        company: "AmazonNanoForest (Freelance)",
+        period: "2021 - 2023",
+        description: "Ανάπτυξη ιστοσελίδας για εταιρεία βιοτεχνολογίας, δημιουργώντας διαισθητικές και ανταποκρινόμενες διεπαφές με σύγχρονες τεχνολογίες."
+      },
+      {
+        role: "Προγραμματιστής Front-end",
+        company: "Hostel Pachacuteq (Freelance)",
+        period: "2022",
+        description: "Δημιουργία ιστοσελίδας για ξενοδοχείο στο Κούσκο του Περού, με έμφαση στην εμπειρία χρήστη και τον ευέλικτο σχεδιασμό."
       }
     ]
   },
@@ -260,14 +279,29 @@ export default {
     title: "Μαρτυρίες",
     items: [
       {
-        name: "Carlos Silva",
-        role: "CEO, Amazon Nano Forest",
-        text: "Ο Garbson ανέπτυξε την πλατφόρμα μας με αριστεία, ξεπερνώντας όλες τις προσδοκίες μας. Το αποτέλεσμα ήταν μια διαισθητική και επαγγελματική διεπαφή."
+        name: "Arnon Rodrigues de Paula",
+        role: "Front-End Expert | Lead Developer | Agile",
+        text: "Συνιστώ τον Garbson, έναν ταλαντούχο νέο που καθοδήγησα τους τελευταίους μήνες. Ο Garbson έχει αξιοσημείωτη περιέργεια και επιθυμία για μάθηση, πάντα αναζητώντας να αναπτυχθεί και να ξεπεράσει προκλήσεις. Ξεχωρίζει για τις εξαιρετικές soft skills του, συμπεριλαμβανομένης της αποτελεσματικής επικοινωνίας, της ενσυναίσθησης και της ικανότητας για ομαδική εργασία. Η θετική του στάση και η προθυμία του να βοηθήσει τους άλλους τον καθιστούν πολύτιμο συνάδελφο. Ο Garbson επίσης επιδεικνύει εντυπωσιακή ικανότητα επίλυσης προβλημάτων με πρακτικό και καινοτόμο τρόπο. Πάνω απ' όλα, ο Garbson είναι ένα άτομο με ακεραιότητα και αξιοπιστία, με υποδειγματική εργασιακή ηθική. Η αφοσίωση και ο ενθουσιασμός του είναι ορατά σε ό,τι κάνει."
       },
       {
-        name: "Maria Santos",
-        role: "Διευθύντρια Έργων, KNN Group",
-        text: "Δουλεύοντας με τον Garbson, παρατηρήσαμε τη δέσμευσή του στις προθεσμίες και την ποιότητα. Η τεχνική του ικανότητα και η δυνατότητα επίλυσης σύνθετων προβλημάτων είναι εντυπωσιακές."
+        name: "Jesiel Monteiro de Oliveira",
+        role: "SAFe® 4 Agilist | CSS Senior Specialist at NTT Data | Product Owner",
+        text: "Συνιστώ ισχυρά τον Garbson, έναν νέο προγραμματιστή front-end, εξαιρετικά αφοσιωμένο και με εντυπωσιακή ικανότητα γρήγορης μάθησης. Κατά τη διάρκεια του χρόνου που εργαστήκαμε μαζί, επέδειξε στέρεες δεξιότητες στις τεχνολογίες front-end, καθώς και απίστευτη ικανότητα επίλυσης σύνθετων προβλημάτων αποτελεσματικά και δημιουργικά. Η προθυμία του να μαθαίνει και να προσαρμόζεται σε νέες προκλήσεις τον καθιστά πολύτιμο στοιχείο για οποιαδήποτε ομάδα. Με την προδραστικότητά του, τη δέσμευση και τη συνεχή αναζήτηση βελτίωσης, είμαι βέβαιος ότι θα έχει ένα λαμπρό μέλλον στην ανάπτυξη ιστού."
+      },
+      {
+        name: "Stavros Tsiogkas",
+        role: "Digital Account Manager @ Hellenic Technologies",
+        text: "Με χαρά συστήνω τον Garbson Souza, με τον οποίο έχω συνεργαστεί σε πολλαπλά έργα ανάπτυξης, ιδιαίτερα στην ανάπτυξη σε επίπεδο προϊόντος. Η τεχνική εμπειρογνωμοσύνη του Garbson, η καινοτόμος σκέψη και η αφοσίωσή του στην παροχή λύσεων υψηλής ποιότητας με έχουν εντυπωσιάσει συνεχώς. Η ικανότητά του να αντιμετωπίζει σύνθετες προκλήσεις και να εργάζεται αποτελεσματικά σε ομάδα τον καθιστά ανεκτίμητο. Είμαι βέβαιος ότι ο Garbson θα διακριθεί σε οποιαδήποτε προσπάθεια επιδιώξει."
+      },
+      {
+        name: "Gabriel Bodenmüller",
+        role: "Software Developer | Python | Vue | JavaScript | Typescript | PostgreSQL | Computer engineer",
+        text: "Είχα την ευχαρίστηση να παρακολουθήσω τη δουλειά του Garbson και μπορώ να πω με βεβαιότητα: είναι ένας εκπληκτικός επαγγελματίας στον κόσμο της ανάπτυξης front-end! Με οξυμένες δεξιότητες στο Vue, TypeScript, προηγμένο CSS και βελτιστοποίηση απόδοσης, δεν παραδίδει μόνο καθαρό και καλά δομημένο κώδικα, αλλά ενδιαφέρεται επίσης για την εμπειρία του χρήστη και τη χρηστικότητα του προϊόντος. Επιπλέον, η ικανότητά του να μαθαίνει γρήγορα και να προσαρμόζεται σε νέες τεχνολογίες είναι εντυπωσιακή. Αν ψάχνετε έναν ταλαντούχο, συνεργάσιμο και αφοσιωμένο προγραμματιστή front-end, ο Garbson είναι η σωστή επιλογή!"
+      },
+      {
+        name: "Tiago Lopes",
+        role: "Αναλυτής BI | Αναλυτής Δεδομένων | SQL | BigQuery | Power BI | Looker Studio",
+        text: "Με μεγάλη ικανοποίηση συστήνω τον Garbson Souza για ευκαιρίες ως Frontend Developer. Είχα το προνόμιο να εργαστώ μαζί του στην KNN Idiomas, όπου επέδειξε συνεχώς τις τεχνικές του ικανότητες και τη δέσμευσή του για αποτελέσματα υψηλής ποιότητας. Ο Garbson είναι ένας ταλαντούχος επαγγελματίας, με γνώσεις σε τεχνολογίες όπως Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, REST API, Vuetify και TypeScript. Η ικανότητά του να δημιουργεί σύγχρονες, διαισθητικές και αποτελεσματικές διεπαφές είναι αξιοσημείωτη, εκτός από την ικανότητά του να ενσωματώνει σύνθετα συστήματα με REST APIs. Κατά τη διάρκεια του χρόνου που εργαστήκαμε μαζί, ο Garbson ξεχώρισε για τη συνεργατική του προσέγγιση και την επίλυση προβλημάτων."
       }
     ]
   }
