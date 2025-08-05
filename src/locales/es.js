@@ -15,19 +15,54 @@ export default {
   biography: {
     title: "Sobre Mí",
     description: `
-    👋 Hola, soy Garbson Souza Santos, un desarrollador front-end apasionado por crear interfaces de usuario intuitivas y responsivas.
-    Con una sólida base en tecnologías modernas como Vue.js, Quasar, Node.js, Nuxt.js, Vuex y Pinia, transformo ideas en experiencias
-    digitales excepcionales. 💡 Desde los 16 años, me he sumergido en el mundo de la programación, acumulando una vasta experiencia en
-    proyectos freelance que abarcan diferentes sectores y geografías. He trabajado con una empresa estadounidense, desarrollando soluciones
-    innovadoras, y he colaborado con empresas de biotecnología, además de un hotel en Cusco, Perú, siempre enfocado en entregar productos de
-    alta calidad y valor añadido. 🌍 Actualmente, trabajo como desarrollador para Hellenic Technologies, una empresa griega, y para el
-    KNN Group, donde sigo aplicando y expandiendo mis competencias. Mi experiencia incluye el consumo de APIs para la creación de aplicaciones
-    web robustas y responsivas, garantizando un rendimiento optimizado y una excelente experiencia de usuario (UX). 🚀 Junto a mi experiencia
-    práctica, estoy estudiando Sistemas de Información en la Universidad Federal de Acre, lo que me permite alinear conocimientos teóricos y
-    prácticos, manteniéndome actualizado con las últimas tendencias e innovaciones del mercado tecnológico. 🎓
-    `,
+Desarrollador Frontend con 3+ años creando aplicaciones web para empresas internacionales en 4 países.
+
+A los 20 años, me enfoco en habilidades técnicas y entrega de calidad.
+
+🌍 Viaje Internacional:
+🇬🇷 Grecia (1+ año) - Panel administrativo para productos de eBay | Nuxt.js + SSR
+🇺🇸 Miami (5 meses) - Startup con gráficos 2D | Vue.js + Pixi.js 
+🇵🇪 Perú (proyecto) - Sitio web de hotel | Networking orgánico mientras viajaba
+🇧🇷 Brasil (actual) - KNN Idiomas + Claro & Embratel | EdTech + Sistemas críticos de telecomunicaciones
+
+🚀 Habilidades Principales:
+- Ecosistema Vue.js (Vue 3, Nuxt.js, Pinia) - Experiencia en crecimiento
+- Desarrollo moderno JavaScript/TypeScript
+- Aplicaciones a escala empresarial (EdTech/Telecom/Sistemas fiscales)
+- Colaboración remota intercultural vía plataformas de chat
+- Integración de sistemas legacy (Mainframe IBM + Frontend Moderno)
+
+💼 Enfoque Actual:
+Contribuyendo a sistemas críticos de cumplimiento fiscal para operadores principales de telecomunicaciones brasileñas (Claro/Embratel), mientras expando mi experiencia frontend y aprendo patrones avanzados de Vue.js.
+
+📱 Proyectos Paralelos:
+Construí mi propio SaaS - una red social para lectores de libros para rastrear su lectura y hacer amistades.
+
+- Construir productos es diferente a construir características
+
+🌱 Objetivos 2025-2026:
+Creciendo hacia el rol de Desarrollador Frontend Senior, dominando conceptos avanzados de Vue.js, optimización de rendimiento. Buscando oportunidades para aprender de equipos internacionales experimentados mientras contribuyo a proyectos significativos.
+
+¡Siempre ansioso por aprender y colaborar con otros desarrolladores! Prueba de que la edad y las barreras del idioma no definen tu potencial - tu trabajo sí.
+  `,
   },
   projects: [
+    {
+      title: "Atapera",
+      description: "Tienda de ventas de armas, pesca, camping y mucho más.",
+      img: "atapera.jpg",
+      tailwind: true,
+      typescript: true,
+      vue: true,
+      nuxt: true,
+      github: "https://github.com/Garbson/atapera-ecommerce",
+      link: "https://atapera.shop/",
+      metrics: [
+        "50+ usuarios activos",
+        "Aumento del 30% de clientes",
+        "Sistemas de ventas en línea"
+      ]
+    },
     {
       title: "Clube da Luta CT",
       description: "Una plataforma de club de entrenamiento de combate construida con tecnologías modernas.",
@@ -37,7 +72,7 @@ export default {
       react: true,
       nextjs: true,
       github: "https://github.com/Garbson/grecieCT",
-      link: "https://github.com/Garbson/grecieCT",
+      link: "https://clubedaluta.pages.dev/",
     },
     {
       title: "Feedel",
@@ -59,6 +94,39 @@ export default {
       bootstrap: true,
       github: "https://github.com/Garbson/duolingo-clone",
       link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
+      metrics: [
+        "Implementación de 15+ ejercicios interactivos",
+        "Sistema de rachas y puntuación gamificada"
+      ]
+    },
+    {
+      title: "DizeME",
+      description: "Un sitio web para ayudar a las personas a dar diezmos y ofrecer con facilidad.",
+      img: "dizeMe.jpg",
+      typescript: true,
+      vue: true,
+      tailwind: true,
+      github: "https://github.com/Garbson/IgrejaAdventistaCentralHumaita",
+      link: "https://igreja-adventista-25-de-dezembro.pages.dev",
+      metrics: [
+        "Facilitación para 100+ miembros de la iglesia",
+        "Interfaz intuitiva para donaciones"
+      ]
+    },
+    {
+      title: "Trote UFAC",
+      description: "Un sitio web gamificado para una experiencia interactiva de novatada universitaria.",
+      img: "trote.jpg",
+      tailwind: true,
+      supabase: true,
+      vue: true,
+      Quasar: true,
+      github: "https://github.com/Garbson/trote/tree/main",
+      link: "https://trote.pages.dev/",
+      metrics: [
+        "50+ usuarios activos",
+        "Sistema de puntuación gamificada"
+      ]
     },
     {
       title: "Wedding Memories",
@@ -243,34 +311,47 @@ export default {
     title: "Experiencia Profesional",
     items: [
       {
-        role: "Desarrollador Front-end",
-        company: "KNN Idiomas Brasil",
-        period: "Oct 2024 - Presente",
-        description: "En KNN Idiomas Brasil, trabajo como desarrollador Front-end, principalmente utilizando Vue.js (v2, v3) con Vuetify (v2, v3), y también con APIs Rest."
+        role: "Desarrollador Frontend",
+        company: "NFCOM (Grupo Easy)",
+        location: "Rio Branco, Acre",
+        period: "Jul 2025 - Actual",
+        description: "Desarrollo de sistema de análisis tributario para Grupo Easy. Trabajo con tecnologías mainframe IBM y Natural Language. Desarrollo de soluciones para procesamiento de datos tributarios. Contribución en proyectos de gran escala corporativa. Prestación de servicios para Claro y Embratel.",
+        current: true
       },
       {
-        role: "Desarrollador Front-end",
+        role: "Desarrollador Frontend",
+        company: "KNN Idiomas",
+        location: "Balneário Camboriú, SC",
+        period: "Sep 2024 - Jun 2025",
+        description: "Desarrollo de plataforma educacional moderna utilizando Vue.js y Nuxt.js. Implementación de interfaz responsiva e intuitiva para sistema de aprendizaje. Integración con sistemas LMS y optimización de experiencia de usuario."
+      },
+      {
+        role: "Desarrollador Frontend",
         company: "Hellenic Technologies",
-        period: "Abr 2024 - Presente",
-        description: "Desarrollo con Vue.js y Nuxt.js, consumo de APIs REST, gestión de estado con Pinia, implementación de funcionalidades complejas en JavaScript, resolución de problemas y optimización de rendimiento, colaborando con diseñadores y desarrolladores back-end para entregar experiencias de usuario de alta calidad."
+        location: "Atenas, Grecia (Remoto)",
+        period: "Ene 2024 - Feb 2025",
+        description: "Desarrollo de soluciones frontend para mercado europeo. Colaboración en equipo internacional utilizando metodologías ágiles. Implementación de componentes reutilizables en Vue.js."
       },
       {
-        role: "Desarrollador Front-end",
-        company: "NeuroAEye (Freelance)",
-        period: "Abr 2024 - Ago 2024",
-        description: "Desarrollo con Vue.js, consumo de APIs REST, JavaScript, Pixi.js para gráficos 2D de alto rendimiento, y resolución de errores para optimizar el rendimiento de la aplicación."
+        role: "Desarrollador Frontend",
+        company: "NeuroAEye",
+        location: "Miami, Florida (Remoto)",
+        period: "Mar 2024 - Oct 2024",
+        description: "Desarrollo de interfaz para aplicación de inteligencia artificial. Integración de componentes visuales avanzados utilizando Pixi.js. Trabajo con datos médicos y visualizaciones interactivas."
       },
       {
-        role: "Desarrollador Front-end",
-        company: "AmazonNanoForest (Freelance)",
-        period: "2021 - 2023",
-        description: "Desarrollo de sitio web para empresa de biotecnología, creando interfaces intuitivas y responsivas con tecnologías modernas."
+        role: "Desarrollador Frontend",
+        company: "Hostal Pachacuteq Inn",
+        location: "Cusco, Perú (Remoto)",
+        period: "Ene 2024",
+        description: "Desarrollo de sistema de reservas hoteleras. Implementación de interfaz multiidioma responsiva. Integración con APIs de pago y booking."
       },
       {
-        role: "Desarrollador Front-end",
-        company: "Hostel Pachacuteq (Freelance)",
-        period: "2022",
-        description: "Creación de sitio web para un hotel en Cusco, Perú, con enfoque en experiencia de usuario y diseño responsivo."
+        role: "Desarrollador Frontend",
+        company: "AmazonNanoForest",
+        location: "Rio Branco, Acre (Remoto)",
+        period: "Nov 2023",
+        description: "Desarrollo del sitio web corporativo para empresa de productos naturales. Creación de interfaz responsiva para e-commerce de productos amazónicos. Implementación de catálogo interactivo y sistema de presentación de productos."
       }
     ]
   },
@@ -301,6 +382,11 @@ export default {
         name: "Tiago Lopes",
         role: "Analista de BI | Analista de Datos | SQL | BigQuery | Power BI | Looker Studio",
         text: "Es con gran satisfacción que recomiendo a Garbson Souza para oportunidades como Desarrollador Frontend. Tuve el privilegio de trabajar con él en KNN Idiomas, donde demostró consistentemente sus habilidades técnicas y su compromiso con resultados de alta calidad. Garbson es un profesional talentoso, con conocimiento en tecnologías como Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, API REST, Vuetify y TypeScript. Su capacidad para crear interfaces modernas, intuitivas y eficientes es notable, además de su habilidad para integrar sistemas complejos con APIs REST. Durante el tiempo que trabajamos juntos, Garbson se destacó por su enfoque colaborativo y resolución de problemas."
+      },
+      {
+        name: "Anielli Martiniano Lemos",
+        role: "Diseñadora en KNN Idiomas Brasil",
+        text: "Como diseñadora, es un alivio tener a alguien que entiende cada ajuste de espaciado, cada rincón del diseño, y transforma todo en código con mucho cuidado y atención a los detalles. En frontend, Garbson entrega con calidad real. No se trata solo de hacer que funcione — se trata de hacerlo bien, pensando en rendimiento, usabilidad y esa experiencia de la que nos sentimos orgullosos de entregar. Sin mencionar que, día a día, es un compañero para todo: intercambia ideas, ayuda, resuelve problemas juntos y aún hace que el ambiente del equipo sea mucho más ligero. Trabajar con él es esa combinación rara de buena entrega + proceso ligero — algo que hace toda la diferencia en el resultado (y en el camino hacia él). Es el tipo de persona que todo equipo merece tener cerca."
       }
     ]
   }

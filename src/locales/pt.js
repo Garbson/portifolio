@@ -15,17 +15,36 @@ export default {
   biography: {
     title: "Sobre mim",
     description: `
-    👋 Olá, sou Garbson Souza Santos, um desenvolvedor front-end apaixonado por criar interfaces de usuário intuitivas e responsivas.
-    Com uma sólida base em tecnologias modernas, Vue.js, Quasar, Node.js, Nuxt.js, Vuex e Pinia, transformo ideias em experiências
-    digitais excepcionais. 💡 Desde os 16 anos, tenho me aprofundado no universo da programação, acumulando uma vasta experiência em
-    projetos freelancer que abrangem diferentes setores e geografias. Já trabalhei com uma empresa americana, desenvolvendo soluções
-    inovadoras, e colaborei com empresas de biotecnologia, além de um hotel em Cusco, no Peru, sempre focado em entregar produtos de
-    alta qualidade e valor agregado. 🌍 Atualmente, trabalho como desenvolvedor para a Hellenic Technologies, uma empresa grega, e para
-    o KNN Group, onde continuo a aplicar e expandir minhas competências. Minha expertise inclui o consumo de APIs para a criação de
-    aplicações web robustas e responsivas, garantindo uma performance otimizada e uma experiência de usuário (UX) de excelência. 🚀
-    Além da minha experiência prática, estou cursando Sistemas de Informação na Universidade Federal do Acre, o que me permite alinhar
-    conhecimentos teóricos e práticos, mantendo-me atualizado com as últimas tendências e inovações do mercado de tecnologia. 🎓
-  `,
+Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas internacionais em 4 países.
+
+Aos 20 anos, foco em habilidades técnicas e entrega de qualidade.
+
+🌍 Jornada Internacional:
+🇬🇷 Grécia (1+ ano) - Painel administrativo para produtos eBay | Nuxt.js + SSR
+🇺🇸 Miami (5 meses) - Startup com gráficos 2D | Vue.js + Pixi.js
+🇵🇪 Peru (projeto) - Site de hotel | Networking orgânico durante viagens
+🇧🇷 Brasil (atual) - KNN Idiomas + Claro & Embratel | EdTech + Sistemas críticos de telecom
+
+🚀 Habilidades Principais:
+- Ecossistema Vue.js (Vue 3, Nuxt.js, Pinia) - Expertise crescente
+- Desenvolvimento JavaScript/TypeScript moderno
+- Aplicações em escala empresarial (EdTech/Telecom/Sistemas fiscais)
+- Colaboração remota intercultural via plataformas de chat
+- Integração de sistemas legados (Mainframe IBM + Frontend Moderno)
+
+💼 Foco Atual:
+Contribuindo para sistemas críticos de compliance fiscal para grandes operadoras brasileiras de telecom (Claro/Embratel), enquanto expando minha expertise frontend e aprendo padrões avançados do Vue.js.
+
+📱 Projetos Paralelos:
+Construí meu próprio SaaS - uma rede social para leitores acompanharem suas leituras e fazerem amizades.
+
+- Construir produtos é diferente de construir funcionalidades
+
+🌱 Metas 2025-2026:
+Crescendo em direção ao papel de Desenvolvedor Frontend Sênior, dominando conceitos avançados do Vue.js e otimização de performance. Buscando oportunidades para aprender com equipes internacionais experientes enquanto contribuo para projetos significativos.
+
+Sempre ansioso para aprender e colaborar com outros desenvolvedores! Prova de que barreiras de idade e idioma não definem seu potencial - seu trabalho define.
+`
   },
   skills: {
     title: "Minhas Habilidades",
@@ -67,6 +86,22 @@ export default {
   },
   projects: [
     {
+      title: "Atapera",
+      description: "loja de vendas de armas, pesca, camping e muito mais.",
+      img: "atapera.jpg",
+      tailwind: true,
+      typescript: true,
+      vue: true,
+      nuxt: true,
+      github: "https://github.com/Garbson/atapera-ecommerce",
+      link: "https://atapera.shop/",
+      metrics: [
+        "50+ usuários ativos",
+        "Aumento de 30%  de clientes",
+        "sistemas de vendas online"
+      ]
+    },
+    {
       title: "Clube da Luta CT",
       description: "Uma plataforma de clube de treinamento de combate construída com tecnologias modernas.",
       img: "CtClube.png",
@@ -75,7 +110,7 @@ export default {
       react: true,
       nextjs: true,
       github: "https://github.com/Garbson/grecieCT",
-      link: "https://github.com/Garbson/grecieCT",
+      link: "https://clubedaluta.pages.dev/",
       metrics: [
         "50+ usuários ativos",
         "Aumento de 30% na retenção de clientes",
@@ -99,6 +134,16 @@ export default {
       ]
     },
     {
+      title: "Golfim",
+      description: "Plataforma para serviços de reparo e restauração de piscinas.",
+      img: "Golfim.png",
+      vue: true,
+      javascript: true,
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+    },
+    {
       title: "Duolingo Clone",
       description: "Uma plataforma de aprendizado de idiomas inspirada no Duolingo.",
       img: "duolingo-clone.jpeg",
@@ -110,6 +155,35 @@ export default {
       metrics: [
         "Implementação de 15+ exercícios interativos",
         "Sistema de streak e pontuação gamificada"
+      ]
+    },
+    {
+      title: "DizeME",
+      description: "Um site para ajudar as pessoas a dizimar e Ofertar com facilidade.",
+      img: "dizeMe.jpg",
+      typescript: true,
+      vue: true,
+      tailwind: true,
+      github: "https://github.com/Garbson/IgrejaAdventistaCentralHumaita",
+      link: "https://igreja-adventista-25-de-dezembro.pages.dev",
+      metrics: [,
+        "Facilitação para 100+ membros da igreja",
+        "Interface intuitiva para doações",
+      ]
+    },
+    {
+      title: "Trote UFAC",
+      description: "Um site gamificado para realização de um trote universitário interativo.",
+      img: "trote.jpg",
+      tailwind: true,
+      supabase: true,
+      vue: true,
+      Quasar: true,
+      github: "https://github.com/Garbson/trote/tree/main",
+      link: "https://trote.pages.dev/",
+      metrics: [
+        "50+ usuários ativos",
+        "Sistema de pontuação gamificada"
       ]
     },
     {
@@ -141,16 +215,6 @@ export default {
         "20+ contatos de parceiros internacionais",
         "Tempo na página aumentou 45%"
       ]
-    },
-    {
-      title: "Golfim",
-      description: "Plataforma para serviços de reparo e restauração de piscinas.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
     },
     {
       title: "Hostel Pachacuteq",
@@ -267,34 +331,47 @@ export default {
     title: "Experiência Profissional",
     items: [
       {
-        role: "Desenvolvedor Front-end",
-        company: "KNN Idiomas Brasil",
-        period: "Out 2024 - Presente",
-        description: "Na KNN idiomas Brasil, trabalho como desenvolvedor Front-end, principalmente usando Vue.js (v2, v3) com Vuetify (v2, v3), e também com API Rest."
+        role: "Desenvolvedor Front-End",
+        company: "NFCOM (Grupo Easy)",
+        location: "Rio Branco, Acre",
+        period: "Jul 2025 - Atual",
+        description: "Desenvolvimento de sistema de análise tributária para o Grupo Easy. Trabalho com tecnologias mainframe IBM e Natural Language. Desenvolvimento de soluções para processamento de dados tributários. Contribuição em projetos de grande escala corporativa. Prestação de serviços para Claro e Embratel.",
+        current: true
       },
       {
-        role: "Desenvolvedor Front-end",
+        role: "Desenvolvedor Front-End",
+        company: "KNN Idiomas",
+        location: "Balneário Camboriú, SC",
+        period: "Set 2024 - Jun 2025",
+        description: "Desenvolvimento de plataforma educacional moderna utilizando Vue.js e Nuxt.js. Implementação de interface responsiva e intuitiva para sistema de aprendizado. Integração com sistemas de LMS e otimização de experiência do usuário."
+      },
+      {
+        role: "Desenvolvedor Front-End",
         company: "Hellenic Technologies",
-        period: "Abr 2024 - Presente",
-        description: "Desenvolvimento com Vue.js e Nuxt.js, consumo de APIs REST, gerenciamento de estado com Pinia, implementação de funcionalidades complexas em JavaScript, resolução de problemas e otimização de desempenho, colaborando com designers e desenvolvedores back-end para entregar experiências de usuário de alta qualidade."
+        location: "Atenas, Grécia (Remoto)",
+        period: "Jan 2024 - Fev 2025",
+        description: "Desenvolvimento de soluções front-end para mercado europeu. Colaboração em equipe internacional utilizando metodologias ágeis. Implementação de componentes reutilizáveis em Vue.js."
       },
       {
-        role: "Desenvolvedor Front-end",
-        company: "NeuroAEye (Freelance)",
-        period: "Abr 2024 - Ago 2024",
-        description: "Desenvolvimento com Vue.js, consumo de APIs REST, JavaScript, Pixi.js para gráficos 2D de alta performance, e resolução de bugs para otimizar o desempenho da aplicação."
+        role: "Desenvolvedor Front-End",
+        company: "NeuroAEye",
+        location: "Miami, Flórida (Remoto)",
+        period: "Mar 2024 - Out 2024",
+        description: "Desenvolvimento de interface para aplicação de inteligência artificial. Integração de componentes visuais avançados utilizando Pixi.js. Trabalho com dados médicos e visualizações interativas."
       },
       {
-        role: "Desenvolvedor Front-end",
-        company: "AmazonNanoForest (Freelance)",
-        period: "2021 - 2023",
-        description: "Desenvolvimento de website para empresa de biotecnologia, criando interfaces intuitivas e responsivas com tecnologias modernas."
+        role: "Desenvolvedor Front-End",
+        company: "Hostal Pachacuteq Inn",
+        location: "Cusco, Peru (Remoto)",
+        period: "Jan 2024",
+        description: "Desenvolvimento de sistema de reservas hoteleiras. Implementação de interface multilíngue responsiva. Integração com APIs de pagamento e booking."
       },
       {
-        role: "Desenvolvedor Front-end",
-        company: "Hostel Pachacuteq (Freelance)",
-        period: "2022",
-        description: "Criação de site para hotel em Cusco, Peru, com foco em experiência do usuário e design responsivo."
+        role: "Desenvolvedor Front-End",
+        company: "AmazonNanoForest",
+        location: "Rio Branco, Acre (Remoto)",
+        period: "Nov 2023",
+        description: "Desenvolvimento do website corporativo para empresa de produtos naturais. Criação de interface responsiva para e-commerce de produtos amazônicos. Implementação de catálogo interativo e sistema de apresentação de produtos."
       }
     ]
   },
@@ -325,6 +402,11 @@ export default {
         name: "Tiago Lopes",
         role: "Analista de BI | Analista de Dados | SQL | BigQuery | Power BI | Looker Studio",
         text: "É com grande satisfação que recomendo Garbson Souza para oportunidades como Frontend Developer. Tive o privilégio de trabalhar com ele na KNN Idiomas, onde ele demonstrou consistentemente suas habilidades técnicas e seu comprometimento com resultados de alta qualidade. Garbson é um profissional talentoso, com conhecimento em tecnologias como Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, API REST, Vuetify e TypeScript. Sua capacidade de criar interfaces modernas, intuitivas e eficientes é notável, além de sua habilidade em integrar sistemas complexos com APIs REST. Durante o tempo em que trabalhamos juntos, Garbson destaca-se por sua abordagem colaborativa e solução de problemas."
+      },
+      {
+        name: "Anielli Martiniano Lemos",
+        role: "Designer na KNN Idiomas Brasil",
+        text: "Como designer, é um alívio ter alguém que entende cada ajuste de espaçamento, cada cantinho do layout, e transforma tudo em código com muito capricho e atenção aos detalhes. No front-end, o Garbson entrega com qualidade de verdade. Não é só sobre fazer funcionar — é sobre fazer bem feito, pensando em performance, usabilidade e aquela experiência que a gente sente orgulho de entregar. Sem contar que, no dia a dia, ele é parceiro pra tudo: troca ideia, ajuda, resolve pepino junto e ainda deixa o clima da equipe muito mais leve. Trabalhar com ele é aquela combinação rara de entrega boa + processo leve — coisa que faz toda a diferença no resultado (e no caminho até ele). É o tipo de pessoa que todo time merece ter por perto."
       }
     ]
   }

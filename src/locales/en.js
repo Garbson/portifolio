@@ -15,19 +15,54 @@ export default {
   biography: {
     title: "About Me",
     description: `
-    👋 Hello, I'm Garbson Souza Santos, a front-end developer passionate about creating intuitive and responsive user interfaces.
-    With a solid foundation in modern technologies like Vue.js, Quasar, Node.js, Nuxt.js, Vuex, and Pinia, I turn ideas into
-    exceptional digital experiences. 💡 Since I was 16, I've been diving deep into the world of programming, accumulating vast
-    experience in freelance projects spanning different sectors and geographies. I've worked with an American company developing
-    innovative solutions, collaborated with biotech companies, and even contributed to a hotel in Cusco, Peru, always focused on
-    delivering high-quality, value-added products. 🌍 Currently, I work as a developer for Hellenic Technologies, a Greek company,
-    and for KNN Group, where I continue to apply and expand my skills. My expertise includes consuming APIs to create robust and
-    responsive web applications, ensuring optimized performance and an excellent user experience (UX). 🚀 Alongside my practical
-    experience, I'm studying Information Systems at the Federal University of Acre, which allows me to align theoretical and practical
-    knowledge while staying updated with the latest trends and innovations in the technology market. 🎓
+Frontend Developer with 3+ years building web applications for international companies across 4 countries.
+
+At 20, I focus on technical skills and quality delivery.
+
+🌍 International Journey:
+🇬🇷 Greece (1+ year) - Administrative panel for eBay products | Nuxt.js + SSR
+🇺🇸 Miami (5 months) - Startup with 2D graphics | Vue.js + Pixi.js 
+🇵🇪 Peru (project) - Hotel website | Organic networking while traveling
+🇧🇷 Brazil (current) - KNN Idiomas + Claro & Embratel | EdTech + Critical telecom systems
+
+🚀 Core Skills:
+- Vue.js Ecosystem (Vue 3, Nuxt.js, Pinia) - Growing expertise
+- Modern JavaScript/TypeScript development
+- Enterprise-scale applications (EdTech/Telecom/Tax systems)
+- Cross-cultural remote collaboration via chat platforms
+- Legacy system integration (Mainframe IBM + Modern Frontend)
+
+💼 Current Focus:
+Contributing to critical tax compliance systems for major Brazilian telecom operators (Claro/Embratel), while expanding my frontend expertise and learning advanced Vue.js patterns.
+
+📱 Side Projects:
+Built my own SaaS - a social network for book readers to track their reading and make friendships.
+
+- Building products is different from building features
+
+🌱 2025-2026 Goals:
+Growing towards Senior Frontend Developer role, mastering advanced Vue.js concepts, performance optimization. Seeking opportunities to learn from experienced international teams while contributing to meaningful projects.
+
+Always eager to learn and collaborate with other developers! Proof that age and language barriers don't define your potential - your work does.
   `,
   },
   projects: [
+    {
+      title: "Atapera",
+      description: "Sales store for weapons, fishing, camping and much more.",
+      img: "atapera.jpg",
+      tailwind: true,
+      typescript: true,
+      vue: true,
+      nuxt: true,
+      github: "https://github.com/Garbson/atapera-ecommerce",
+      link: "https://atapera.shop/",
+      metrics: [
+        "50+ active users",
+        "30% increase in customers",
+        "Online sales systems"
+      ]
+    },
     {
       title: "Clube da Luta CT",
       description: "A combat training club platform built with modern technologies.",
@@ -37,7 +72,7 @@ export default {
       react: true,
       nextjs: true,
       github: "https://github.com/Garbson/grecieCT",
-      link: "https://github.com/Garbson/grecieCT",
+      link: "https://clubedaluta.pages.dev/",
     },
     {
       title: "Feedel",
@@ -59,6 +94,39 @@ export default {
       bootstrap: true,
       github: "https://github.com/Garbson/duolingo-clone",
       link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
+      metrics: [
+        "Implementation of 15+ interactive exercises",
+        "Gamified streak and scoring system"
+      ]
+    },
+    {
+      title: "DizeME",
+      description: "A website to help people tithe and offer with ease.",
+      img: "dizeMe.jpg",
+      typescript: true,
+      vue: true,
+      tailwind: true,
+      github: "https://github.com/Garbson/IgrejaAdventistaCentralHumaita",
+      link: "https://igreja-adventista-25-de-dezembro.pages.dev",
+      metrics: [
+        "Facilitation for 100+ church members",
+        "Intuitive interface for donations"
+      ]
+    },
+    {
+      title: "Trote UFAC",
+      description: "A gamified website for an interactive university hazing experience.",
+      img: "trote.jpg",
+      tailwind: true,
+      supabase: true,
+      vue: true,
+      Quasar: true,
+      github: "https://github.com/Garbson/trote/tree/main",
+      link: "https://trote.pages.dev/",
+      metrics: [
+        "50+ active users",
+        "Gamified scoring system"
+      ]
     },
     {
       title: "Wedding Memories",
@@ -243,34 +311,47 @@ export default {
     title: "Professional Experience",
     items: [
       {
-        role: "Front-end Developer",
-        company: "KNN Idiomas Brasil",
-        period: "Oct 2024 - Present",
-        description: "At KNN Idiomas Brasil, I work as a Front-end developer, primarily using Vue.js (v2, v3) with Vuetify (v2, v3), and also with REST APIs."
+        role: "Frontend Developer",
+        company: "NFCOM (Grupo Easy)",
+        location: "Rio Branco, Acre",
+        period: "Jul 2025 - Current",
+        description: "Tax analysis system development for Grupo Easy. Working with IBM mainframe technologies and Natural Language. Developing solutions for tax data processing. Contributing to large-scale corporate projects. Providing services for Claro and Embratel.",
+        current: true
       },
       {
-        role: "Front-end Developer",
+        role: "Frontend Developer",
+        company: "KNN Idiomas",
+        location: "Balneário Camboriú, SC",
+        period: "Sep 2024 - Jun 2025",
+        description: "Modern educational platform development using Vue.js and Nuxt.js. Implementation of responsive and intuitive interface for learning system. Integration with LMS systems and user experience optimization."
+      },
+      {
+        role: "Frontend Developer",
         company: "Hellenic Technologies",
-        period: "Apr 2024 - Present",
-        description: "Development with Vue.js and Nuxt.js, REST API integration, state management with Pinia, implementation of complex JavaScript functionalities, problem-solving and performance optimization, collaborating with designers and back-end developers to deliver high-quality user experiences."
+        location: "Athens, Greece (Remote)",
+        period: "Jan 2024 - Feb 2025",
+        description: "Frontend solutions development for European market. International team collaboration using agile methodologies. Implementation of reusable components in Vue.js."
       },
       {
-        role: "Front-end Developer",
-        company: "NeuroAEye (Freelance)",
-        period: "Apr 2024 - Aug 2024",
-        description: "Development with Vue.js, REST API integration, JavaScript, Pixi.js for high-performance 2D graphics, and bug resolution to optimize application performance."
+        role: "Frontend Developer",
+        company: "NeuroAEye",
+        location: "Miami, Florida (Remote)",
+        period: "Mar 2024 - Oct 2024",
+        description: "Interface development for artificial intelligence application. Integration of advanced visual components using Pixi.js. Working with medical data and interactive visualizations."
       },
       {
-        role: "Front-end Developer",
-        company: "AmazonNanoForest (Freelance)",
-        period: "2021 - 2023",
-        description: "Development of a website for a biotechnology company, creating intuitive and responsive interfaces with modern technologies."
+        role: "Frontend Developer",
+        company: "Hostal Pachacuteq Inn",
+        location: "Cusco, Peru (Remote)",
+        period: "Jan 2024",
+        description: "Hotel reservation system development. Implementation of responsive multilingual interface. Integration with payment and booking APIs."
       },
       {
-        role: "Front-end Developer",
-        company: "Hostel Pachacuteq (Freelance)",
-        period: "2022",
-        description: "Creation of a website for a hotel in Cusco, Peru, focusing on user experience and responsive design."
+        role: "Frontend Developer",
+        company: "AmazonNanoForest",
+        location: "Rio Branco, Acre (Remote)",
+        period: "Nov 2023",
+        description: "Corporate website development for natural products company. Creation of responsive interface for Amazon products e-commerce. Implementation of interactive catalog and product presentation system."
       }
     ]
   },
@@ -301,6 +382,11 @@ export default {
         name: "Tiago Lopes",
         role: "BI Analyst | Data Analyst | SQL | BigQuery | Power BI | Looker Studio",
         text: "It is with great satisfaction that I recommend Garbson Souza for opportunities as a Frontend Developer. I had the privilege of working with him at KNN Idiomas, where he consistently demonstrated his technical skills and commitment to high-quality results. Garbson is a talented professional with knowledge in technologies such as Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, REST API, Vuetify, and TypeScript. His ability to create modern, intuitive, and efficient interfaces is notable, in addition to his ability to integrate complex systems with REST APIs. During the time we worked together, Garbson stood out for his collaborative approach and problem-solving skills."
+      },
+      {
+        name: "Anielli Martiniano Lemos",
+        role: "Designer at KNN Idiomas Brasil",
+        text: "As a designer, it's a relief to have someone who understands every spacing adjustment, every corner of the layout, and transforms everything into code with great care and attention to detail. In frontend, Garbson delivers with real quality. It's not just about making it work — it's about doing it well, thinking about performance, usability, and that experience we feel proud to deliver. Not to mention that, day by day, he's a partner for everything: exchanges ideas, helps, solves problems together and still makes the team atmosphere much lighter. Working with him is that rare combination of good delivery + light process — something that makes all the difference in the result (and the path to it). He's the kind of person every team deserves to have around."
       }
     ]
   }

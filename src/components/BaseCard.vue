@@ -6,9 +6,7 @@
       <div
         v-for="(project, index) in projects"
         :key="project.title"
-        class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transform transition-transform duration-300 hover:scale-105 flex flex-col justify-between"
-        data-aos="flip-up"
-        :data-aos-delay="index * 100"
+        class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transition-transform duration-300 hover:scale-105 flex flex-col justify-between"
       >
         <a :href="project.link" target="_blank" class="flex flex-col h-full w-full">
           <img
@@ -120,6 +118,13 @@
                 alt="bootstrap"
                 class="w-6 h-6"
                 title="bootstrap"
+              />
+              <img
+                v-if="project.supabase"
+                src="@/assets/img/supabase.svg"
+                alt="Supabase"
+                class="w-6 h-6"
+                title="Supabase"
               />
             </div>
             <a :href="project.github">

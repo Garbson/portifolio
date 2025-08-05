@@ -1,11 +1,10 @@
 <template>
-  <div class="body bg-gradient-to-t  from-teal-400 to-blue-900">
-    <div class="md:w-[72%] mx-auto pt-20"> <!-- Ajuste o padding -->
+  <div class="body bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 min-h-screen">
+    <div class="md:w-[72%] mx-auto pt-20">
       <NavBarComponent />
       <Apresentacao />
     </div>
     <SobreMim />
-    <Habilidades />
     <Experiencia />
     <SocialLinks :links="socialLinks" />
     <Projetos />
@@ -19,7 +18,6 @@ import Apresentacao from "./components/Apresentacao.vue";
 import Certificados from "./components/Certificados.vue";
 import Depoimentos from "./components/Depoimentos.vue";
 import Experiencia from "./components/Experiencia.vue";
-import Habilidades from "./components/Habilidades.vue";
 import NavBarComponent from "./components/NavBar.vue";
 import Projetos from "./components/Projetos.vue";
 import SobreMim from "./components/SobreMim.vue";
@@ -27,7 +25,6 @@ import SocialLinks from "./components/SocialLinks.vue";
 
 const socialLinks = {
   whatsapp: "https://api.whatsapp.com/send?phone=5568992490198",
-  instagram: "https://www.instagram.com/dev_garbson/",
   github: "https://github.com/Garbson",
   linkedin: "https://www.linkedin.com/in/garbson-souza-0744a825a/",
 };

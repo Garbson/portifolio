@@ -28,11 +28,7 @@ import { useI18n } from 'vue-i18n';
 
 const { tm, locale } = useI18n();
 
-// Para debug no console
-onMounted(() => {
-  console.log("Idioma atual para depoimentos:", locale.value);
-  console.log("Depoimentos obtidos via tm():", tm('testimonials.items'));
-});
+
 
 // Usar tm() para acessar corretamente os arrays de depoimentos
 const testimonialItems = computed(() => tm('testimonials.items'));
