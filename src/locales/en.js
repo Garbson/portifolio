@@ -70,7 +70,7 @@ Frontend Developer with 3+ years building web applications for international com
     {
       title: "Atapera",
       description: "Complete e-commerce for sports and outdoor equipment with catalog of 1000+ products, shopping cart, advanced search system with filters, and payment API integration. Implemented inventory management system, administrative panel for order management, and secure checkout. Focus on performance and SEO for sales conversion.",
-      img: "atapera.jpg",
+      img: "atapera.png",
       tailwind: true,
       typescript: true,
       vue: true,
@@ -81,16 +81,16 @@ Frontend Developer with 3+ years building web applications for international com
       featured: true
     },
     {
-      title: "Feedel",
-      description: "Global marketplace connecting sellers and buyers internationally, with complex product management system, shopping carts, and payment processing. Implemented authentication, advanced search system with filters, and complete administrative panel. Project focused on scalability and performance for multiple simultaneous users.",
-      img: "feedel.png",
+      title: "Personal Portfolio",
+      description: "My personal portfolio developed with Vue 3 and Vite, showcasing my professional journey, projects, and skills. Implemented internationalization (i18n) system for 5 languages, responsive design with Tailwind CSS, and smooth animations with AOS. Solution that demonstrates my technical capability and creativity in frontend development.",
+      img: "portfolio.png",
       vue: true,
-      Quasar: true,
-      node: true,
-      nuxt: true,
-      github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
-      link: "https://feedel.app/login",
-      tech: "Vue.js, Nuxt.js, Node.js",
+      tailwind: true,
+      javascript: true,
+      vite: true,
+      github: "https://github.com/Garbson/portifolio",
+      link: "https://garbsonsouza.dev/",
+      tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
     {
@@ -107,21 +107,9 @@ Frontend Developer with 3+ years building web applications for international com
       featured: true
     },
     {
-      title: "Golfim",
-      description: "Professional platform for pool repair and restoration services with service scheduling system, customer management, and budget tracking. Implemented complete service workflow from initial contact to project completion with photo documentation and progress tracking.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
-      tech: "Vue.js, Quasar, Service Management",
-      featured: true
-    },
-    {
       title: "Hostel Pachacuteq",
       description: "Complete booking system for Peruvian hotel with multilingual interface, real-time availability calendar, payment processing, and guest management. Implemented responsive design optimized for mobile travelers with integrated local tourism information and booking confirmation system.",
-      img: "pachacuteq.png",
+      img: "pachacutec.png",
       vue: true,
       tailwind: true,
       Quasar: true,
@@ -130,6 +118,19 @@ Frontend Developer with 3+ years building web applications for international com
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Booking System",
       featured: true
+    }
+  ],
+  projects: [
+    {
+      title: "Golfim",
+      description: "Professional platform for pool repair and restoration services with service scheduling system, customer management, and budget tracking. Implemented complete service workflow from initial contact to project completion with photo documentation and progress tracking.",
+      img: "Golfim.png",
+      vue: true,
+      javascript: true,
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+      tech: "Vue.js, Quasar, Service Management"
     },
     {
       title: "AmazonNanoForest",
@@ -140,11 +141,8 @@ Frontend Developer with 3+ years building web applications for international com
       Quasar: true,
       github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
       link: "https://amazonnanoforest.com/",
-      tech: "Vue.js, Tailwind CSS, Quasar",
-      featured: true
-    }
-  ],
-  projects: [
+      tech: "Vue.js, Tailwind CSS, Quasar"
+    },
     {
       title: "DizeME",
       description: "A website to help people tithe and offer with ease.",

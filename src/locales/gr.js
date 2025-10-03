@@ -20,7 +20,7 @@ export default {
     {
       title: "Atapera",
       description: "Πλήρες e-commerce για αθλητικό και outdoor εξοπλισμό με κατάλογο 1000+ προϊόντων, καλάθι αγορών, σύστημα αναζήτησης με προηγμένα φίλτρα και ενσωμάτωση με APIs πληρωμών. Υλοποίησα σύστημα διαχείρισης αποθέματος, διοικητικό πάνελ για διαχείριση παραγγελιών και ασφαλή checkout. Εστίαση σε απόδοση και SEO για μετατροπή πωλήσεων.",
-      img: "atapera.jpg",
+      img: "atapera.png",
       tailwind: true,
       typescript: true,
       vue: true,
@@ -31,16 +31,16 @@ export default {
       featured: true
     },
     {
-      title: "Feedel",
-      description: "Παγκόσμια αγορά που συνδέει πωλητές και αγοραστές διεθνώς, με πολύπλοκο σύστημα διαχείρισης προϊόντων, καλάθια αγορών και επεξεργασία πληρωμών. Υλοποίησα έλεγχο ταυτότητας, προηγμένο σύστημα αναζήτησης με φίλτρα και πλήρες διοικητικό πάνελ. Έργο εστιασμένο σε επεκτασιμότητα και απόδοση για πολλαπλούς ταυτόχρονους χρήστες.",
-      img: "feedel.png",
+      title: "Προσωπικό Πορτφόλιο",
+      description: "Το προσωπικό μου πορτφόλιο αναπτυγμένο με Vue 3 και Vite, παρουσιάζοντας την επαγγελματική μου πορεία, έργα και δεξιότητες. Υλοποίησα σύστημα διεθνοποίησης (i18n) για 5 γλώσσες, ανταποκρινόμενο σχεδιασμό με Tailwind CSS και ελαφριές ανιμάτιονς με AOS. Λύση που αποδεικνύει την τεχνική μου ικανότητα και δημιουργικότητα στην ανάπτυξη frontend.",
+      img: "portfolio.png",
       vue: true,
-      Quasar: true,
-      node: true,
-      nuxt: true,
-      github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
-      link: "https://feedel.app/login",
-      tech: "Vue.js, Nuxt.js, Node.js",
+      tailwind: true,
+      javascript: true,
+      vite: true,
+      github: "https://github.com/Garbson/portifolio",
+      link: "https://garbsonsouza.dev/",
+      tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
     {
@@ -57,21 +57,9 @@ export default {
       featured: true
     },
     {
-      title: "Golfim",
-      description: "Επαγγελματική πλατφόρμα για υπηρεσίες επισκευής και αποκατάστασης πισινών με σύστημα προγραμματισμού υπηρεσιών, διαχείριση πελατών και παρακολούθηση προϋπολογισμών. Υλοποίησα πλήρη ροή εργασιών υπηρεσιών από αρχική επαφή έως ολοκλήρωση έργου με φωτογραφική τεκμηρίωση και παρακολούθηση προόδου.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
-      tech: "Vue.js, Quasar, Διαχείριση Υπηρεσιών",
-      featured: true
-    },
-    {
-      title: "Hostel Pachacuteq",
+      title: "Hostel Pachacutec",
       description: "Πλήρες σύστημα κρατήσεων για περουβιανό ξενοδοχείο με πολυγλωσσικό interface, ημερολόγιο διαθεσιμότητας σε πραγματικό χρόνο, επεξεργασία πληρωμών και διαχείριση επισκεπτών. Υλοποίησα responsive σχεδιασμό βελτιστοποιημένο για mobile ταξιδιώτες με ενσωματωμένες τοπικές τουριστικές πληροφορίες και σύστημα επιβεβαίωσης κρατήσεων.",
-      img: "pachacuteq.png",
+      img: "pachacutec.png",
       vue: true,
       tailwind: true,
       Quasar: true,
@@ -80,6 +68,19 @@ export default {
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Σύστημα Κρατήσεων",
       featured: true
+    }
+  ],
+  projects: [
+    {
+      title: "Golfim",
+      description: "Επαγγελματική πλατφόρμα για υπηρεσίες επισκευής και αποκατάστασης πισινών με σύστημα προγραμματισμού υπηρεσιών, διαχείριση πελατών και παρακολούθηση προϋπολογισμών. Υλοποίησα πλήρη ροή εργασιών υπηρεσιών από αρχική επαφή έως ολοκλήρωση έργου με φωτογραφική τεκμηρίωση και παρακολούθηση προόδου.",
+      img: "Golfim.png",
+      vue: true,
+      javascript: true,
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+      tech: "Vue.js, Quasar, Διαχείριση Υπηρεσιών"
     },
     {
       title: "AmazonNanoForest",
@@ -90,15 +91,12 @@ export default {
       Quasar: true,
       github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
       link: "https://amazonnanoforest.com/",
-      tech: "Vue.js, Tailwind CSS, Quasar",
-      featured: true
-    }
-  ],
-  projects: [
+      tech: "Vue.js, Tailwind CSS, Quasar"
+    },
     {
       title: "Atapera",
       description: "Κατάστημα πωλήσεων όπλων, ψαρέματος, κάμπινγκ και πολλά άλλα.",
-      img: "atapera.jpg",
+      img: "atapera.png",
       tailwind: true,
       typescript: true,
       vue: true,
@@ -189,7 +187,7 @@ export default {
     {
       title: "Hostel Pachacuteq",
       description: "Ιστότοπος για ένα περουβιανό ξενοδοχείο που σχεδιάστηκε για ταξιδιώτες που αναζητούν περιπέτεια και άνεση.",
-      img: "pachacuteq.png",
+      img: "pachacutec.png",
       vue: true,
       tailwind: true,
       Quasar: true,

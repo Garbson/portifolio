@@ -108,7 +108,7 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     {
       title: "Atapera",
       description: "E-commerce completo para equipamentos esportivos e outdoor com catálogo de 1000+ produtos, carrinho de compras, sistema de busca com filtros avançados, e integração com APIs de pagamento. Implementei sistema de gerenciamento de estoque, painel administrativo para gestão de pedidos, e checkout seguro. Foco em performance e SEO para conversão de vendas.",
-      img: "atapera.jpg",
+      img: "atapera.png",
       tailwind: true,
       typescript: true,
       vue: true,
@@ -119,16 +119,16 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       featured: true
     },
     {
-      title: "Feedel",
-      description: "Marketplace global que conecta vendedores e compradores internacionalmente, com sistema complexo de gerenciamento de produtos, carreiras de compras, e processamento de pagamentos. Implementei autenticação, sistema de busca avançada com filtros, e painel administrativo completo. Projeto focado em escalabilidade e performance para múltiplos usuários simultâneos.",
-      img: "feedel.png",
+      title: "Portfolio Pessoal",
+      description: "Meu portfólio pessoal desenvolvido com Vue 3 e Vite, apresentando minha jornada profissional, projetos e habilidades. Implementei sistema de internacionalização (i18n) para 5 idiomas, design responsivo com Tailwind CSS, e animações fluidas com AOS. Solução que demonstra minha capacidade técnica e criatividade em desenvolvimento frontend.",
+      img: "portfolio.png",
       vue: true,
-      Quasar: true,
-      node: true,
-      nuxt: true,
-      github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
-      link: "https://feedel.app/login",
-      tech: "Vue.js, Nuxt.js, Node.js",
+      tailwind: true,
+      javascript: true,
+      vite: true,
+      github: "https://github.com/Garbson/portifolio",
+      link: "https://garbsonsouza.dev/",
+      tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
     {
@@ -145,21 +145,9 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       featured: true
     },
     {
-      title: "Golfim",
-      description: "Plataforma profissional para serviços de reparo e restauração de piscinas com sistema de agendamento de serviços, gestão de clientes e acompanhamento de orçamentos. Implementei fluxo completo de serviço desde contato inicial até conclusão do projeto com documentação fotográfica e tracking de progresso.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
-      tech: "Vue.js, Quasar, Gestão de Serviços",
-      featured: true
-    },
-    {
       title: "Hostel Pachacuteq",
       description: "Sistema completo de reservas para hotel peruano com interface multilíngue, calendário de disponibilidade em tempo real, processamento de pagamentos e gestão de hóspedes. Implementei design responsivo otimizado para viajantes mobile com informações turísticas locais integradas e sistema de confirmação de reservas.",
-      img: "pachacuteq.png",
+      img: "pachacutec.png",
       vue: true,
       tailwind: true,
       Quasar: true,
@@ -168,6 +156,19 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Sistema de Reservas",
       featured: true
+    }
+  ],
+  projects: [
+    {
+      title: "Golfim",
+      description: "Plataforma profissional para serviços de reparo e restauração de piscinas com sistema de agendamento de serviços, gestão de clientes e acompanhamento de orçamentos. Implementei fluxo completo de serviço desde contato inicial até conclusão do projeto com documentação fotográfica e tracking de progresso.",
+      img: "Golfim.png",
+      vue: true,
+      javascript: true,
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+      tech: "Vue.js, Quasar, Gestão de Serviços"
     },
     {
       title: "AmazonNanoForest",
@@ -178,11 +179,8 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       Quasar: true,
       github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
       link: "https://amazonnanoforest.com/",
-      tech: "Vue.js, Tailwind CSS, Quasar",
-      featured: true
-    }
-  ],
-  projects: [
+      tech: "Vue.js, Tailwind CSS, Quasar"
+    },
     {
       title: "DizeME",
       description: "Um site para ajudar as pessoas a dizimar e Ofertar com facilidade.",

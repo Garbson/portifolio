@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue';
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { tm, locale } = useI18n();
