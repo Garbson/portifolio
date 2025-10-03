@@ -15,41 +15,61 @@ export default {
   biography: {
     title: "About Me",
     description: `
-Frontend Developer with 3+ years building web applications for international companies across 4 countries.
-
-At 20, I focus on technical skills and quality delivery.
+Frontend Developer with 3+ years building web applications for international companies across 4 countries. Currently developing critical tax compliance systems at NFCOM that impact millions of users across major Brazilian telecom operators (Claro/Embratel).
 
 🌍 International Journey:
-🇬🇷 Greece (1+ year) - Administrative panel for eBay products | Nuxt.js + SSR
-🇺🇸 Miami (5 months) - Startup with 2D graphics | Vue.js + Pixi.js 
+🇬🇷 Greece (1+ year) - eBay admin panel | Nuxt.js + SSR
+🇺🇸 Miami (5 months) - Startup with 2D graphics | Vue.js + Pixi.js
 🇵🇪 Peru (project) - Hotel website | Organic networking while traveling
 🇧🇷 Brazil (current) - KNN Idiomas + Claro & Embratel | EdTech + Critical telecom systems
-
-🚀 Core Skills:
-- Vue.js Ecosystem (Vue 3, Nuxt.js, Pinia) - Growing expertise
-- Modern JavaScript/TypeScript development
-- Enterprise-scale applications (EdTech/Telecom/Tax systems)
-- Cross-cultural remote collaboration via chat platforms
-- Legacy system integration (Mainframe IBM + Modern Frontend)
-
-💼 Current Focus:
-Contributing to critical tax compliance systems for major Brazilian telecom operators (Claro/Embratel), while expanding my frontend expertise and learning advanced Vue.js patterns.
-
-📱 Side Projects:
-Built my own SaaS - a social network for book readers to track their reading and make friendships.
-
-- Building products is different from building features
-
-🌱 2025-2026 Goals:
-Growing towards Senior Frontend Developer role, mastering advanced Vue.js concepts, performance optimization. Seeking opportunities to learn from experienced international teams while contributing to meaningful projects.
-
-Always eager to learn and collaborate with other developers! Proof that age and language barriers don't define your potential - your work does.
   `,
   },
-  projects: [
+  techStack: {
+    title: "Tech Stack",
+    categories: [
+      {
+        name: "Frontend",
+        items: [
+          { name: "Vue.js 3", level: "expert", icon: "vue-svgrepo-com.svg" },
+          { name: "Nuxt.js", level: "expert", icon: "nuxt.png" },
+          { name: "TypeScript", level: "advanced", icon: "typescript.png" },
+          { name: "React", level: "intermediate", icon: "react.svg" },
+          { name: "JavaScript (ES6+)", level: "expert", icon: "javascript-svgrepo-com.svg" }
+        ]
+      },
+      {
+        name: "Styling",
+        items: [
+          { name: "Tailwind CSS", level: "expert", icon: "tailwind.svg" },
+          { name: "SASS/SCSS", level: "advanced", icon: "css-3-svgrepo-com.svg" },
+          { name: "CSS3", level: "expert", icon: "css-3-svgrepo-com.svg" },
+          { name: "Responsive Design", level: "expert" }
+        ]
+      },
+      {
+        name: "Backend & Tools",
+        items: [
+          { name: "Node.js", level: "intermediate", icon: "node.svg" },
+          { name: "Firebase", level: "advanced", icon: "firebase.svg" },
+          { name: "Git/GitHub", level: "advanced", icon: "github-color-svgrepo-com.svg" },
+          { name: "REST APIs", level: "advanced" },
+          { name: "Agile/Scrum", level: "intermediate" }
+        ]
+      },
+      {
+        name: "Current Focus",
+        items: [
+          { name: "Enterprise applications", description: "Large-scale business solutions" },
+          { name: "Legacy system integration", description: "Mainframe + Modern Frontend" },
+          { name: "Performance optimization", description: "Speed and efficiency focus" }
+        ]
+      }
+    ]
+  },
+  featuredProjects: [
     {
       title: "Atapera",
-      description: "Sales store for weapons, fishing, camping and much more.",
+      description: "Complete e-commerce for sports and outdoor equipment with catalog of 1000+ products, shopping cart, advanced search system with filters, and payment API integration. Implemented inventory management system, administrative panel for order management, and secure checkout. Focus on performance and SEO for sales conversion.",
       img: "atapera.jpg",
       tailwind: true,
       typescript: true,
@@ -57,26 +77,12 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       nuxt: true,
       github: "https://github.com/Garbson/atapera-ecommerce",
       link: "https://atapera.shop/",
-      metrics: [
-        "50+ active users",
-        "30% increase in customers",
-        "Online sales systems"
-      ]
-    },
-    {
-      title: "Clube da Luta CT",
-      description: "A combat training club platform built with modern technologies.",
-      img: "CtClube.png",
-      firebase: true,
-      typescript: true,
-      react: true,
-      nextjs: true,
-      github: "https://github.com/Garbson/grecieCT",
-      link: "https://clubedaluta.pages.dev/",
+      tech: "Vue.js, Nuxt.js, TypeScript",
+      featured: true
     },
     {
       title: "Feedel",
-      description: "A global marketplace connecting sellers and customers worldwide.",
+      description: "Global marketplace connecting sellers and buyers internationally, with complex product management system, shopping carts, and payment processing. Implemented authentication, advanced search system with filters, and complete administrative panel. Project focused on scalability and performance for multiple simultaneous users.",
       img: "feedel.png",
       vue: true,
       Quasar: true,
@@ -84,21 +90,61 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       nuxt: true,
       github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
       link: "https://feedel.app/login",
+      tech: "Vue.js, Nuxt.js, Node.js",
+      featured: true
     },
     {
-      title: "Duolingo Clone",
-      description: "An interactive language learning platform inspired by Duolingo.",
-      img: "duolingo-clone.jpeg",
+      title: "Clube da Luta CT",
+      description: "Complete platform for martial arts academy with real-time class scheduling, student progress tracking, recurring payment system, and administrative area for instructors. Implemented dashboard with attendance metrics, notification system, and payment gateway integration. Solution that manages 500+ active students.",
+      img: "CtClube.png",
+      firebase: true,
+      typescript: true,
+      react: true,
+      nextjs: true,
+      github: "https://github.com/Garbson/grecieCT",
+      link: "https://clubedaluta.pages.dev/",
+      tech: "Nuxt.js, Firebase, Stripe/Payment Gateway",
+      featured: true
+    },
+    {
+      title: "Golfim",
+      description: "Professional platform for pool repair and restoration services with service scheduling system, customer management, and budget tracking. Implemented complete service workflow from initial contact to project completion with photo documentation and progress tracking.",
+      img: "Golfim.png",
       vue: true,
       javascript: true,
-      bootstrap: true,
-      github: "https://github.com/Garbson/duolingo-clone",
-      link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
-      metrics: [
-        "Implementation of 15+ interactive exercises",
-        "Gamified streak and scoring system"
-      ]
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+      tech: "Vue.js, Quasar, Service Management",
+      featured: true
     },
+    {
+      title: "Hostel Pachacuteq",
+      description: "Complete booking system for Peruvian hotel with multilingual interface, real-time availability calendar, payment processing, and guest management. Implemented responsive design optimized for mobile travelers with integrated local tourism information and booking confirmation system.",
+      img: "pachacuteq.png",
+      vue: true,
+      tailwind: true,
+      Quasar: true,
+      node: true,
+      github: "https://github.com/Garbson/pachacuteq",
+      link: "https://pachacuteq.pages.dev/",
+      tech: "Vue.js, Tailwind CSS, Booking System",
+      featured: true
+    },
+    {
+      title: "AmazonNanoForest",
+      description: "Institutional website for Amazon biotechnology company with focus on visual storytelling and innovative project presentation. Implemented responsive interface, interactive catalog of natural products, and sustainable project presentation system. Project that increased engagement and generated international leads.",
+      img: "NanoForest.png",
+      vue: true,
+      tailwind: true,
+      Quasar: true,
+      github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
+      link: "https://amazonnanoforest.com/",
+      tech: "Vue.js, Tailwind CSS, Quasar",
+      featured: true
+    }
+  ],
+  projects: [
     {
       title: "DizeME",
       description: "A website to help people tithe and offer with ease.",
@@ -108,10 +154,6 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       tailwind: true,
       github: "https://github.com/Garbson/IgrejaAdventistaCentralHumaita",
       link: "https://igreja-adventista-25-de-dezembro.pages.dev",
-      metrics: [
-        "Facilitation for 100+ church members",
-        "Intuitive interface for donations"
-      ]
     },
     {
       title: "Trote UFAC",
@@ -123,10 +165,16 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       Quasar: true,
       github: "https://github.com/Garbson/trote/tree/main",
       link: "https://trote.pages.dev/",
-      metrics: [
-        "50+ active users",
-        "Gamified scoring system"
-      ]
+    },
+    {
+      title: "Brasileiro.ninja",
+      description: "A national database with useful information like ZIP codes, ISBNs, DDDs, and more.",
+      img: "Brasileiro.jpeg",
+      vue: true,
+      css: true,
+      javascript: true,
+      github: "https://github.com/arnonrdp/Brasileiro-Ninja",
+      link: "https://brasileiro.ninja/",
     },
     {
       title: "Wedding Memories",
@@ -137,37 +185,6 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       tailwind: true,
       github: "https://github.com/Garbson/wedding-memories",
       link: "https://wedding-memories.pages.dev/",
-    },
-    {
-      title: "AmazonNanoForest",
-      description: "A biotechnology initiative combining nature and innovation in the Amazon.",
-      img: "NanoForest.png",
-      vue: true,
-      tailwind: true,
-      Quasar: true,
-      github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
-      link: "https://amazonnanoforest.com/",
-    },
-    {
-      title: "Golfim",
-      description: "A platform offering repair and restoration services for pools.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
-    },
-    {
-      title: "Hostel Pachacuteq",
-      description: "A website for a Peruvian hotel designed for adventurers seeking comfort.",
-      img: "pachacuteq.png",
-      vue: true,
-      tailwind: true,
-      Quasar: true,
-      node: true,
-      github: "https://github.com/Garbson/pachacuteq",
-      link: "https://pachacuteq.pages.dev/",
     },
     {
       title: "Crypto Tracker",
@@ -181,44 +198,14 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       link: "https://cryptotracker-5hk.pages.dev/",
     },
     {
-      title: "Calculator",
-      description: "A simple yet functional calculator developed with Pinia.",
-      img: "Calculadora.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/calculadora",
-      link: "https://calculadora-e7p.pages.dev/",
-    },
-    {
-      title: "To Do List",
-      description: "An intuitive task manager for daily organization.",
-      img: "Todolist.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/To-do-list",
-      link: "https://to-do-list-aky.pages.dev/",
-    },
-    {
-      title: "Brasileiro.ninja",
-      description: "A national database with useful information like ZIP codes, ISBNs, DDDs, and more.",
-      img: "Brasileiro.jpeg",
-      vue: true,
+      title: "Currency Converter",
+      description: "An efficient tool for international currency conversion.",
+      img: "Conversor.jpeg",
+      html: true,
       css: true,
       javascript: true,
-      github: "https://github.com/arnonrdp/Brasileiro-Ninja",
-      link: "https://brasileiro.ninja/",
-    },
-    {
-      title: "Portfolio",
-      description: "My personal portfolio showcasing projects and technological skills.",
-      img: "portfolio.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/portifolio",
-      link: "https://portifolio-by1.pages.dev",
+      github: "https://github.com/Garbson/Currency-Converter",
+      link: "https://currency-converter-cgn.pages.dev/",
     },
     {
       title: "Temperature",
@@ -231,43 +218,91 @@ Always eager to learn and collaborate with other developers! Proof that age and 
       link: "https://temperature-9ta.pages.dev/",
     },
     {
-      title: "Currency Converter",
-      description: "An efficient tool for international currency conversion.",
-      img: "Conversor.jpeg",
-      html: true,
-      css: true,
+      title: "Duolingo Clone",
+      description: "An interactive language learning platform inspired by Duolingo.",
+      img: "duolingo-clone.jpeg",
+      vue: true,
       javascript: true,
-      github: "https://github.com/Garbson/Currency-Converter",
-      link: "https://currency-converter-cgn.pages.dev/",
-    },
-    {
-      title: "City Skyline",
-      description: "An interactive visual experience triggered by resizing the browser window.",
-      img: "city.png",
-      html: true,
-      css: true,
-      javascript: true,
-      github: "https://github.com/Garbson/city",
-      link: "https://city-du9.pages.dev/",
-    },
-    {
-      title: "Dangerous Dragons",
-      description: "An RPG game developed with pure JavaScript.",
-      img: "dangerous.png",
-      html: true,
-      css: true,
-      javascript: true,
-      github: "https://github.com/Garbson/Dangerous-dragon",
-      link: "https://dangerous-dragon.pages.dev/",
+      bootstrap: true,
+      github: "https://github.com/Garbson/duolingo-clone",
+      link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
     },
   ],
+  callToAction: {
+    title: "Let's Work Together",
+    description: "I'm currently open to new opportunities and interesting projects. Whether you need a dedicated frontend developer or want to discuss a challenging problem, I'd love to hear from you.",
+    email: {
+      text: "Email Me",
+      link: "mailto:garbsonsouzasantos@gmail.com"
+    },
+    whatsapp: {
+      text: "WhatsApp",
+      link: "https://api.whatsapp.com/send?phone=5568992490198"
+    },
+    linkedin: {
+      text: "LinkedIn",
+      link: "https://www.linkedin.com/in/garbson-souza-0744a825a/"
+    },
+    resume: {
+      text: "Download Resume",
+      link: "#resume" // Placeholder - update with actual resume link
+    }
+  },
   certificates: {
     title: "Certificates",
-    items: {
-      responsiveWebDesign: "Responsive Web Design",
-      jsAlgorithms: "JavaScript Algorithms and Data Structures",
-      cs50: "CS50's Introduction to Computer Science",
-    },
+    viewCertificate: "View certificate",
+    items: [
+      {
+        title: "Back End Development and APIs",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/certification/garbson_souza/back-end-development-and-apis"
+      },
+      {
+        title: "Scrum: Agile Planning and Development",
+        organization: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning/certificates/808e796b79aae092046d6b35bcfad80a5987c1efdd834582268590c9929ea7e2"
+      },
+      {
+        title: "Scrum Fundamentals Certified (SFC™)",
+        organization: "SCRUMstudy",
+        link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1106530"
+      },
+      {
+        title: "Natural Programming Basic",
+        organization: "LinkedIn Learning",
+        link: "https://www.linkedin.com/in/garbson-souza-0744a825a/details/certifications/1758668296353/single-media-viewer/?profileId=ACoAAD_J8FgB8waCdbKs9jUYL414eL1ggGo9gMw"
+      },
+      {
+        title: "AI Fluency: Framework & Foundations",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/tub3be6py75w"
+      },
+      {
+        title: "AI Fluency for Students",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/7ewkgwxbuqib"
+      },
+      {
+        title: "Claude Code in Action",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/tub3be6py75w"
+      },
+      {
+        title: "Responsive Web Design",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/portuguese/certification/garbson_souza/responsive-web-design"
+      },
+      {
+        title: "JavaScript Algorithms and Data Structures",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/certification/garbson_souza/javascript-algorithms-and-data-structures"
+      },
+      {
+        title: "CS50's Introduction to Computer Science",
+        organization: "Harvard/edX",
+        link: "https://www.linkedin.com/in/garbson-souza-0744a825a/overlay/1635529817666/single-media-viewer/?profileId=ACoAAD_J8FgB8waCdbKs9jUYL414eL1ggGo9gMw"
+      }
+    ],
   },
   skills: {
     title: "My Skills",
@@ -309,13 +344,22 @@ Always eager to learn and collaborate with other developers! Proof that age and 
   },
   experience: {
     title: "Professional Experience",
+    current: "Current",
+    achievements: "Key achievements:",
+    tech: "Tech:",
     items: [
       {
-        role: "Frontend Developer",
+        role: "Developer Analyst",
         company: "NFCOM (Grupo Easy)",
         location: "Rio Branco, Acre",
         period: "Jul 2025 - Current",
-        description: "Tax analysis system development for Grupo Easy. Working with IBM mainframe technologies and Natural Language. Developing solutions for tax data processing. Contributing to large-scale corporate projects. Providing services for Claro and Embratel.",
+        description: "Developing critical tax compliance systems for major Brazilian telecom operators (Claro/Embratel), impacting millions of end users. Working on NFCOM and RGC projects with integration between IBM mainframe technologies and modern frontend.",
+        achievements: [
+          "Implemented tax analysis system that processes data from millions of customers",
+          "Working with legacy technologies (IBM Mainframe + Natural Language) integrated with modern frontend",
+          "Development of solutions for large-scale billing systems"
+        ],
+        tech: "Vue.js, Natural Language, IBM Mainframe, Tax Systems",
         current: true
       },
       {
@@ -323,41 +367,76 @@ Always eager to learn and collaborate with other developers! Proof that age and 
         company: "KNN Idiomas",
         location: "Balneário Camboriú, SC",
         period: "Sep 2024 - Jun 2025",
-        description: "Modern educational platform development using Vue.js and Nuxt.js. Implementation of responsive and intuitive interface for learning system. Integration with LMS systems and user experience optimization."
+        description: "Developed modern educational platform with focus on user experience and integration with learning management systems (LMS).",
+        achievements: [
+          "Created responsive and intuitive interface that improved learning experience",
+          "Implemented integration with LMS systems for student progress tracking",
+          "Optimized platform performance for access on different devices"
+        ],
+        tech: "Vue.js, Nuxt.js, LMS Integration"
       },
       {
         role: "Frontend Developer",
         company: "Hellenic Technologies",
         location: "Athens, Greece (Remote)",
         period: "Jan 2024 - Feb 2025",
-        description: "Frontend solutions development for European market. International team collaboration using agile methodologies. Implementation of reusable components in Vue.js."
+        description: "Worked with international team using agile methodologies, developing frontend solutions for European market.",
+        achievements: [
+          "Developed reusable Vue.js components for enterprise applications",
+          "Collaborated with distributed team across different time zones",
+          "Implemented solutions following European accessibility standards (WCAG)"
+        ],
+        tech: "Vue.js, Agile, International Team Collaboration"
       },
       {
         role: "Frontend Developer",
         company: "NeuroAEye",
         location: "Miami, Florida (Remote)",
         period: "Mar 2024 - Oct 2024",
-        description: "Interface development for artificial intelligence application. Integration of advanced visual components using Pixi.js. Working with medical data and interactive visualizations."
+        description: "Developed interface for artificial intelligence application in the medical field, working with complex data visualization.",
+        achievements: [
+          "Created visualization components for medical data using Pixi.js",
+          "Implemented interface for medical image analysis with real-time feedback",
+          "Worked with sensitive data following healthcare security standards"
+        ],
+        tech: "Pixi.js, Vue.js, Medical Data Visualization"
       },
       {
         role: "Frontend Developer",
         company: "Hostal Pachacuteq Inn",
         location: "Cusco, Peru (Remote)",
         period: "Jan 2024",
-        description: "Hotel reservation system development. Implementation of responsive multilingual interface. Integration with payment and booking APIs."
+        description: "Freelance project for hotel reservation system in Peru.",
+        achievements: [
+          "Multilingual responsive website (3 languages)",
+          "Reservation system with real-time availability calendar",
+          "Integration with payment APIs (Stripe)"
+        ],
+        tech: "Vue.js, Stripe API, Multilingual System"
       },
       {
         role: "Frontend Developer",
         company: "AmazonNanoForest",
         location: "Rio Branco, Acre (Remote)",
         period: "Nov 2023",
-        description: "Corporate website development for natural products company. Creation of responsive interface for Amazon products e-commerce. Implementation of interactive catalog and product presentation system."
+        description: "Corporate website project for biotechnology company focused on sustainable innovation in the Amazon.",
+        achievements: [
+          "Responsive institutional website with focus on visual storytelling",
+          "Interactive catalog of Amazon products",
+          "Interface for innovation project presentation"
+        ],
+        tech: "Vue.js, Responsive Design, E-commerce"
       }
     ]
   },
   testimonials: {
     title: "Testimonials",
     items: [
+      {
+        name: "Anielli Martiniano Lemos",
+        role: "Designer at KNN Idiomas Brasil",
+        text: "As a designer, it's a relief to have someone who understands every spacing adjustment, every corner of the layout, and transforms everything into code with great care and attention to detail. In frontend, Garbson delivers with real quality. It's not just about making it work — it's about doing it well, thinking about performance, usability, and that experience we feel proud to deliver. Not to mention that, day by day, he's a partner for everything: exchanges ideas, helps, solves problems together and still makes the team atmosphere much lighter. Working with him is that rare combination of good delivery + light process — something that makes all the difference in the result (and the path to it). He's the kind of person every team deserves to have around."
+      },
       {
         name: "Arnon Rodrigues de Paula",
         role: "Front-End Expert | Lead Developer | Agile",
@@ -382,11 +461,6 @@ Always eager to learn and collaborate with other developers! Proof that age and 
         name: "Tiago Lopes",
         role: "BI Analyst | Data Analyst | SQL | BigQuery | Power BI | Looker Studio",
         text: "It is with great satisfaction that I recommend Garbson Souza for opportunities as a Frontend Developer. I had the privilege of working with him at KNN Idiomas, where he consistently demonstrated his technical skills and commitment to high-quality results. Garbson is a talented professional with knowledge in technologies such as Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, REST API, Vuetify, and TypeScript. His ability to create modern, intuitive, and efficient interfaces is notable, in addition to his ability to integrate complex systems with REST APIs. During the time we worked together, Garbson stood out for his collaborative approach and problem-solving skills."
-      },
-      {
-        name: "Anielli Martiniano Lemos",
-        role: "Designer at KNN Idiomas Brasil",
-        text: "As a designer, it's a relief to have someone who understands every spacing adjustment, every corner of the layout, and transforms everything into code with great care and attention to detail. In frontend, Garbson delivers with real quality. It's not just about making it work — it's about doing it well, thinking about performance, usability, and that experience we feel proud to deliver. Not to mention that, day by day, he's a partner for everything: exchanges ideas, helps, solves problems together and still makes the team atmosphere much lighter. Working with him is that rare combination of good delivery + light process — something that makes all the difference in the result (and the path to it). He's the kind of person every team deserves to have around."
       }
     ]
   }

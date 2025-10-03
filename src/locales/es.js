@@ -15,37 +15,93 @@ export default {
   biography: {
     title: "Sobre Mí",
     description: `
-Desarrollador Frontend con 3+ años creando aplicaciones web para empresas internacionales en 4 países.
-
-A los 20 años, me enfoco en habilidades técnicas y entrega de calidad.
+Desarrollador Frontend con 3+ años creando aplicaciones web para empresas internacionales en 4 países. Actualmente desarrollando sistemas críticos de compliance fiscal en NFCOM que impactan millones de usuarios en las principales operadoras brasileñas de telecomunicaciones (Claro/Embratel).
 
 🌍 Viaje Internacional:
-🇬🇷 Grecia (1+ año) - Panel administrativo para productos de eBay | Nuxt.js + SSR
-🇺🇸 Miami (5 meses) - Startup con gráficos 2D | Vue.js + Pixi.js 
+🇬🇷 Grecia (1+ año) - Panel administrativo eBay | Nuxt.js + SSR
+🇺🇸 Miami (5 meses) - Startup con gráficos 2D | Vue.js + Pixi.js
 🇵🇪 Perú (proyecto) - Sitio web de hotel | Networking orgánico mientras viajaba
 🇧🇷 Brasil (actual) - KNN Idiomas + Claro & Embratel | EdTech + Sistemas críticos de telecomunicaciones
-
-🚀 Habilidades Principales:
-- Ecosistema Vue.js (Vue 3, Nuxt.js, Pinia) - Experiencia en crecimiento
-- Desarrollo moderno JavaScript/TypeScript
-- Aplicaciones a escala empresarial (EdTech/Telecom/Sistemas fiscales)
-- Colaboración remota intercultural vía plataformas de chat
-- Integración de sistemas legacy (Mainframe IBM + Frontend Moderno)
-
-💼 Enfoque Actual:
-Contribuyendo a sistemas críticos de cumplimiento fiscal para operadores principales de telecomunicaciones brasileñas (Claro/Embratel), mientras expando mi experiencia frontend y aprendo patrones avanzados de Vue.js.
-
-📱 Proyectos Paralelos:
-Construí mi propio SaaS - una red social para lectores de libros para rastrear su lectura y hacer amistades.
-
-- Construir productos es diferente a construir características
-
-🌱 Objetivos 2025-2026:
-Creciendo hacia el rol de Desarrollador Frontend Senior, dominando conceptos avanzados de Vue.js, optimización de rendimiento. Buscando oportunidades para aprender de equipos internacionales experimentados mientras contribuyo a proyectos significativos.
-
-¡Siempre ansioso por aprender y colaborar con otros desarrolladores! Prueba de que la edad y las barreras del idioma no definen tu potencial - tu trabajo sí.
   `,
   },
+  featuredProjects: [
+    {
+      title: "Atapera",
+      description: "E-commerce completo para equipos deportivos y outdoor con catálogo de 1000+ productos, carrito de compras, sistema de búsqueda con filtros avanzados, e integración con APIs de pago. Implementé sistema de gestión de inventario, panel administrativo para gestión de pedidos, y checkout seguro. Enfoque en rendimiento y SEO para conversión de ventas.",
+      img: "atapera.jpg",
+      tailwind: true,
+      typescript: true,
+      vue: true,
+      nuxt: true,
+      github: "https://github.com/Garbson/atapera-ecommerce",
+      link: "https://atapera.shop/",
+      tech: "Vue.js, Nuxt.js, TypeScript",
+      featured: true
+    },
+    {
+      title: "Feedel",
+      description: "Marketplace global que conecta vendedores y compradores internacionalmente, con sistema complejo de gestión de productos, carritos de compras, y procesamiento de pagos. Implementé autenticación, sistema de búsqueda avanzada con filtros, y panel administrativo completo. Proyecto enfocado en escalabilidad y rendimiento para múltiples usuarios simultáneos.",
+      img: "feedel.png",
+      vue: true,
+      Quasar: true,
+      node: true,
+      nuxt: true,
+      github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
+      link: "https://feedel.app/login",
+      tech: "Vue.js, Nuxt.js, Node.js",
+      featured: true
+    },
+    {
+      title: "Clube da Luta CT",
+      description: "Plataforma completa para academia de artes marciales con programación de clases en tiempo real, seguimiento de progreso de estudiantes, sistema de pagos recurrentes, y área administrativa para instructores. Implementé dashboard con métricas de asistencia, sistema de notificaciones, e integración con gateway de pago. Solución que gestiona 500+ estudiantes activos.",
+      img: "CtClube.png",
+      firebase: true,
+      typescript: true,
+      react: true,
+      nextjs: true,
+      github: "https://github.com/Garbson/grecieCT",
+      link: "https://clubedaluta.pages.dev/",
+      tech: "Nuxt.js, Firebase, Stripe/Payment Gateway",
+      featured: true
+    },
+    {
+      title: "Golfim",
+      description: "Plataforma profesional para servicios de reparación y restauración de piscinas con sistema de programación de servicios, gestión de clientes y seguimiento de presupuestos. Implementé flujo completo de servicio desde contacto inicial hasta conclusión del proyecto con documentación fotográfica y seguimiento de progreso.",
+      img: "Golfim.png",
+      vue: true,
+      javascript: true,
+      Quasar: true,
+      github: "https://github.com/leonardo-cordeiro/golfim",
+      link: "https://golfim.pages.dev/",
+      tech: "Vue.js, Quasar, Gestión de Servicios",
+      featured: true
+    },
+    {
+      title: "Hostel Pachacuteq",
+      description: "Sistema completo de reservas para hotel peruano con interfaz multilingüe, calendario de disponibilidad en tiempo real, procesamiento de pagos y gestión de huéspedes. Implementé diseño responsivo optimizado para viajeros móviles con información turística local integrada y sistema de confirmación de reservas.",
+      img: "pachacuteq.png",
+      vue: true,
+      tailwind: true,
+      Quasar: true,
+      node: true,
+      github: "https://github.com/Garbson/pachacuteq",
+      link: "https://pachacuteq.pages.dev/",
+      tech: "Vue.js, Tailwind CSS, Sistema de Reservas",
+      featured: true
+    },
+    {
+      title: "AmazonNanoForest",
+      description: "Sitio web institucional para empresa de biotecnología amazónica con enfoque en storytelling visual y presentación de proyectos innovadores. Implementé interfaz responsiva, catálogo interactivo de productos naturales, y sistema de presentación de proyectos sostenibles. Proyecto que aumentó el engagement y generó leads internacionales.",
+      img: "NanoForest.png",
+      vue: true,
+      tailwind: true,
+      Quasar: true,
+      github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
+      link: "https://amazonnanoforest.com/",
+      tech: "Vue.js, Tailwind CSS, Quasar",
+      featured: true
+    }
+  ],
   projects: [
     {
       title: "Atapera",
@@ -309,13 +365,22 @@ Creciendo hacia el rol de Desarrollador Frontend Senior, dominando conceptos ava
   },
   experience: {
     title: "Experiencia Profesional",
+    current: "Actual",
+    achievements: "Principales logros:",
+    tech: "Tech:",
     items: [
       {
-        role: "Desarrollador Frontend",
+        role: "Analista Desenvolvedor",
         company: "NFCOM (Grupo Easy)",
         location: "Rio Branco, Acre",
         period: "Jul 2025 - Actual",
-        description: "Desarrollo de sistema de análisis tributario para Grupo Easy. Trabajo con tecnologías mainframe IBM y Natural Language. Desarrollo de soluciones para procesamiento de datos tributarios. Contribución en proyectos de gran escala corporativa. Prestación de servicios para Claro y Embratel.",
+        description: "Desarrollo de sistema de análisis tributario para Grupo Easy. Trabajo en los proyectos NFCOM y RGC con tecnologías mainframe IBM y Natural Language. Desarrollo de soluciones para procesamiento de datos tributarios. Contribución en proyectos de gran escala corporativa. Prestación de servicios para Claro y Embratel.",
+        achievements: [
+          "Implementé sistema de análisis tributario que procesa datos de millones de clientes",
+          "Trabajo con tecnologías legacy (IBM Mainframe + Natural Language) integradas con frontend moderno",
+          "Desarrollo de soluciones para sistemas de facturación a gran escala"
+        ],
+        tech: "Vue.js, Natural Language, IBM Mainframe, Tax Systems",
         current: true
       },
       {
@@ -323,37 +388,143 @@ Creciendo hacia el rol de Desarrollador Frontend Senior, dominando conceptos ava
         company: "KNN Idiomas",
         location: "Balneário Camboriú, SC",
         period: "Sep 2024 - Jun 2025",
-        description: "Desarrollo de plataforma educacional moderna utilizando Vue.js y Nuxt.js. Implementación de interfaz responsiva e intuitiva para sistema de aprendizaje. Integración con sistemas LMS y optimización de experiencia de usuario."
+        description: "Desarrollo de plataforma educacional moderna utilizando Vue.js y Nuxt.js. Implementación de interfaz responsiva e intuitiva para sistema de aprendizaje. Integración con sistemas LMS y optimización de experiencia de usuario.",
+        achievements: [
+          "Creé interfaz responsiva e intuitiva que mejoró la experiencia de aprendizaje",
+          "Implementé integración con sistemas LMS para seguimiento de progreso de estudiantes",
+          "Optimicé rendimiento de la plataforma para acceso en diferentes dispositivos"
+        ],
+        tech: "Vue.js, Nuxt.js, LMS Integration"
       },
       {
         role: "Desarrollador Frontend",
         company: "Hellenic Technologies",
         location: "Atenas, Grecia (Remoto)",
         period: "Ene 2024 - Feb 2025",
-        description: "Desarrollo de soluciones frontend para mercado europeo. Colaboración en equipo internacional utilizando metodologías ágiles. Implementación de componentes reutilizables en Vue.js."
+        description: "Desarrollo de soluciones frontend para mercado europeo. Colaboración en equipo internacional utilizando metodologías ágiles. Implementación de componentes reutilizables en Vue.js.",
+        achievements: [
+          "Desarrollé componentes reutilizables en Vue.js para aplicaciones enterprise",
+          "Colaboré con equipo distribuido en diferentes zonas horarias",
+          "Implementé soluciones siguiendo estándares de accesibilidad europeos (WCAG)"
+        ],
+        tech: "Vue.js, Agile, International Team Collaboration"
       },
       {
         role: "Desarrollador Frontend",
         company: "NeuroAEye",
         location: "Miami, Florida (Remoto)",
         period: "Mar 2024 - Oct 2024",
-        description: "Desarrollo de interfaz para aplicación de inteligencia artificial. Integración de componentes visuales avanzados utilizando Pixi.js. Trabajo con datos médicos y visualizaciones interactivas."
+        description: "Desarrollo de interfaz para aplicación de inteligencia artificial. Integración de componentes visuales avanzados utilizando Pixi.js. Trabajo con datos médicos y visualizaciones interactivas.",
+        achievements: [
+          "Creé componentes de visualización para datos médicos usando Pixi.js",
+          "Implementé interfaz para análisis de imágenes médicas con feedback en tiempo real",
+          "Trabajé con datos sensibles siguiendo estándares de seguridad de salud"
+        ],
+        tech: "Pixi.js, Vue.js, Medical Data Visualization"
       },
       {
         role: "Desarrollador Frontend",
         company: "Hostal Pachacuteq Inn",
         location: "Cusco, Perú (Remoto)",
         period: "Ene 2024",
-        description: "Desarrollo de sistema de reservas hoteleras. Implementación de interfaz multiidioma responsiva. Integración con APIs de pago y booking."
+        description: "Desarrollo de sistema de reservas hoteleras. Implementación de interfaz multiidioma responsiva. Integración con APIs de pago y booking.",
+        achievements: [
+          "Sitio web responsivo multilingüe (3 idiomas)",
+          "Sistema de reservas con calendario de disponibilidad en tiempo real",
+          "Integración con APIs de pago (Stripe)"
+        ],
+        tech: "Vue.js, Stripe API, Multilingual System"
       },
       {
         role: "Desarrollador Frontend",
         company: "AmazonNanoForest",
         location: "Rio Branco, Acre (Remoto)",
         period: "Nov 2023",
-        description: "Desarrollo del sitio web corporativo para empresa de productos naturales. Creación de interfaz responsiva para e-commerce de productos amazónicos. Implementación de catálogo interactivo y sistema de presentación de productos."
+        description: "Desarrollo del sitio web corporativo para empresa de productos naturales. Creación de interfaz responsiva para e-commerce de productos amazónicos. Implementación de catálogo interactivo y sistema de presentación de productos.",
+        achievements: [
+          "Sitio web institucional responsivo con enfoque en storytelling visual",
+          "Catálogo interactivo de productos amazónicos",
+          "Interfaz para presentación de proyectos de innovación"
+        ],
+        tech: "Vue.js, Responsive Design, E-commerce"
       }
     ]
+  },
+  callToAction: {
+    title: "Trabajemos Juntos",
+    description: "Actualmente estoy abierto a nuevas oportunidades y proyectos interesantes. Si necesitas un desarrollador frontend dedicado o quieres discutir un problema desafiante, me encantaría escucharte.",
+    email: {
+      text: "Email",
+      link: "mailto:garbsonsouzasantos@gmail.com"
+    },
+    whatsapp: {
+      text: "WhatsApp",
+      link: "https://api.whatsapp.com/send?phone=5568992490198"
+    },
+    linkedin: {
+      text: "LinkedIn",
+      link: "https://www.linkedin.com/in/garbson-souza-0744a825a/"
+    },
+    resume: {
+      text: "Descargar Currículum",
+      link: "#resume" // Placeholder - update with actual resume link
+    }
+  },
+  certificates: {
+    title: "Certificados",
+    viewCertificate: "Ver certificado",
+    items: [
+      {
+        title: "Desarrollo Back End y APIs",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/certification/garbson_souza/back-end-development-and-apis"
+      },
+      {
+        title: "Scrum: Planificación y Desarrollo Ágiles",
+        organization: "LinkedIn Learning",
+        link: "https://www.linkedin.com/learning/certificates/808e796b79aae092046d6b35bcfad80a5987c1efdd834582268590c9929ea7e2"
+      },
+      {
+        title: "Scrum Fundamentals Certified (SFC™)",
+        organization: "SCRUMstudy",
+        link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1106530"
+      },
+      {
+        title: "Programación Natural Básica",
+        organization: "LinkedIn Learning",
+        link: "https://www.linkedin.com/in/garbson-souza-0744a825a/details/certifications/1758668296353/single-media-viewer/?profileId=ACoAAD_J8FgB8waCdbKs9jUYL414eL1ggGo9gMw"
+      },
+      {
+        title: "Fluidez en IA: Marco y Fundamentos",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/tub3be6py75w"
+      },
+      {
+        title: "Fluidez en IA para Estudiantes",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/7ewkgwxbuqib"
+      },
+      {
+        title: "Claude Code en Acción",
+        organization: "Skilljar",
+        link: "https://verify.skilljar.com/c/tub3be6py75w"
+      },
+      {
+        title: "Diseño Web Responsivo",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/portuguese/certification/garbson_souza/responsive-web-design"
+      },
+      {
+        title: "Algoritmos y Estructuras de Datos de JavaScript",
+        organization: "freeCodeCamp",
+        link: "https://www.freecodecamp.org/certification/garbson_souza/javascript-algorithms-and-data-structures"
+      },
+      {
+        title: "CS50: Introducción a las Ciencias de la Computación",
+        organization: "Harvard/edX",
+        link: "https://www.linkedin.com/in/garbson-souza-0744a825a/overlay/1635529817666/single-media-viewer/?profileId=ACoAAD_J8FgB8waCdbKs9jUYL414eL1ggGo9gMw"
+      }
+    ],
   },
   testimonials: {
     title: "Testimonios",

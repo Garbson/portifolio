@@ -8,52 +8,50 @@
       <div class="w-16 h-0.5 bg-teal-400 mx-auto"></div>
     </div>
     
-    <!-- Timeline Container -->
-    <div class="relative max-w-4xl mx-auto">
-      <!-- Timeline Line -->
-      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-teal-400 md:transform md:-translate-x-1/2"></div>
-      
-      <div class="space-y-8">
-        <div v-for="(job, index) in experienceItems" :key="index" 
-             class="timeline-item relative"
-             :class="index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2'">
-          
-          <!-- Timeline Dot -->
-          <div class="absolute left-3 md:left-1/2 w-3 h-3 transform -translate-x-1/2 z-10">
-            <div class="w-full h-full rounded-full border-2 border-white shadow-lg"
-                 :class="job.current ? 'bg-green-500' : 'bg-teal-400'">
-            </div>
+    <!-- Simple Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <div v-for="(job, index) in experienceItems" :key="index"
+           class="bg-slate-800 p-4 rounded-lg shadow-lg border border-slate-700 hover:border-teal-400 transition-all duration-300">
+
+        <!-- Current Badge -->
+        <div v-if="job.current" class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-500 text-white mb-2">
+          <div class="w-2 h-2 bg-white rounded-full mr-1"></div>
+          {{ $t('experience.current') }}
+        </div>
+
+        <!-- Header -->
+        <div class="mb-3">
+          <h3 class="text-base font-bold text-white mb-1">{{ job.role }}</h3>
+          <p class="text-teal-300 font-semibold text-sm">{{ job.company }}</p>
+          <div class="flex flex-col sm:flex-row sm:justify-between text-xs text-slate-400 mt-1">
+            <span v-if="job.location">{{ job.location }}</span>
+            <span>{{ job.period }}</span>
           </div>
-          
-          <!-- Job Card -->
-          <div class="job-card ml-10 md:ml-0 max-w-md md:max-w-sm">
-            <!-- Connecting line para desktop -->
-            <div class="hidden md:block absolute top-6 w-6 h-0.5 bg-teal-400"
-                 :class="index % 2 === 0 ? 'right-0' : 'left-0'"></div>
-            
-            <!-- Card principal -->
-            <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:border-teal-400 transition-all duration-300">
-              
-              <!-- Current Badge -->
-              <div v-if="job.current" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500 text-white mb-3">
-                <div class="w-2 h-2 bg-white rounded-full mr-2"></div>
-                Atual
-              </div>
-              
-              <!-- Header -->
-              <div class="mb-4">
-                <h3 class="text-lg font-bold text-white mb-1">{{ job.role }}</h3>
-                <p class="text-teal-300 font-semibold">{{ job.company }}</p>
-                <p v-if="job.location" class="text-slate-400 text-sm mt-1">{{ job.location }}</p>
-                <p class="text-slate-400 text-sm mt-1">{{ job.period }}</p>
-              </div>
-              
-              <!-- Description -->
-              <div class="text-slate-300 text-sm leading-relaxed">
-                <p>{{ job.description }}</p>
-              </div>
-            </div>
-          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="text-slate-300 text-xs leading-relaxed mb-3">
+          <p>{{ job.description }}</p>
+        </div>
+
+        <!-- Top 2 Achievements -->
+        <div v-if="job.achievements && job.achievements.length > 0" class="mb-3">
+          <h4 class="text-white font-semibold mb-1 text-xs">{{ $t('experience.achievements') }}</h4>
+          <ul class="space-y-1">
+            <li v-for="achievement in job.achievements.slice(0, 2)" :key="achievement"
+                class="text-slate-300 text-xs flex items-start">
+              <span class="text-teal-400 mr-1 flex-shrink-0 mt-0.5">•</span>
+              <span>{{ achievement }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tech Stack -->
+        <div v-if="job.tech" class="pt-2 border-t border-slate-600">
+          <p class="text-xs">
+            <span class="text-slate-400 font-medium">{{ $t('experience.tech') }}</span>
+            <span class="text-teal-300 ml-1">{{ job.tech }}</span>
+          </p>
         </div>
       </div>
     </div>
@@ -73,36 +71,5 @@ const experienceItems = computed(() => tm('experience.items'));
 </script>
 
 <style scoped>
-.timeline-item {
-  position: relative;
-}
-
-.job-card {
-  position: relative;
-}
-
-/* Desktop layout */
-@media (min-width: 768px) {
-  .timeline-item:nth-child(even) .job-card {
-    margin-right: 0;
-    margin-left: auto;
-  }
-  
-  .timeline-item:nth-child(odd) .job-card {
-    margin-left: 0;
-    margin-right: auto;
-  }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .timeline-item {
-    text-align: left !important;
-  }
-  
-  .job-card {
-    margin-left: 2.5rem !important;
-    max-width: calc(100% - 2.5rem) !important;
-  }
-}
+/* Estilos customizados se necessário */
 </style>

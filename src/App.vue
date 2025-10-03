@@ -5,16 +5,18 @@
       <Apresentacao />
     </div>
     <SobreMim />
-    <Experiencia />
     <SocialLinks :links="socialLinks" />
     <Projetos />
+    <Experiencia />
     <Depoimentos />
     <Certificados />
+    <CallToAction />
   </div>
 </template>
 
 <script setup>
 import Apresentacao from "./components/Apresentacao.vue";
+import CallToAction from "./components/CallToAction.vue";
 import Certificados from "./components/Certificados.vue";
 import Depoimentos from "./components/Depoimentos.vue";
 import Experiencia from "./components/Experiencia.vue";
