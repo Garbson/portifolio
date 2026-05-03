@@ -18,6 +18,18 @@ export default {
   },
   featuredProjects: [
     {
+      title: "Fernando Ακίνητα",
+      description: "Landing page για κτηματομεσίτη εστιασμένη στην απόκτηση πελατών. Σχεδιάστηκε με Vue.js, Tailwind CSS και JavaScript, με επαγγελματική παρουσίαση υπηρεσιών, τμήμα μαρτυριών και ενσωματωμένα κανάλια επικοινωνίας για αύξηση μετατροπών.",
+      img: "fernando.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/fernandoimoveis",
+      link: "https://fernandoimoveis.garbsonsouza2602.workers.dev/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
+    {
       title: "Atapera",
       description: "Πλήρες e-commerce για αθλητικό και outdoor εξοπλισμό με κατάλογο 1000+ προϊόντων, καλάθι αγορών, σύστημα αναζήτησης με προηγμένα φίλτρα και ενσωμάτωση με APIs πληρωμών. Υλοποίησα σύστημα διαχείρισης αποθέματος, διοικητικό πάνελ για διαχείριση παραγγελιών και ασφαλή checkout. Εστίαση σε απόδοση και SEO για μετατροπή πωλήσεων.",
       img: "atapera.png",
@@ -33,7 +45,7 @@ export default {
     {
       title: "Προσωπικό Πορτφόλιο",
       description: "Το προσωπικό μου πορτφόλιο αναπτυγμένο με Vue 3 και Vite, παρουσιάζοντας την επαγγελματική μου πορεία, έργα και δεξιότητες. Υλοποίησα σύστημα διεθνοποίησης (i18n) για 5 γλώσσες, ανταποκρινόμενο σχεδιασμό με Tailwind CSS και ελαφριές ανιμάτιονς με AOS. Λύση που αποδεικνύει την τεχνική μου ικανότητα και δημιουργικότητα στην ανάπτυξη frontend.",
-      img: "portfolio.png",
+      img: "garbson.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -41,19 +53,6 @@ export default {
       github: "https://github.com/Garbson/portifolio",
       link: "https://garbsonsouza.dev/",
       tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
-      featured: true
-    },
-    {
-      title: "Clube da Luta CT",
-      description: "Πλήρης πλατφόρμα για ακαδημία πολεμικών τεχνών με προγραμματισμό μαθημάτων σε πραγματικό χρόνο, παρακολούθηση προόδου μαθητών, σύστημα επαναλαμβανόμενων πληρωμών και διοικητική περιοχή για εκπαιδευτές. Υλοποίησα dashboard με μετρήσεις παρουσίας, σύστημα ειδοποιήσεων και ενσωμάτωση με payment gateway. Λύση που διαχειρίζεται 500+ ενεργούς μαθητές.",
-      img: "CtClube.png",
-      firebase: true,
-      typescript: true,
-      react: true,
-      nextjs: true,
-      github: "https://github.com/Garbson/grecieCT",
-      link: "https://clubedaluta.pages.dev/",
-      tech: "Nuxt.js, Firebase, Stripe/Payment Gateway",
       featured: true
     },
     {
@@ -68,9 +67,31 @@ export default {
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Σύστημα Κρατήσεων",
       featured: true
-    }
+    },
+    {
+      title: "Guty Ακίνητα",
+      description: "Επαγγελματική landing page για κτηματομεσίτη εστιασμένη στη μετατροπή leads. Υλοποίησα responsive σχεδιασμό με Vue.js και Tailwind CSS, βελτιστοποιημένο για κινητές συσκευές, με εμφανή call-to-action και διατομή παρουσίασης ακινήτων για μέγιστη εμπλοκή πελατών.",
+      img: "guty.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/corretor-landing",
+      link: "https://gutthierryimoveis.com/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
   ],
   projects: [
+    {
+      title: "Σύστημα Χρέωσης Τηλεπικοινωνιών",
+      description: "Προσωπικό εκπαιδευτικό έργο — δεν είναι το επίσημο σύστημα της Claro/Embratel. Προσομοίωση δημιουργίας τιμολογίων στα μοντέλα NFCom 62 και 22, με αυτόματο υπολογισμό φόρων (ICMS, PIS, COFINS) και εξαγωγή XML σύμφωνα με το βραζιλιάνικο φορολογικό πρότυπο. Αναπτύχθηκε για εμβάθυνση στις διαδικασίες χρέωσης τηλεπικοινωνιών που αποκτήθηκαν στην εργασία.",
+      img: "nfcom.png",
+      react: true,
+      javascript: true,
+      css: true,
+      github: "https://github.com/Garbson/GeradorDeTributa--o",
+      link: "https://geradordetributa--o.pages.dev/",
+    },
     {
       title: "Golfim",
       description: "Επαγγελματική πλατφόρμα για υπηρεσίες επισκευής και αποκατάστασης πισινών με σύστημα προγραμματισμού υπηρεσιών, διαχείριση πελατών και παρακολούθηση προϋπολογισμών. Υλοποίησα πλήρη ροή εργασιών υπηρεσιών από αρχική επαφή έως ολοκλήρωση έργου με φωτογραφική τεκμηρίωση και παρακολούθηση προόδου.",
@@ -110,17 +131,6 @@ export default {
       ]
     },
     {
-      title: "Clube da Luta CT",
-      description: "Μια πλατφόρμα εκπαίδευσης μάχης κατασκευασμένη με σύγχρονες τεχνολογίες.",
-      img: "CtClube.png",
-      firebase: true,
-      typescript: true,
-      react: true,
-      nextjs: true,
-      github: "https://github.com/Garbson/grecieCT",
-      link: "https://clubedaluta.pages.dev/",
-    },
-    {
       title: "Feedel",
       description: "Μια παγκόσμια αγορά που συνδέει πωλητές και πελάτες σε όλο τον κόσμο.",
       img: "feedel.png",
@@ -130,20 +140,6 @@ export default {
       nuxt: true,
       github: "https://github.com/hellenictechnologies/feedel-dashboard-garbson",
       link: "https://feedel.app/login",
-    },
-    {
-      title: "Duolingo Clone",
-      description: "Μια διαδραστική πλατφόρμα εκμάθησης γλωσσών εμπνευσμένη από το Duolingo.",
-      img: "duolingo-clone.jpeg",
-      vue: true,
-      javascript: true,
-      bootstrap: true,
-      github: "https://github.com/Garbson/duolingo-clone",
-      link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
-      metrics: [
-        "Υλοποίηση 15+ διαδραστικών ασκήσεων",
-        "Gamified σύστημα σειρών και βαθμολόγησης"
-      ]
     },
     {
       title: "DizeME",
@@ -157,21 +153,6 @@ export default {
       metrics: [
         "Διευκόλυνση για 100+ μέλη της εκκλησίας",
         "Διαισθητική διεπαφή για δωρεές"
-      ]
-    },
-    {
-      title: "Trote UFAC",
-      description: "Μια gamified ιστοσελίδα για διαδραστική πανεπιστημιακή εμπειρία μύησης.",
-      img: "trote.jpg",
-      tailwind: true,
-      supabase: true,
-      vue: true,
-      Quasar: true,
-      github: "https://github.com/Garbson/trote/tree/main",
-      link: "https://trote.pages.dev/",
-      metrics: [
-        "50+ ενεργοί χρήστες",
-        "Gamified σύστημα βαθμολόγησης"
       ]
     },
     {
@@ -259,7 +240,7 @@ export default {
     {
       title: "Πορτφόλιο",
       description: "Το προσωπικό μου πορτφόλιο που παρουσιάζει έργα και δεξιότητες τεχνολογίας.",
-      img: "portfolio.png",
+      img: "garbson.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -378,26 +359,36 @@ export default {
         company: "KNN Idiomas",
         location: "Μπαλνεάριο Καμπορίου, SC",
         period: "Σεπ 2024 - Ιούν 2025",
-        description: "Ανάπτυξη σύγχρονης εκπαιδευτικής πλατφόρμας χρησιμοποιώντας Vue.js και Nuxt.js. Υλοποίηση ανταποκρινόμενης και διαισθητικής διεπαφής για σύστημα μάθησης. Ενσωμάτωση με συστήματα LMS και βελτιστοποίηση εμπειρίας χρήστη.",
+        description: "Εργάστηκα ως Frontend Developer στην KNN Idiomas, μία από τις μεγαλύτερες εταιρείες εκπαίδευσης γλωσσών στη Λατινική Αμερική, εξυπηρετώντας χιλιάδες μαθητές σε ολόκληρη την περιοχή.",
         achievements: [
-          "Δημιούργησα ανταποκρινόμενη και διαισθητική διεπαφή που βελτίωσε την εμπειρία μάθησης",
-          "Υλοποίησα ενσωμάτωση με συστήματα LMS για παρακολούθηση προόδου μαθητών",
-          "Βελτιστοποίησα την απόδοση της πλατφόρμας για πρόσβαση σε διαφορετικές συσκευές"
+          "Ανέπτυξα και συντήρησα web εφαρμογές με Vue.js (v2 και v3) και Vuetify (v2 και v3) για εκπαιδευτικές πλατφόρμες",
+          "Δημιούργησα ανταποκρινόμενες και φιλικές διεπαφές για εκπαιδευτικές πλατφόρμες που εξυπηρετούν χιλιάδες εκπαιδευόμενους",
+          "Ενσωμάτωσα REST APIs για σύνδεση frontend υπηρεσιών με backend συστήματα",
+          "Συνέβαλα στον ψηφιακό μετασχηματισμό της γλωσσικής εκπαίδευσης σε ολόκληρη τη Λατινική Αμερική",
+          "Συνεργάστηκα με ομάδες σχεδιασμού και backend για απρόσκοπτες εμπειρίες χρήστη",
+          "Βελτιστοποίησα την απόδοση εφαρμογών για υποστήριξη μεγάλου όγκου ταυτόχρονων χρηστών σε ώρες αιχμής",
+          "Υλοποίησα διαδραστικά εκπαιδευτικά συστατικά που βελτίωσαν τη συμμετοχή και διατήρηση μαθητών",
+          "Ανέπτυξα πολυγλωσσικές διεπαφές για υποστήριξη διαφόρων λατινοαμερικανικών αγορών"
         ],
-        tech: "Vue.js, Nuxt.js, LMS Integration"
+        tech: "Vue.js (v2, v3), Vuetify (v2, v3), JavaScript, REST APIs, Responsive Design, Educational Technology"
       },
       {
         role: "Frontend Προγραμματιστής",
         company: "Hellenic Technologies",
         location: "Αθήνα, Ελλάδα (Απομακρυσμένα)",
         period: "Ιαν 2024 - Φεβ 2025",
-        description: "Ανάπτυξη frontend λύσεων για την ευρωπαϊκή αγορά. Συνεργασία σε διεθνή ομάδα χρησιμοποιώντας agile μεθοδολογίες. Υλοποίηση επαναχρησιμοποιήσιμων συστατικών στο Vue.js.",
+        description: "Frontend Developer στην Hellenic Technologies, δημιουργώντας και συντηρώντας δυναμικές και διαισθητικές διεπαφές χρήστη χρησιμοποιώντας σύγχρονες τεχνολογίες για την ευρωπαϊκή αγορά.",
         achievements: [
-          "Ανέπτυξα frontend λύσεις για ευρωπαϊκή αγορά με διεθνή ομάδα και agile μεθοδολογίες",
-          "Υλοποίησα επαναχρησιμοποιήσιμα συστατικά Vue.js που χρησιμοποιήθηκαν σε πολλαπλά έργα",
-          "Συνεισέφερα στη βελτίωση της παραγωγικότητας ομάδας με καλές πρακτικές ανάπτυξης"
+          "Ανέπτυξα εφαρμογές με Vue.js και Nuxt.js για βελτιστοποίηση απόδοσης και εμπειρίας χρήστη σε ευρωπαϊκές αγορές",
+          "Δημιούργησα δυναμικά συστατικά και universal εφαρμογές με Server-Side Rendering (SSR) για βέλτιστη απόδοση",
+          "Ενσωμάτωσα πολλαπλά REST APIs, διασφαλίζοντας αποδοτική επικοινωνία μεταξύ frontend και backend συστημάτων",
+          "Υλοποίησα κεντρικοποιημένη διαχείριση κατάστασης με Pinia για βελτίωση της κλιμακωσιμότητας και συντηρησιμότητας",
+          "Ανέπτυξα σύνθετες λειτουργίες JavaScript και προηγμένες αλληλεπιδράσεις χρήστη για ευρωπαίους πελάτες",
+          "Συνεργάστηκα με διεθνείς ομάδες σε διαφορετικές ζώνες ώρας για παράδοση ποιοτικών λύσεων",
+          "Βελτιστοποίησα εφαρμογές για συμβατότητα μεταξύ περιηγητών και ευρωπαϊκά πρότυπα προσβασιμότητας",
+          "Υλοποίησα responsive design patterns βελτιστοποιημένα για διαφορετικά μοτίβα χρήσης συσκευών στην Ευρώπη"
         ],
-        tech: "Vue.js, Agile Methodologies, Component Architecture"
+        tech: "Vue.js, Nuxt.js, Pinia, JavaScript, REST APIs, Server-Side Rendering, State Management"
       },
       {
         role: "Frontend Προγραμματιστής",

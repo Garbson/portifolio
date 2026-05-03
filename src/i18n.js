@@ -17,7 +17,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: 'en', // Idioma padrão
+  locale: 'pt', // Idioma padrão
   fallbackLocale: 'en', // Idioma de fallback
   messages,
 });

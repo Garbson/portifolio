@@ -26,6 +26,18 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
   },
   featuredProjects: [
     {
+      title: "Fernando Inmuebles",
+      description: "Landing page para corredor de bienes raíces enfocada en captación de clientes y generación de leads calificados. Interfaz elegante con portafolio de propiedades, testimonios de clientes y canales de contacto integrados. Entregada con alto rendimiento y diseño orientado a la conversión.",
+      img: "fernando.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/fernandoimoveis",
+      link: "https://fernandoimoveis.garbsonsouza2602.workers.dev/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
+    {
       title: "Atapera",
       description: "E-commerce completo para equipos deportivos y outdoor con catálogo de 1000+ productos, carrito de compras, sistema de búsqueda con filtros avanzados, e integración con APIs de pago. Implementé sistema de gestión de inventario, panel administrativo para gestión de pedidos, y checkout seguro. Enfoque en rendimiento y SEO para conversión de ventas.",
       img: "atapera.png",
@@ -41,7 +53,7 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
     {
       title: "Portafolio Personal",
       description: "Mi portafolio personal desarrollado con Vue 3 y Vite, mostrando mi trayectoria profesional, proyectos y habilidades. Implementé sistema de internacionalización (i18n) para 5 idiomas, diseño responsivo con Tailwind CSS, y animaciones fluidas con AOS. Solución que demuestra mi capacidad técnica y creatividad en desarrollo frontend.",
-      img: "portfolio.png",
+      img: "garbson.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -49,19 +61,6 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       github: "https://github.com/Garbson/portifolio",
       link: "https://garbsonsouza.dev/",
       tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
-      featured: true
-    },
-    {
-      title: "Clube da Luta CT",
-      description: "Plataforma completa para academia de artes marciales con programación de clases en tiempo real, seguimiento de progreso de estudiantes, sistema de pagos recurrentes, y área administrativa para instructores. Implementé dashboard con métricas de asistencia, sistema de notificaciones, e integración con gateway de pago. Solución que gestiona 500+ estudiantes activos.",
-      img: "CtClube.png",
-      firebase: true,
-      typescript: true,
-      react: true,
-      nextjs: true,
-      github: "https://github.com/Garbson/grecieCT",
-      link: "https://clubedaluta.pages.dev/",
-      tech: "Nuxt.js, Firebase, Stripe/Payment Gateway",
       featured: true
     },
     {
@@ -76,9 +75,31 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Sistema de Reservas",
       featured: true
-    }
+    },
+    {
+      title: "Guty Inmuebles",
+      description: "Landing page profesional para corredor de bienes raíces enfocada en conversión de leads. Diseño moderno y responsivo con presentación de propiedades y diferenciadores del corredor. Optimizada para rendimiento y experiencia mobile.",
+      img: "guty.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/corretor-landing",
+      link: "https://gutthierryimoveis.com/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
   ],
   projects: [
+    {
+      title: "Sistema de Facturación Telecom",
+      description: "Proyecto personal de estudio — no es el sistema oficial utilizado por Claro/Embratel. Simulación de generación de facturas en los modelos NFCom 62 y 22, con cálculo automático de impuestos (ICMS, PIS, COFINS) y exportación de XML según el estándar fiscal brasileño. Desarrollado para profundizar el conocimiento en los procesos de facturación telecom adquiridos en el trabajo.",
+      img: "nfcom.png",
+      react: true,
+      javascript: true,
+      css: true,
+      github: "https://github.com/Garbson/GeradorDeTributa--o",
+      link: "https://geradordetributa--o.pages.dev/",
+    },
     {
       title: "Golfim",
       description: "Plataforma profesional para servicios de reparación y restauración de piscinas con sistema de programación de servicios, gestión de clientes y seguimiento de presupuestos. Implementé flujo completo de servicio desde contacto inicial hasta conclusión del proyecto con documentación fotográfica y seguimiento de progreso.",
@@ -129,20 +150,6 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       link: "https://clubedaluta.pages.dev/",
     },
     {
-      title: "Duolingo Clone",
-      description: "Una plataforma interactiva de aprendizaje de idiomas inspirada en Duolingo.",
-      img: "duolingo-clone.jpeg",
-      vue: true,
-      javascript: true,
-      bootstrap: true,
-      github: "https://github.com/Garbson/duolingo-clone",
-      link: "https://duolingo-clone-6jg.pages.dev/exercise/1",
-      metrics: [
-        "Implementación de 15+ ejercicios interactivos",
-        "Sistema de rachas y puntuación gamificada"
-      ]
-    },
-    {
       title: "DizeME",
       description: "Un sitio web para ayudar a las personas a dar diezmos y ofrecer con facilidad.",
       img: "dizeMe.jpg",
@@ -154,21 +161,6 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       metrics: [
         "Facilitación para 100+ miembros de la iglesia",
         "Interfaz intuitiva para donaciones"
-      ]
-    },
-    {
-      title: "Trote UFAC",
-      description: "Un sitio web gamificado para una experiencia interactiva de novatada universitaria.",
-      img: "trote.jpg",
-      tailwind: true,
-      supabase: true,
-      vue: true,
-      Quasar: true,
-      github: "https://github.com/Garbson/trote/tree/main",
-      link: "https://trote.pages.dev/",
-      metrics: [
-        "50+ usuarios activos",
-        "Sistema de puntuación gamificada"
       ]
     },
     {
@@ -256,7 +248,7 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
     {
       title: "Portfolio",
       description: "Mi portafolio personal, mostrando proyectos y habilidades tecnológicas.",
-      img: "portfolio.png",
+      img: "garbson.png",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -375,26 +367,36 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
         company: "KNN Idiomas",
         location: "Balneário Camboriú, SC",
         period: "Sep 2024 - Jun 2025",
-        description: "Desarrollo de plataforma educacional moderna utilizando Vue.js y Nuxt.js. Implementación de interfaz responsiva e intuitiva para sistema de aprendizaje. Integración con sistemas LMS y optimización de experiencia de usuario.",
+        description: "Trabajé como Desarrollador Frontend en KNN Idiomas, una de las mayores empresas de educación en idiomas de América Latina, atendiendo a miles de estudiantes en toda la región.",
         achievements: [
-          "Creé interfaz responsiva e intuitiva que mejoró la experiencia de aprendizaje",
-          "Implementé integración con sistemas LMS para seguimiento de progreso de estudiantes",
-          "Optimicé rendimiento de la plataforma para acceso en diferentes dispositivos"
+          "Desarrollé y mantuve aplicaciones web con Vue.js (v2 y v3) y Vuetify (v2 y v3) para plataformas educativas",
+          "Construí interfaces responsivas y amigables para plataformas educativas que sirven a miles de estudiantes de idiomas",
+          "Integré APIs REST para conectar servicios frontend con sistemas backend",
+          "Contribuí a la transformación digital de la educación en idiomas en América Latina",
+          "Colaboré con equipos de diseño y backend para entregar experiencias de usuario fluidas en aplicaciones educativas",
+          "Optimicé el rendimiento de la aplicación para soportar alto volumen de usuarios concurrentes en horarios pico",
+          "Implementé componentes de aprendizaje interactivos que mejoraron el compromiso y la retención de estudiantes",
+          "Desarrollé interfaces multilingües para apoyar los diversos mercados latinoamericanos"
         ],
-        tech: "Vue.js, Nuxt.js, LMS Integration"
+        tech: "Vue.js (v2, v3), Vuetify (v2, v3), JavaScript, REST APIs, Responsive Design, Educational Technology"
       },
       {
         role: "Desarrollador Frontend",
         company: "Hellenic Technologies",
         location: "Atenas, Grecia (Remoto)",
         period: "Ene 2024 - Feb 2025",
-        description: "Desarrollo de soluciones frontend para mercado europeo. Colaboración en equipo internacional utilizando metodologías ágiles. Implementación de componentes reutilizables en Vue.js.",
+        description: "Desarrollador Frontend en Hellenic Technologies, creando y manteniendo interfaces de usuario dinámicas e intuitivas usando tecnologías modernas para el mercado europeo.",
         achievements: [
-          "Desarrollé componentes reutilizables en Vue.js para aplicaciones enterprise",
-          "Colaboré con equipo distribuido en diferentes zonas horarias",
-          "Implementé soluciones siguiendo estándares de accesibilidad europeos (WCAG)"
+          "Desarrollé aplicaciones con Vue.js y Nuxt.js para optimizar el rendimiento y la experiencia del usuario en mercados europeos",
+          "Creé componentes dinámicos y aplicaciones universales con renderización del lado del servidor (SSR) para rendimiento óptimo",
+          "Integré diversas APIs REST, asegurando comunicación eficiente entre sistemas de frontend y backend",
+          "Implementé gestión de estado centralizado con Pinia para mejorar la escalabilidad y el mantenimiento de la aplicación",
+          "Desarrollé funcionalidades complejas en JavaScript e interacciones avanzadas con el usuario para clientes europeos",
+          "Colaboré con equipos internacionales en diferentes zonas horarias para entregar soluciones de alta calidad",
+          "Optimicé aplicaciones para compatibilidad entre navegadores y estándares de accesibilidad europeos",
+          "Implementé patrones de diseño responsivo optimizados para diversos patrones de uso de dispositivos en Europa"
         ],
-        tech: "Vue.js, Agile, International Team Collaboration"
+        tech: "Vue.js, Nuxt.js, Pinia, JavaScript, REST APIs, Server-Side Rendering, State Management"
       },
       {
         role: "Desarrollador Frontend",

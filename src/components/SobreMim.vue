@@ -1,7 +1,14 @@
 <template>
-  <div class="biografia w-full md:w-[72%] mx-auto bg-blue-900 text-white p-5 rounded-lg flex flex-col items-center justify-center mt-5">
-    <h1 class="text-2xl md:text-3xl font-bold mb-4">{{ $t('biography.title') }}</h1>
-    <p class="text-sm whitespace-pre-line">{{ biographyText }}</p>
+  <div class="w-full md:w-[72%] mx-auto px-4 mt-10">
+    <div class="glass-card rounded-2xl p-6 md:p-8">
+      <!-- Header -->
+      <div class="flex items-center gap-3 mb-5">
+        <div class="icon-dot w-2 h-2 rounded-full bg-teal-400 shadow-[0_0_8px_rgba(20,184,166,0.8)]"></div>
+        <h1 class="text-2xl md:text-3xl font-bold text-white">{{ $t('biography.title') }}</h1>
+      </div>
+      <div class="divider mb-5"></div>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed whitespace-pre-line">{{ biographyText }}</p>
+    </div>
   </div>
 </template>
 
@@ -16,3 +23,18 @@ const biographyText = computed(() => {
   return biography.description || 'Texto não encontrado'
 })
 </script>
+
+<style scoped>
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(20, 184, 166, 0.6), rgba(59, 130, 246, 0.4), transparent);
+}
+</style>

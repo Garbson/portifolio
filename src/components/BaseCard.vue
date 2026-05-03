@@ -1,157 +1,90 @@
 <template>
-  <div class="w-[100%]">
-    <div
-      class="content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto"
-    >
+  <div class="w-full">
+    <div class="content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
       <div
-        v-for="(project, index) in projects"
+        v-for="(project) in projects"
         :key="project.title"
-        class="projeto shadow-md rounded-lg bg-gradient-to-tl from-blue-800 to-blue-900 text-white transition-transform duration-300 hover:scale-105 flex flex-col justify-between"
+        class="glass-card rounded-2xl overflow-hidden flex flex-col group"
       >
-        <a :href="project.link" target="_blank" class="flex flex-col h-full w-full">
-          <img
-            :src="project.img"
-            :alt="project.title"
-            class="w-full h-40 object-cover rounded-t-lg cursor-pointer shadow-xl"
-            :title="project.title"
-          />
-          <div class="p-5 flex-grow">
-            <h3 class="titulo text-lg font-semibold mt-2">{{ project.title }}</h3>
-            <p class="border-t-2"></p>
-            <div class="h-full">
-              <p class="description text-sm h-[100%] mt-2">{{ project.description }}</p>
-              
-              <!-- Seção de métricas removida conforme solicitado -->
+        <!-- Imagem + Conteúdo clicável → abre o site -->
+        <a :href="project.link" target="_blank" rel="noopener noreferrer" class="flex flex-col flex-grow min-h-0">
+          <!-- Imagem -->
+          <div class="relative overflow-hidden flex-shrink-0">
+            <img
+              :src="project.img"
+              :alt="project.title"
+              class="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+              :title="project.title"
+            />
+            <div class="img-overlay absolute inset-0"></div>
+            <!-- Badge "visitar site" no hover -->
+            <div class="visit-badge absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span class="bg-teal-500/90 text-white text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur-sm flex items-center gap-1.5">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                Visitar site
+              </span>
             </div>
           </div>
-          <div
-            class="linguagens-projeto flex justify-between items-center p-4 border-black mt-auto"
-          >
-            <div class="flex space-x-2">
-              <img
-                v-if="project.firebase"
-                src="@/assets/img/firebase.svg"
-                alt="Firebase"
-                class="w-6 h-6"
-                title="Firebase"
-              />
-              <img
-                v-if="project.react"
-                src="@/assets/img/react.svg"
-                alt="React"
-                class="w-6 h-6"
-                title="React"
-              />
-              <img
-                v-if="project.nextjs"
-                src="@/assets/img/nextjs.svg"
-                alt="Next.js"
-                class="w-6 h-6"
-                title="Next.js"
-              />
-              <img
-                v-if="project.html"
-                src="@/assets/img/html.svg"
-                alt="HTML"
-                class="w-6 h-6"
-                title="HTML"
-              />
-              <img
-                v-if="project.vue"
-                src="@/assets/img/vue-svgrepo-com.svg"
-                alt="Vue"
-                class="w-6 h-6"
-                title="Vue.js"
-              />
-              <img
-                v-if="project.css"
-                src="@/assets/img/css-3-svgrepo-com.svg"
-                alt="CSS"
-                class="w-6 h-6"
-                title="CSS"
-              />
-              <img
-                v-if="project.tailwind"
-                src="@/assets/img/tailwind.svg"
-                alt="Tailwind"
-                class="w-6 h-6"
-                title="Tailwind"
-              />
-              <img
-                v-if="project.javascript"
-                src="@/assets/img/javascript.svg.png"
-                alt="JavaScript"
-                class="w-6 h-6"
-                title="JavaScript"
-              />
-              <img
-                v-if="project.typescript"
-                src="@/assets/img/typescript.png"
-                alt="typescript"
-                class="w-6 h-6"
-                title="typescript"
-              />
-              <img
-                v-if="project.Quasar"
-                src="@/assets/img/Quasar.svg"
-                alt="Quasar"
-                class="w-6 h-6"
-                title="Quasar"
-              />
-              <img
-                v-if="project.node"
-                src="@/assets/img/node.svg"
-                alt="Node.js"
-                class="w-6 h-6"
-                title="Node.js"
-              />
-              <img
-                v-if="project.nuxt"
-                src="@/assets/img/nuxt.png"
-                alt="Nuxt.js"
-                class="w-6 h-6"
-                title="Nuxt.js"
-              />
-              <img
-                v-if="project.bootstrap"
-                src="@/assets/img/bootstrap.png"
-                alt="bootstrap"
-                class="w-6 h-6"
-                title="bootstrap"
-              />
-              <img
-                v-if="project.supabase"
-                src="@/assets/img/supabase.svg"
-                alt="Supabase"
-                class="w-6 h-6"
-                title="Supabase"
-              />
-            </div>
-            <a :href="project.github">
-              <img
-                src="@/assets/img/github-142-svgrepo-com.svg"
-                alt="GitHub"
-                class="w-6 h-6"
-                title="GitHub"
-              />
-            </a>
+
+          <!-- Conteúdo -->
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-base font-bold text-white mb-2 group-hover:text-teal-300 transition-colors duration-200">{{ project.title }}</h3>
+            <div class="divider mb-3"></div>
+            <p class="text-slate-400 text-sm leading-relaxed flex-grow">{{ project.description }}</p>
           </div>
         </a>
+
+        <!-- Footer: Tech + GitHub -->
+        <div class="px-5 py-4 border-t border-white/5 flex justify-between items-center">
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              v-for="tech in getTechs(project)"
+              :key="tech.label"
+              class="tech-wrapper"
+              :data-label="tech.label"
+            >
+              <img :src="tech.src" :alt="tech.label" class="tech-icon" />
+            </span>
+          </div>
+          <a :href="project.github" target="_blank" class="github-btn p-1.5 rounded-lg transition-all duration-200">
+            <img src="@/assets/img/github-142-svgrepo-com.svg" alt="GitHub" class="w-5 h-5" style="filter: brightness(0) invert(1) opacity(0.6);" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps } from 'vue'
 
-// Recebe os projetos como prop do componente pai
 const props = defineProps({
   projects: {
     type: Array,
     required: true,
   },
-});
+})
+
+const TECH_MAP = [
+  { key: 'firebase', src: new URL('@/assets/img/firebase.svg', import.meta.url).href, label: 'Firebase' },
+  { key: 'react', src: new URL('@/assets/img/react.svg', import.meta.url).href, label: 'React' },
+  { key: 'nextjs', src: new URL('@/assets/img/nextjs.svg', import.meta.url).href, label: 'Next.js' },
+  { key: 'html', src: new URL('@/assets/img/html.svg', import.meta.url).href, label: 'HTML5' },
+  { key: 'vue', src: new URL('@/assets/img/vue-svgrepo-com.svg', import.meta.url).href, label: 'Vue.js' },
+  { key: 'css', src: new URL('@/assets/img/css-3-svgrepo-com.svg', import.meta.url).href, label: 'CSS3' },
+  { key: 'tailwind', src: new URL('@/assets/img/tailwind.svg', import.meta.url).href, label: 'Tailwind CSS' },
+  { key: 'javascript', src: new URL('@/assets/img/javascript.svg.png', import.meta.url).href, label: 'JavaScript' },
+  { key: 'typescript', src: new URL('@/assets/img/typescript.png', import.meta.url).href, label: 'TypeScript' },
+  { key: 'Quasar', src: new URL('@/assets/img/Quasar.svg', import.meta.url).href, label: 'Quasar' },
+  { key: 'node', src: new URL('@/assets/img/node.svg', import.meta.url).href, label: 'Node.js' },
+  { key: 'nuxt', src: new URL('@/assets/img/nuxt.png', import.meta.url).href, label: 'Nuxt.js' },
+  { key: 'bootstrap', src: new URL('@/assets/img/bootstrap.png', import.meta.url).href, label: 'Bootstrap' },
+  { key: 'supabase', src: new URL('@/assets/img/supabase.svg', import.meta.url).href, label: 'Supabase' },
+]
+
+function getTechs(project) {
+  return TECH_MAP.filter(t => project[t.key])
+}
 </script>
 
 <style scoped>
@@ -160,18 +93,87 @@ const props = defineProps({
   margin-bottom: 50px;
 }
 
-.projeto {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
 @media (max-width: 768px) {
   .content {
     width: 90%;
   }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(20, 184, 166, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(20, 184, 166, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.img-overlay {
+  background: linear-gradient(to bottom, transparent 40%, rgba(2, 8, 23, 0.6) 100%);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(20, 184, 166, 0.5), rgba(59, 130, 246, 0.3), transparent);
+}
+
+.tech-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.tech-wrapper::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.95);
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 20;
+}
+
+.tech-wrapper:hover::after {
+  opacity: 1;
+}
+
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 2px;
+  transition: transform 0.2s ease;
+}
+
+.tech-wrapper:hover .tech-icon {
+  transform: scale(1.2);
+}
+
+.github-btn {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.github-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 </style>
