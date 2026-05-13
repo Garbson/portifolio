@@ -1,6 +1,5 @@
 <template>
   <div class="devtools-ghost pointer-events-none">
-
     <!-- Highlight box sobre o elemento inspecionado -->
     <Transition name="hl">
       <div v-if="highlight" class="inspect-highlight" :style="highlight.box">
@@ -13,11 +12,12 @@
 
     <!-- Painel DevTools full-width na base -->
     <div class="dt-panel">
-
       <!-- Barra de título (drag handle) -->
       <div class="dt-handle">
         <div class="dt-handle-dots">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <span class="dt-handle-title">DevTools – garbsondev.portfolio</span>
         <div class="dt-handle-actions">
@@ -29,7 +29,10 @@
       <!-- Abas -->
       <div class="dt-tabs">
         <div class="dt-tab dt-tab--active">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px">
+            <polyline points="16,18 22,12 16,6" />
+            <polyline points="8,6 2,12 8,18" />
+          </svg>
           Elements
         </div>
         <div class="dt-tab">Console</div>
@@ -37,16 +40,18 @@
         <div class="dt-tab">Network</div>
         <div class="dt-tab">Performance</div>
         <div class="dt-cursor-icon">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-7 1-4 7z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 3l14 9-7 1-4 7z" />
+          </svg>
         </div>
         <div class="dt-breadcrumb">
-          body &gt; div#app &gt; <span class="dt-bc-active">{{ current.tag }}.{{ current.cls.split(' ')[0] }}</span>
+          body &gt; div#app &gt;
+          <span class="dt-bc-active">{{ current.tag }}.{{ current.cls.split(' ')[0] }}</span>
         </div>
       </div>
 
       <!-- Body: DOM + Divider + Styles + Computed -->
       <div class="dt-body">
-
         <!-- ── DOM Tree ── -->
         <div class="dt-dom">
           <div class="dt-search">
@@ -55,26 +60,108 @@
             <span class="dt-cursor blink">|</span>
           </div>
 
-          <div class="dt-line dt-dim">▾ <span class="dt-tag">&lt;html</span> <span class="dt-attr">lang</span>=<span class="dt-str">"pt-BR"</span><span class="dt-tag">&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;▾ <span class="dt-tag">&lt;body&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;▾ <span class="dt-tag">&lt;div</span> <span class="dt-attr">id</span>=<span class="dt-str">"app"</span><span class="dt-tag">&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;▾ <span class="dt-tag">&lt;div</span> <span class="dt-attr">class</span>=<span class="dt-str">"min-h-screen bg-[#020817]"</span><span class="dt-tag">&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;div</span> <span class="dt-attr">class</span>=<span class="dt-str">"fixed inset-0 z-0"</span><span class="dt-tag">&gt;</span> <span class="dt-comment">&lt;!-- blobs --&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;nav</span> <span class="dt-attr">class</span>=<span class="dt-str">"glass-nav fixed top-0 z-50"</span><span class="dt-tag">&gt;…&lt;/nav&gt;</span></div>
-          <div class="dt-line dt-selected">
-            &nbsp;&nbsp;&nbsp;&nbsp;▾ <span class="dt-tag">&lt;{{ current.tag }}</span>
-            <span class="dt-attr"> class</span>=<span class="dt-str">"{{ current.cls }}"</span>
+          <div class="dt-line dt-dim">
+            ▾
+            <span class="dt-tag">&lt;html</span>
+            <span class="dt-attr">lang</span>
+            =
+            <span class="dt-str">"pt-BR"</span>
             <span class="dt-tag">&gt;</span>
-            <span class="dt-comment"> == $0</span>
           </div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dt-tag">&lt;/{{ current.tag }}&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;section</span> <span class="dt-attr">id</span>=<span class="dt-str">"experience"</span><span class="dt-tag">&gt;…&lt;/section&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;section</span> <span class="dt-attr">id</span>=<span class="dt-str">"projects"</span><span class="dt-tag">&gt;…&lt;/section&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;section</span> <span class="dt-attr">id</span>=<span class="dt-str">"testimonials"</span><span class="dt-tag">&gt;…&lt;/section&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;&nbsp;▸ <span class="dt-tag">&lt;section</span> <span class="dt-attr">id</span>=<span class="dt-str">"certificates"</span><span class="dt-tag">&gt;…&lt;/section&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;&nbsp;<span class="dt-tag">&lt;/div&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;&nbsp;<span class="dt-tag">&lt;/div&gt;</span></div>
-          <div class="dt-line dt-dim">&nbsp;<span class="dt-tag">&lt;/body&gt;</span></div>
+          <div class="dt-line dt-dim">
+            &nbsp;▾
+            <span class="dt-tag">&lt;body&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;▾
+            <span class="dt-tag">&lt;div</span>
+            <span class="dt-attr">id</span>
+            =
+            <span class="dt-str">"app"</span>
+            <span class="dt-tag">&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;▾
+            <span class="dt-tag">&lt;div</span>
+            <span class="dt-attr">class</span>
+            =
+            <span class="dt-str">"min-h-screen bg-[#020817]"</span>
+            <span class="dt-tag">&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;div</span>
+            <span class="dt-attr">class</span>
+            =
+            <span class="dt-str">"fixed inset-0 z-0"</span>
+            <span class="dt-tag">&gt;</span>
+            <span class="dt-comment">&lt;!-- blobs --&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;nav</span>
+            <span class="dt-attr">class</span>
+            =
+            <span class="dt-str">"glass-nav fixed top-0 z-50"</span>
+            <span class="dt-tag">&gt;…&lt;/nav&gt;</span>
+          </div>
+          <div class="dt-line dt-selected">
+            &nbsp;&nbsp;&nbsp;&nbsp;▾
+            <span class="dt-tag">&lt;{{ current.tag }}</span>
+            <span class="dt-attr">class</span>
+            =
+            <span class="dt-str">"{{ current.cls }}"</span>
+            <span class="dt-tag">&gt;</span>
+            <span class="dt-comment">== $0</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="dt-tag">&lt;/{{ current.tag }}&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;section</span>
+            <span class="dt-attr">id</span>
+            =
+            <span class="dt-str">"experience"</span>
+            <span class="dt-tag">&gt;…&lt;/section&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;section</span>
+            <span class="dt-attr">id</span>
+            =
+            <span class="dt-str">"projects"</span>
+            <span class="dt-tag">&gt;…&lt;/section&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;section</span>
+            <span class="dt-attr">id</span>
+            =
+            <span class="dt-str">"testimonials"</span>
+            <span class="dt-tag">&gt;…&lt;/section&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;&nbsp;▸
+            <span class="dt-tag">&lt;section</span>
+            <span class="dt-attr">id</span>
+            =
+            <span class="dt-str">"certificates"</span>
+            <span class="dt-tag">&gt;…&lt;/section&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;&nbsp;
+            <span class="dt-tag">&lt;/div&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;&nbsp;
+            <span class="dt-tag">&lt;/div&gt;</span>
+          </div>
+          <div class="dt-line dt-dim">
+            &nbsp;
+            <span class="dt-tag">&lt;/body&gt;</span>
+          </div>
         </div>
 
         <!-- ── Divider redimensionável ── -->
@@ -92,13 +179,16 @@
           <div class="dt-rule">
             <div class="dt-rule-source">portfolio.css:{{ current.line || 42 }}</div>
             <div class="dt-styles-header">
-              <span class="dt-selector">{{ current.selector }}</span> {
+              <span class="dt-selector">{{ current.selector }}</span>
+              {
             </div>
             <TransitionGroup name="prop" tag="div">
               <div v-for="prop in current.styles" :key="prop.name" class="dt-prop">
                 <span class="dt-checkbox">☑</span>
-                <span class="dt-prop-name">{{ prop.name }}</span>:
-                <span class="dt-prop-value"> {{ prop.value }}</span>;
+                <span class="dt-prop-name">{{ prop.name }}</span>
+                :
+                <span class="dt-prop-value">{{ prop.value }}</span>
+                ;
               </div>
             </TransitionGroup>
             <div class="dt-styles-close">}</div>
@@ -108,31 +198,46 @@
           <div class="dt-rule dt-dim">
             <div class="dt-rule-source">portfolio.css:128</div>
             <div class="dt-styles-header">
-              <span class="dt-selector dt-dim">.glass-card, .glass-wrap</span> {
+              <span class="dt-selector dt-dim">.glass-card, .glass-wrap</span>
+              {
             </div>
             <div class="dt-prop">
               <span class="dt-checkbox dt-dim">☑</span>
-              <span class="dt-prop-name">backdrop-filter</span>:
-              <span class="dt-prop-value"> blur(20px) saturate(150%)</span>;
+              <span class="dt-prop-name">backdrop-filter</span>
+              :
+              <span class="dt-prop-value">blur(20px) saturate(150%)</span>
+              ;
             </div>
             <div class="dt-prop">
               <span class="dt-checkbox dt-dim">☑</span>
-              <span class="dt-prop-name">border</span>:
-              <span class="dt-prop-value"> 1px solid rgba(255,255,255,.09)</span>;
+              <span class="dt-prop-name">border</span>
+              :
+              <span class="dt-prop-value">1px solid rgba(255,255,255,.09)</span>
+              ;
             </div>
             <div class="dt-prop">
               <span class="dt-checkbox dt-dim">☑</span>
-              <span class="dt-prop-name">box-shadow</span>:
-              <span class="dt-prop-value"> 0 8px 32px rgba(0,0,0,.25)</span>;
+              <span class="dt-prop-name">box-shadow</span>
+              :
+              <span class="dt-prop-value">0 8px 32px rgba(0,0,0,.25)</span>
+              ;
             </div>
             <div class="dt-styles-close">}</div>
           </div>
 
           <!-- User agent styles -->
-          <div class="dt-rule dt-dim" style="opacity:0.4">
+          <div class="dt-rule dt-dim" style="opacity: 0.4">
             <div class="dt-rule-source">user agent stylesheet</div>
-            <div class="dt-styles-header"><span class="dt-selector dt-dim">div</span> {</div>
-            <div class="dt-prop"><span class="dt-prop-name">display</span>: <span class="dt-prop-value">block</span>;</div>
+            <div class="dt-styles-header">
+              <span class="dt-selector dt-dim">div</span>
+              {
+            </div>
+            <div class="dt-prop">
+              <span class="dt-prop-name">display</span>
+              :
+              <span class="dt-prop-value">block</span>
+              ;
+            </div>
             <div class="dt-styles-close">}</div>
           </div>
         </div>
@@ -157,16 +262,26 @@
             </div>
           </div>
           <div class="dt-computed-props">
-            <div class="dt-cprop"><span>color</span><span class="dt-prop-value">rgba(255,255,255,.85)</span></div>
-            <div class="dt-cprop"><span>font-size</span><span class="dt-prop-value">14px</span></div>
-            <div class="dt-cprop"><span>border-radius</span><span class="dt-prop-value">{{ current.borderRadius || '16px' }}</span></div>
-            <div class="dt-cprop"><span>z-index</span><span class="dt-prop-value">{{ current.zIndex || 'auto' }}</span></div>
+            <div class="dt-cprop">
+              <span>color</span>
+              <span class="dt-prop-value">rgba(255,255,255,.85)</span>
+            </div>
+            <div class="dt-cprop">
+              <span>font-size</span>
+              <span class="dt-prop-value">14px</span>
+            </div>
+            <div class="dt-cprop">
+              <span>border-radius</span>
+              <span class="dt-prop-value">{{ current.borderRadius || '16px' }}</span>
+            </div>
+            <div class="dt-cprop">
+              <span>z-index</span>
+              <span class="dt-prop-value">{{ current.zIndex || 'auto' }}</span>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
 </template>
 
@@ -188,8 +303,8 @@ const elements = [
       { name: 'backdrop-filter', value: 'blur(28px) saturate(160%)' },
       { name: 'background', value: 'rgba(2, 8, 23, 0.50)' },
       { name: 'border-bottom', value: '1px solid rgba(255,255,255,.07)' },
-      { name: 'z-index', value: '50' },
-    ],
+      { name: 'z-index', value: '50' }
+    ]
   },
   {
     selector: 'div.foto-ring',
@@ -205,8 +320,8 @@ const elements = [
       { name: 'background', value: 'linear-gradient(135deg, #14b8a6, #2563eb, #8b5cf6)' },
       { name: 'padding', value: '4px' },
       { name: 'box-shadow', value: '0 0 40px rgba(20,184,166,.30)' },
-      { name: 'animation', value: 'rotateBorder 6s linear infinite' },
-    ],
+      { name: 'animation', value: 'rotateBorder 6s linear infinite' }
+    ]
   },
   {
     selector: 'div.glass-card',
@@ -222,8 +337,8 @@ const elements = [
       { name: 'backdrop-filter', value: 'blur(20px) saturate(150%)' },
       { name: 'border', value: '1px solid rgba(255,255,255,.09)' },
       { name: 'border-radius', value: '1rem' },
-      { name: 'box-shadow', value: '0 8px 32px rgba(0,0,0,.25)' },
-    ],
+      { name: 'box-shadow', value: '0 8px 32px rgba(0,0,0,.25)' }
+    ]
   },
   {
     selector: 'a.cta-btn',
@@ -239,8 +354,8 @@ const elements = [
       { name: 'border', value: '1px solid rgba(20,184,166,.40)' },
       { name: 'backdrop-filter', value: 'blur(12px)' },
       { name: 'border-radius', value: '9999px' },
-      { name: 'transition', value: 'all 0.3s ease' },
-    ],
+      { name: 'transition', value: 'all 0.3s ease' }
+    ]
   },
   {
     selector: 'div.lang-pill',
@@ -256,8 +371,8 @@ const elements = [
       { name: 'backdrop-filter', value: 'blur(20px) saturate(150%)' },
       { name: 'border', value: '1px solid rgba(255,255,255,.10)' },
       { name: 'border-radius', value: '1rem' },
-      { name: 'box-shadow', value: '0 4px 20px rgba(0,0,0,.30)' },
-    ],
+      { name: 'box-shadow', value: '0 4px 20px rgba(0,0,0,.30)' }
+    ]
   },
   {
     selector: 'a.social-btn',
@@ -274,9 +389,9 @@ const elements = [
       { name: 'border-radius', value: '50%' },
       { name: 'background', value: 'rgba(255,255,255,.06)' },
       { name: 'backdrop-filter', value: 'blur(12px)' },
-      { name: 'border', value: '1px solid rgba(255,255,255,.12)' },
-    ],
-  },
+      { name: 'border', value: '1px solid rgba(255,255,255,.12)' }
+    ]
+  }
 ]
 
 const current = reactive({ ...elements[0] })
@@ -298,8 +413,8 @@ const updateElement = () => {
         top: `${r.top}px`,
         left: `${r.left}px`,
         width: `${r.width}px`,
-        height: `${r.height}px`,
-      },
+        height: `${r.height}px`
+      }
     }
   } else {
     highlight.value = null
@@ -329,10 +444,11 @@ onBeforeUnmount(() => clearInterval(timer))
   background: rgba(20, 184, 166, 0.07);
   box-shadow: inset 0 0 0 1px rgba(20, 184, 166, 0.12);
   pointer-events: none;
-  transition: top 0.55s cubic-bezier(0.4,0,0.2,1),
-              left 0.55s cubic-bezier(0.4,0,0.2,1),
-              width 0.55s cubic-bezier(0.4,0,0.2,1),
-              height 0.55s cubic-bezier(0.4,0,0.2,1);
+  transition:
+    top 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 6;
 }
 
@@ -351,9 +467,22 @@ onBeforeUnmount(() => clearInterval(timer))
   letter-spacing: 0.02em;
 }
 
-.hl-ruler { position: absolute; background: rgba(20,184,166,0.25); }
-.hl-ruler--top  { top: -1px; left: 10%; width: 80%; height: 1px; }
-.hl-ruler--left { left: -1px; top: 10%; height: 80%; width: 1px; }
+.hl-ruler {
+  position: absolute;
+  background: rgba(20, 184, 166, 0.25);
+}
+.hl-ruler--top {
+  top: -1px;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+}
+.hl-ruler--left {
+  left: -1px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+}
 
 /* ── Panel ── */
 .dt-panel {
@@ -372,7 +501,7 @@ onBeforeUnmount(() => clearInterval(timer))
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 -8px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Handle / title bar */
@@ -380,8 +509,8 @@ onBeforeUnmount(() => clearInterval(timer))
   display: flex;
   align-items: center;
   height: 26px;
-  background: rgba(255,255,255,0.03);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 0 10px;
   gap: 8px;
   flex-shrink: 0;
@@ -397,12 +526,12 @@ onBeforeUnmount(() => clearInterval(timer))
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .dt-handle-title {
   font-size: 10px;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   flex: 1;
   text-align: center;
   letter-spacing: 0.05em;
@@ -412,7 +541,7 @@ onBeforeUnmount(() => clearInterval(timer))
   display: flex;
   gap: 10px;
   font-size: 12px;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /* Tabs */
@@ -420,7 +549,7 @@ onBeforeUnmount(() => clearInterval(timer))
   display: flex;
   align-items: center;
   height: 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding: 0 4px;
   gap: 0;
   flex-shrink: 0;
@@ -431,19 +560,19 @@ onBeforeUnmount(() => clearInterval(timer))
   height: 100%;
   display: flex;
   align-items: center;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255, 255, 255, 0.25);
   font-size: 11px;
   border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
 
 .dt-tab--active {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   border-bottom-color: #14b8a6;
 }
 
 .dt-cursor-icon {
-  color: rgba(20,184,166,0.6);
+  color: rgba(20, 184, 166, 0.6);
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -452,7 +581,7 @@ onBeforeUnmount(() => clearInterval(timer))
 .dt-breadcrumb {
   margin-left: auto;
   font-size: 10px;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
   padding-right: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -460,7 +589,9 @@ onBeforeUnmount(() => clearInterval(timer))
   max-width: 320px;
 }
 
-.dt-bc-active { color: rgba(20,184,166,0.7); }
+.dt-bc-active {
+  color: rgba(20, 184, 166, 0.7);
+}
 
 /* Body */
 .dt-body {
@@ -475,58 +606,83 @@ onBeforeUnmount(() => clearInterval(timer))
   padding: 6px 8px;
   overflow-y: auto;
   overflow-x: hidden;
-  border-right: 1px solid rgba(255,255,255,0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.dt-dom::-webkit-scrollbar { width: 3px; }
-.dt-dom::-webkit-scrollbar-track { background: transparent; }
-.dt-dom::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+.dt-dom::-webkit-scrollbar {
+  width: 3px;
+}
+.dt-dom::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dt-dom::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
 
 .dt-search {
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   padding: 3px 8px;
   margin-bottom: 8px;
   gap: 6px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
 }
 
-.dt-search-icon { font-size: 9px; }
-.dt-search-text { color: rgba(20,184,166,0.8); }
+.dt-search-icon {
+  font-size: 9px;
+}
+.dt-search-text {
+  color: rgba(20, 184, 166, 0.8);
+}
 
 .dt-line {
   line-height: 1.8;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 11px;
 }
 
-.dt-dim { color: rgba(255,255,255,0.18) !important; }
+.dt-dim {
+  color: rgba(255, 255, 255, 0.18) !important;
+}
 
 .dt-selected {
-  color: rgba(255,255,255,0.9) !important;
-  background: rgba(20,184,166,0.1);
-  border-left: 2px solid rgba(20,184,166,0.6);
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(20, 184, 166, 0.1);
+  border-left: 2px solid rgba(20, 184, 166, 0.6);
   padding-left: 4px;
   border-radius: 0 3px 3px 0;
 }
 
-.dt-tag     { color: rgba(103,194,233,0.85); }
-.dt-attr    { color: rgba(156,220,254,0.7); }
-.dt-str     { color: rgba(206,145,120,0.85); }
-.dt-comment { color: rgba(255,255,255,0.25); font-style: italic; }
-.dt-cursor  { color: #14b8a6; margin-left: 2px; }
+.dt-tag {
+  color: rgba(103, 194, 233, 0.85);
+}
+.dt-attr {
+  color: rgba(156, 220, 254, 0.7);
+}
+.dt-str {
+  color: rgba(206, 145, 120, 0.85);
+}
+.dt-comment {
+  color: rgba(255, 255, 255, 0.25);
+  font-style: italic;
+}
+.dt-cursor {
+  color: #14b8a6;
+  margin-left: 2px;
+}
 
 /* Divider */
 .dt-divider {
   width: 3px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
   cursor: col-resize;
   flex-shrink: 0;
   transition: background 0.2s;
@@ -539,54 +695,66 @@ onBeforeUnmount(() => clearInterval(timer))
   padding: 6px 10px;
   overflow-y: auto;
   overflow-x: hidden;
-  border-right: 1px solid rgba(255,255,255,0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.dt-styles::-webkit-scrollbar { width: 3px; }
-.dt-styles::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+.dt-styles::-webkit-scrollbar {
+  width: 3px;
+}
+.dt-styles::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
 
 .dt-styles-tabs {
   display: flex;
   gap: 12px;
   margin-bottom: 8px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding-bottom: 4px;
 }
 
 .dt-styles-tab {
   font-size: 10.5px;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255, 255, 255, 0.25);
   cursor: default;
   padding-bottom: 2px;
 }
 
 .dt-styles-tab--active {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   border-bottom: 1.5px solid #14b8a6;
 }
 
-.dt-rule { margin-bottom: 10px; }
+.dt-rule {
+  margin-bottom: 10px;
+}
 
 .dt-rule-source {
   font-size: 9.5px;
-  color: rgba(20,184,166,0.5);
+  color: rgba(20, 184, 166, 0.5);
   margin-bottom: 2px;
   letter-spacing: 0.03em;
 }
 
 .dt-styles-header {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1px;
   font-size: 11px;
 }
 
-.dt-selector     { color: rgba(215,186,125,0.9); }
-.dt-styles-close { color: rgba(255,255,255,0.35); font-size: 11px; }
+.dt-selector {
+  color: rgba(215, 186, 125, 0.9);
+}
+.dt-styles-close {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 11px;
+}
 
 .dt-prop {
   padding-left: 12px;
   line-height: 1.75;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 11px;
   display: flex;
   align-items: baseline;
@@ -594,9 +762,17 @@ onBeforeUnmount(() => clearInterval(timer))
   transition: all 0.35s ease;
 }
 
-.dt-checkbox   { color: rgba(255,255,255,0.15); font-size: 9px; margin-right: 4px; }
-.dt-prop-name  { color: rgba(156,220,254,0.85); }
-.dt-prop-value { color: rgba(206,145,120,0.9); }
+.dt-checkbox {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 9px;
+  margin-right: 4px;
+}
+.dt-prop-name {
+  color: rgba(156, 220, 254, 0.85);
+}
+.dt-prop-value {
+  color: rgba(206, 145, 120, 0.9);
+}
 
 /* Computed / Box Model */
 .dt-computed {
@@ -613,31 +789,56 @@ onBeforeUnmount(() => clearInterval(timer))
   justify-content: center;
 }
 
-.bm-margin, .bm-border, .bm-padding, .bm-content {
+.bm-margin,
+.bm-border,
+.bm-padding,
+.bm-content {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bm-margin  { background: rgba(245,158,11,0.08);  border: 1px solid rgba(245,158,11,0.25);  padding: 10px; border-radius: 3px; }
-.bm-border  { background: rgba(59,130,246,0.08);  border: 1px solid rgba(59,130,246,0.25);  padding: 8px;  border-radius: 2px; }
-.bm-padding { background: rgba(16,185,129,0.08);  border: 1px solid rgba(16,185,129,0.25);  padding: 8px;  border-radius: 2px; }
-.bm-content { background: rgba(20,184,166,0.1);   border: 1px solid rgba(20,184,166,0.3);   padding: 6px 12px; border-radius: 2px; min-width: 80px; justify-content: center; }
+.bm-margin {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 10px;
+  border-radius: 3px;
+}
+.bm-border {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 8px;
+  border-radius: 2px;
+}
+.bm-padding {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 8px;
+  border-radius: 2px;
+}
+.bm-content {
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  padding: 6px 12px;
+  border-radius: 2px;
+  min-width: 80px;
+  justify-content: center;
+}
 
 .bm-label {
   position: absolute;
   top: 2px;
   left: 4px;
   font-size: 8px;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .bm-size {
   font-size: 10px;
-  color: rgba(20,184,166,0.8);
+  color: rgba(20, 184, 166, 0.8);
   white-space: nowrap;
 }
 
@@ -652,41 +853,76 @@ onBeforeUnmount(() => clearInterval(timer))
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  color: rgba(255,255,255,0.25);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  color: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   padding: 1px 0;
 }
 
-.dt-cprop .dt-prop-value { color: rgba(206,145,120,0.7); font-size: 10px; }
+.dt-cprop .dt-prop-value {
+  color: rgba(206, 145, 120, 0.7);
+  font-size: 10px;
+}
 
 /* ── Mobile responsive ── */
 @media (max-width: 776px) {
-  .dt-panel { font-size: 10px; }
+  .dt-panel {
+    font-size: 10px;
+  }
 
   /* Abas: esconde as que transbordam */
-  .dt-tab:not(.dt-tab--active) { padding: 0 8px; }
-  .dt-breadcrumb { display: none; }
+  .dt-tab:not(.dt-tab--active) {
+    padding: 0 8px;
+  }
+  .dt-breadcrumb {
+    display: none;
+  }
 
   /* Body: DOM ocupa toda a largura, styles compacto, computed escondido */
-  .dt-styles  { width: 140px; }
-  .dt-computed { display: none; }
+  .dt-styles {
+    width: 140px;
+  }
+  .dt-computed {
+    display: none;
+  }
 
   /* Reduz padding interno */
-  .dt-dom    { padding: 4px 6px; }
-  .dt-styles { padding: 4px 6px; }
+  .dt-dom {
+    padding: 4px 6px;
+  }
+  .dt-styles {
+    padding: 4px 6px;
+  }
 }
 
 /* Cursor piscando */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-.blink { animation: blink 1s step-end infinite; }
+.blink {
+  animation: blink 1s step-end infinite;
+}
 
 /* Transitions */
-.hl-enter-active, .hl-leave-active { transition: opacity 0.4s ease; }
-.hl-enter-from, .hl-leave-to       { opacity: 0; }
+.hl-enter-active,
+.hl-leave-active {
+  transition: opacity 0.4s ease;
+}
+.hl-enter-from,
+.hl-leave-to {
+  opacity: 0;
+}
 
-.prop-enter-active { transition: all 0.3s ease; }
-.prop-enter-from   { opacity: 0; transform: translateX(-6px); }
+.prop-enter-active {
+  transition: all 0.3s ease;
+}
+.prop-enter-from {
+  opacity: 0;
+  transform: translateX(-6px);
+}
 </style>

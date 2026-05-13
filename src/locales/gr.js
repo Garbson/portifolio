@@ -18,6 +18,18 @@ export default {
   },
   featuredProjects: [
     {
+      title: "Guty Ακίνητα",
+      description: "Επαγγελματική landing page για κτηματομεσίτη εστιασμένη στη μετατροπή leads. Υλοποίησα responsive σχεδιασμό με Vue.js και Tailwind CSS, βελτιστοποιημένο για κινητές συσκευές, με εμφανή call-to-action και διατομή παρουσίασης ακινήτων για μέγιστη εμπλοκή πελατών.",
+      img: "guty.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/corretor-landing",
+      link: "https://gutthierryimoveis.com/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
+    {
       title: "Fernando Ακίνητα",
       description: "Landing page για κτηματομεσίτη εστιασμένη στην απόκτηση πελατών. Σχεδιάστηκε με Vue.js, Tailwind CSS και JavaScript, με επαγγελματική παρουσίαση υπηρεσιών, τμήμα μαρτυριών και ενσωματωμένα κανάλια επικοινωνίας για αύξηση μετατροπών.",
       img: "fernando.png",
@@ -51,7 +63,7 @@ export default {
       javascript: true,
       vite: true,
       github: "https://github.com/Garbson/portifolio",
-      link: "https://garbsonsouza.dev/",
+      link: "https://garbson.dev/",
       tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
@@ -66,18 +78,6 @@ export default {
       github: "https://github.com/Garbson/pachacuteq",
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Σύστημα Κρατήσεων",
-      featured: true
-    },
-    {
-      title: "Guty Ακίνητα",
-      description: "Επαγγελματική landing page για κτηματομεσίτη εστιασμένη στη μετατροπή leads. Υλοποίησα responsive σχεδιασμό με Vue.js και Tailwind CSS, βελτιστοποιημένο για κινητές συσκευές, με εμφανή call-to-action και διατομή παρουσίασης ακινήτων για μέγιστη εμπλοκή πελατών.",
-      img: "guty.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/corretor-landing",
-      link: "https://gutthierryimoveis.com/",
-      tech: "Vue.js, Tailwind CSS, JavaScript",
       featured: true
     },
   ],

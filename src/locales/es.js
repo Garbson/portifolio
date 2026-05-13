@@ -26,6 +26,18 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
   },
   featuredProjects: [
     {
+      title: "Guty Inmuebles",
+      description: "Landing page profesional para corredor de bienes raíces enfocada en conversión de leads. Diseño moderno y responsivo con presentación de propiedades y diferenciadores del corredor. Optimizada para rendimiento y experiencia mobile.",
+      img: "guty.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/corretor-landing",
+      link: "https://gutthierryimoveis.com/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
+    {
       title: "Fernando Inmuebles",
       description: "Landing page para corredor de bienes raíces enfocada en captación de clientes y generación de leads calificados. Interfaz elegante con portafolio de propiedades, testimonios de clientes y canales de contacto integrados. Entregada con alto rendimiento y diseño orientado a la conversión.",
       img: "fernando.png",
@@ -59,7 +71,7 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       javascript: true,
       vite: true,
       github: "https://github.com/Garbson/portifolio",
-      link: "https://garbsonsouza.dev/",
+      link: "https://garbson.dev/",
       tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
@@ -74,18 +86,6 @@ Desarrollador Frontend con 3+ años creando aplicaciones web para empresas inter
       github: "https://github.com/Garbson/pachacuteq",
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Sistema de Reservas",
-      featured: true
-    },
-    {
-      title: "Guty Inmuebles",
-      description: "Landing page profesional para corredor de bienes raíces enfocada en conversión de leads. Diseño moderno y responsivo con presentación de propiedades y diferenciadores del corredor. Optimizada para rendimiento y experiencia mobile.",
-      img: "guty.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/corretor-landing",
-      link: "https://gutthierryimoveis.com/",
-      tech: "Vue.js, Tailwind CSS, JavaScript",
       featured: true
     },
   ],

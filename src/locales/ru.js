@@ -26,6 +26,18 @@ Frontend разработчик с 3+ годами создания веб-пр�
   },
   featuredProjects: [
     {
+      title: "Guty Недвижимость",
+      description: "Профессиональный лендинг для риелтора, ориентированный на конверсию лидов. Современный адаптивный дизайн с презентацией объектов и преимуществами риелтора. Оптимизирован для производительности и мобильного опыта.",
+      img: "guty.png",
+      vue: true,
+      tailwind: true,
+      javascript: true,
+      github: "https://github.com/Garbson/corretor-landing",
+      link: "https://gutthierryimoveis.com/",
+      tech: "Vue.js, Tailwind CSS, JavaScript",
+      featured: true
+    },
+    {
       title: "Fernando Недвижимость",
       description: "Лендинг для риелтора, направленный на привлечение клиентов и генерацию квалифицированных лидов. Элегантный адаптивный интерфейс с портфолио объектов, отзывами клиентов и интегрированными каналами связи. Высокая производительность и дизайн, ориентированный на конверсию.",
       img: "fernando.png",
@@ -59,7 +71,7 @@ Frontend разработчик с 3+ годами создания веб-пр�
       javascript: true,
       vite: true,
       github: "https://github.com/Garbson/portifolio",
-      link: "https://garbsonsouza.dev/",
+      link: "https://garbson.dev/",
       tech: "Vue.js 3, Vite, Tailwind CSS, Vue I18n",
       featured: true
     },
@@ -74,18 +86,6 @@ Frontend разработчик с 3+ годами создания веб-пр�
       github: "https://github.com/Garbson/pachacuteq",
       link: "https://pachacuteq.pages.dev/",
       tech: "Vue.js, Tailwind CSS, Система Бронирования",
-      featured: true
-    },
-    {
-      title: "Guty Недвижимость",
-      description: "Профессиональный лендинг для риелтора, ориентированный на конверсию лидов. Современный адаптивный дизайн с презентацией объектов и преимуществами риелтора. Оптимизирован для производительности и мобильного опыта.",
-      img: "guty.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      github: "https://github.com/Garbson/corretor-landing",
-      link: "https://gutthierryimoveis.com/",
-      tech: "Vue.js, Tailwind CSS, JavaScript",
       featured: true
     },
   ],
