@@ -16,161 +16,11 @@ export default {
     "title": "Sobre Mí",
     "description": "\nDesarrollador Frontend con 3+ años creando aplicaciones web para empresas internacionales en 4 países. Actualmente desarrollando sistemas críticos de compliance fiscal en NFCOM que atienden a clientes empresariales en las principales operadoras brasileñas de telecomunicaciones (Claro/Embratel).\n\n🌍 Viaje Internacional:\n🇬🇷 Grecia (1+ año) - Panel administrativo eBay | Nuxt.js + SSR\n🇺🇸 Miami (5 meses) - Startup con gráficos 2D | Vue.js + Pixi.js\n🇵🇪 Perú (proyecto) - Sitio web de hotel | Networking orgánico mientras viajaba\n🇧🇷 Brasil (actual) - KNN Idiomas + Claro & Embratel | EdTech + Sistemas críticos de telecomunicaciones\n  "
   },
-  "skills": {
-    "title": "Mis Habilidades",
-    "categories": [
-      {
-        "name": "Front-end",
-        "items": [
-          {
-            "name": "Vue.js",
-            "level": 90,
-            "icon": "vue-svgrepo-com.svg",
-            "description": "Framework Vue.js para construir interfaces interactivas"
-          },
-          {
-            "name": "Quasar",
-            "level": 85,
-            "icon": "Quasar.svg",
-            "description": "Framework Quasar para aplicaciones Vue multiplataforma"
-          },
-          {
-            "name": "React",
-            "level": 75,
-            "icon": "react.svg",
-            "description": "Biblioteca React.js para construir interfaces de usuario"
-          },
-          {
-            "name": "Next.js",
-            "level": 70,
-            "icon": "nextjs.svg",
-            "description": "Framework Next.js para aplicaciones React"
-          },
-          {
-            "name": "Bootstrap",
-            "level": 85,
-            "icon": "bootstrap.png",
-            "description": "Framework CSS Bootstrap para desarrollo web responsivo"
-          },
-          {
-            "name": "HTML5",
-            "level": 95,
-            "icon": "html.svg",
-            "description": "Lenguaje de marcado HTML5 para contenido web"
-          },
-          {
-            "name": "CSS3/SCSS",
-            "level": 90,
-            "icon": "css-3-svgrepo-com.svg",
-            "description": "CSS3 y SCSS para estilizar aplicaciones web"
-          },
-          {
-            "name": "Tailwind CSS",
-            "level": 85,
-            "icon": "tailwind.svg",
-            "description": "Framework Tailwind CSS utility-first"
-          },
-          {
-            "name": "JavaScript",
-            "level": 90,
-            "icon": "javascript-svgrepo-com.svg",
-            "description": "Lenguaje de programación JavaScript"
-          },
-          {
-            "name": "TypeScript",
-            "level": 80,
-            "icon": "typescript.png",
-            "description": "Superconjunto de JavaScript con tipos"
-          }
-        ]
-      },
-      {
-        "name": "Back-end y Herramientas",
-        "items": [
-          {
-            "name": "Node.js",
-            "level": 75,
-            "icon": "node.svg",
-            "description": "Entorno de ejecución Node.js para JavaScript"
-          },
-          {
-            "name": "PHP",
-            "level": 70,
-            "icon": "php.svg",
-            "description": "Lenguaje de programación PHP para desarrollo web"
-          },
-          {
-            "name": "Python",
-            "level": 65,
-            "icon": "python.svg",
-            "description": "Lenguaje de programación Python para diversos fines"
-          },
-          {
-            "name": "Bash",
-            "level": 60,
-            "icon": "bash.svg",
-            "description": "Shell script Bash para automatización de tareas"
-          },
-          {
-            "name": "MySQL",
-            "level": 75,
-            "icon": "mysql.svg",
-            "description": "Sistema de gestión de bases de datos relacional MySQL"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": 70,
-            "icon": "postgresql.svg",
-            "description": "Sistema de base de datos relacional PostgreSQL"
-          },
-          {
-            "name": "Docker",
-            "level": 65,
-            "icon": "docker.svg",
-            "description": "Plataforma de contenedorización Docker"
-          },
-          {
-            "name": "Firebase",
-            "level": 80,
-            "icon": "firebase.svg",
-            "description": "Plataforma Firebase para desarrollo de aplicaciones"
-          },
-          {
-            "name": "Git/GitHub",
-            "level": 85,
-            "icon": "github-color-svgrepo-com.svg",
-            "description": "Sistema de control de versiones Git y plataforma GitHub"
-          },
-          {
-            "name": "RESTful APIs",
-            "level": 85,
-            "description": "Diseño y consumo de APIs RESTful"
-          },
-          {
-            "name": "Responsive Design",
-            "level": 95,
-            "description": "Creación de diseños responsivos para todos los dispositivos"
-          },
-          {
-            "name": "Nuxt.js",
-            "level": 75,
-            "icon": "nuxt.png",
-            "description": "Framework Nuxt.js para aplicaciones Vue"
-          },
-          {
-            "name": "UI/UX Design",
-            "level": 70,
-            "description": "Principios de diseño de interfaz y experiencia de usuario"
-          }
-        ]
-      }
-    ]
-  },
   "featuredProjects": [
     {
       "title": "Guty Inmuebles",
       "description": "Landing page profesional para corredor de inmuebles enfocada en la conversión de leads. Diseño moderno y responsivo con presentación de propiedades y diferenciales del corredor. Optimizada para rendimiento y experiencia móvil.",
-      "img": "guty.png",
+      img: "guty.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -182,7 +32,7 @@ export default {
     {
       "title": "Fernando Inmuebles",
       "description": "Landing page para corredor de inmuebles enfocada en captar clientes y generar leads calificados. Interfaz elegante con portafolio de propiedades, testimonios y canales de contacto integrados. Entregada con alto rendimiento y diseño orientado a la conversión.",
-      "img": "fernando.png",
+      img: "fernando.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -194,7 +44,7 @@ export default {
     {
       "title": "Portafolio Personal",
       "description": "Mi portafolio personal desarrollado con Vue 3 y Vite, que presenta mi trayectoria profesional, proyectos y habilidades. Implementé un sistema de internacionalización (i18n) para 5 idiomas, diseño responsivo con Tailwind CSS y animaciones fluidas con AOS. Una solución que demuestra mi capacidad técnica y creatividad en desarrollo frontend.",
-      "img": "garbson.png",
+      img: "garbson.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -207,7 +57,7 @@ export default {
     {
       "title": "Hostel Pachacuteq",
       "description": "Sistema completo de reservas para un hotel peruano con interfaz multilingüe, calendario de disponibilidad en tiempo real, procesamiento de pagos y gestión de huéspedes. Implementé diseño responsivo optimizado para viajeros móviles, con información turística local integrada y sistema de confirmación de reservas.",
-      "img": "pachacutec.png",
+      img: "pachacutec.webp",
       "vue": true,
       "tailwind": true,
       "Quasar": true,

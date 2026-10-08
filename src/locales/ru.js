@@ -16,161 +16,11 @@ export default {
     "title": "Обо мне",
     "description": "\nFrontend разработчик с 3+ годами создания веб-приложений для международных компаний в 4 странах. В настоящее время разрабатываю критические системы налогового соответствия в NFCOM, которые обслуживают корпоративных клиентов основных бразильских телекоммуникационных операторов (Claro/Embratel).\n\n🌍 Международное путешествие:\n🇬🇷 Греция (1+ год) - Административная панель eBay | Nuxt.js + SSR\n🇺🇸 Майами (5 месяцев) - Стартап с 2D графикой | Vue.js + Pixi.js\n🇵🇪 Перу (проект) - Сайт отеля | Органичное нетворкинг во время путешествий\n🇧🇷 Бразилия (текущее) - KNN Idiomas + Claro & Embratel | EdTech + Критические телекоммуникационные системы\n  "
   },
-  "skills": {
-    "title": "Мои Навыки",
-    "categories": [
-      {
-        "name": "Front-end",
-        "items": [
-          {
-            "name": "Vue.js",
-            "level": 90,
-            "icon": "vue-svgrepo-com.svg",
-            "description": "Фреймворк Vue.js для создания интерактивных интерфейсов"
-          },
-          {
-            "name": "Quasar",
-            "level": 85,
-            "icon": "Quasar.svg",
-            "description": "Фреймворк Quasar для кросс-платформенных Vue приложений"
-          },
-          {
-            "name": "React",
-            "level": 75,
-            "icon": "react.svg",
-            "description": "Библиотека React.js для создания пользовательских интерфейсов"
-          },
-          {
-            "name": "Next.js",
-            "level": 70,
-            "icon": "nextjs.svg",
-            "description": "Фреймворк Next.js для React приложений"
-          },
-          {
-            "name": "Bootstrap",
-            "level": 85,
-            "icon": "bootstrap.png",
-            "description": "Фреймворк CSS Bootstrap для адаптивной веб-разработки"
-          },
-          {
-            "name": "HTML5",
-            "level": 95,
-            "icon": "html.svg",
-            "description": "Язык разметки HTML5 для веб-контента"
-          },
-          {
-            "name": "CSS3/SCSS",
-            "level": 90,
-            "icon": "css-3-svgrepo-com.svg",
-            "description": "CSS3 и SCSS для стилизации веб-приложений"
-          },
-          {
-            "name": "Tailwind CSS",
-            "level": 85,
-            "icon": "tailwind.svg",
-            "description": "Utility-first фреймворк Tailwind CSS"
-          },
-          {
-            "name": "JavaScript",
-            "level": 90,
-            "icon": "javascript-svgrepo-com.svg",
-            "description": "Язык программирования JavaScript"
-          },
-          {
-            "name": "TypeScript",
-            "level": 80,
-            "icon": "typescript.png",
-            "description": "TypeScript, надмножество JavaScript с типами"
-          }
-        ]
-      },
-      {
-        "name": "Back-end и Инструменты",
-        "items": [
-          {
-            "name": "Node.js",
-            "level": 75,
-            "icon": "node.svg",
-            "description": "Среда выполнения Node.js для JavaScript"
-          },
-          {
-            "name": "PHP",
-            "level": 70,
-            "icon": "php.svg",
-            "description": "Язык программирования PHP для веб-разработки"
-          },
-          {
-            "name": "Python",
-            "level": 65,
-            "icon": "python.svg",
-            "description": "Язык программирования Python для различных целей"
-          },
-          {
-            "name": "Bash",
-            "level": 60,
-            "icon": "bash.svg",
-            "description": "Скриптовый язык Bash для автоматизации задач"
-          },
-          {
-            "name": "MySQL",
-            "level": 75,
-            "icon": "mysql.svg",
-            "description": "Система управления реляционными базами данных MySQL"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": 70,
-            "icon": "postgresql.svg",
-            "description": "Система реляционных баз данных PostgreSQL"
-          },
-          {
-            "name": "Docker",
-            "level": 65,
-            "icon": "docker.svg",
-            "description": "Платформа контейнеризации Docker"
-          },
-          {
-            "name": "Firebase",
-            "level": 80,
-            "icon": "firebase.svg",
-            "description": "Платформа Firebase для разработки приложений"
-          },
-          {
-            "name": "Git/GitHub",
-            "level": 85,
-            "icon": "github-color-svgrepo-com.svg",
-            "description": "Система контроля версий Git и платформа GitHub"
-          },
-          {
-            "name": "RESTful APIs",
-            "level": 85,
-            "description": "Проектирование и потребление RESTful API"
-          },
-          {
-            "name": "Responsive Design",
-            "level": 95,
-            "description": "Создание адаптивных макетов для всех устройств"
-          },
-          {
-            "name": "Nuxt.js",
-            "level": 75,
-            "icon": "nuxt.png",
-            "description": "Фреймворк Nuxt.js для Vue приложений"
-          },
-          {
-            "name": "UI/UX Design",
-            "level": 70,
-            "description": "Принципы дизайна интерфейса и пользовательского опыта"
-          }
-        ]
-      }
-    ]
-  },
   "featuredProjects": [
     {
       "title": "Guty Недвижимость",
       "description": "Профессиональный лендинг для риелтора, ориентированный на конверсию лидов. Современный адаптивный дизайн с презентацией объектов и преимуществ риелтора. Оптимизирован по производительности и для мобильных устройств.",
-      "img": "guty.png",
+      img: "guty.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -182,7 +32,7 @@ export default {
     {
       "title": "Fernando Недвижимость",
       "description": "Лендинг для риелтора, ориентированный на привлечение клиентов и генерацию качественных лидов. Элегантный интерфейс с портфолио объектов, отзывами и встроенными каналами связи. Сдан с высокой производительностью и дизайном, ориентированным на конверсию.",
-      "img": "fernando.png",
+      img: "fernando.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -194,7 +44,7 @@ export default {
     {
       "title": "Личное Портфолио",
       "description": "Моё личное портфолио на Vue 3 и Vite: профессиональный путь, проекты и навыки. Я реализовал систему интернационализации (i18n) для 5 языков, адаптивный дизайн на Tailwind CSS и плавные анимации на AOS. Решение, демонстрирующее мои технические навыки и креативность во фронтенд-разработке.",
-      "img": "garbson.png",
+      img: "garbson.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -207,7 +57,7 @@ export default {
     {
       "title": "Hostel Pachacuteq",
       "description": "Полная система бронирования для отеля в Перу: многоязычный интерфейс, календарь доступности в реальном времени, обработка платежей и управление гостями. Я реализовал адаптивный дизайн для путешественников с мобильными устройствами, со встроенной местной туристической информацией и системой подтверждения бронирований.",
-      "img": "pachacutec.png",
+      img: "pachacutec.webp",
       "vue": true,
       "tailwind": true,
       "Quasar": true,

@@ -13,7 +13,7 @@
           <div class="terminal-panel">
             <div class="panel-title">{{ $t('ui.hero.personal') }}</div>
             <div class="profile-row">
-              <img class="pixel-avatar" src="/garbson-avatar.png" alt="Garbson Souza" />
+              <img class="pixel-avatar" src="/garbson-avatar.webp" alt="Garbson Souza" />
               <div class="profile-fields">
                 <div><i>{{ $t('ui.hero.name') }}</i> GARBSON SOUZA</div>
                 <div><i>{{ $t('ui.hero.role') }}</i> {{ $t('ui.hero.roleValue') }}</div>

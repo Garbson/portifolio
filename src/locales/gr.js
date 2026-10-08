@@ -16,161 +16,11 @@ export default {
     "title": "Σχετικά με μένα",
     "description": "Frontend Προγραμματιστής με 3+ χρόνια δημιουργίας web εφαρμογών για διεθνείς εταιρείες σε 4 χώρες. Αυτή τη στιγμή αναπτύσσω κρίσιμα συστήματα φορολογικής συμμόρφωσης στην NFCOM που εξυπηρετούν εταιρικούς πελάτες σε μεγάλους βραζιλιάνους τηλεπικοινωνιακούς παρόχους (Claro/Embratel)."
   },
-  "skills": {
-    "title": "Οι Δεξιότητές μου",
-    "categories": [
-      {
-        "name": "Front-end",
-        "items": [
-          {
-            "name": "Vue.js",
-            "level": 90,
-            "icon": "vue-svgrepo-com.svg",
-            "description": "Framework Vue.js για δημιουργία διαδραστικών διεπαφών"
-          },
-          {
-            "name": "Quasar",
-            "level": 85,
-            "icon": "Quasar.svg",
-            "description": "Framework Quasar για εφαρμογές Vue πολλαπλών πλατφορμών"
-          },
-          {
-            "name": "React",
-            "level": 75,
-            "icon": "react.svg",
-            "description": "Βιβλιοθήκη React.js για δημιουργία διεπαφών χρήστη"
-          },
-          {
-            "name": "Next.js",
-            "level": 70,
-            "icon": "nextjs.svg",
-            "description": "Framework Next.js για εφαρμογές React"
-          },
-          {
-            "name": "Bootstrap",
-            "level": 85,
-            "icon": "bootstrap.png",
-            "description": "Framework CSS Bootstrap για αποκρίσιμη ανάπτυξη ιστού"
-          },
-          {
-            "name": "HTML5",
-            "level": 95,
-            "icon": "html.svg",
-            "description": "Γλώσσα σήμανσης HTML5 για περιεχόμενο ιστού"
-          },
-          {
-            "name": "CSS3/SCSS",
-            "level": 90,
-            "icon": "css-3-svgrepo-com.svg",
-            "description": "CSS3 και SCSS για στυλιστική επεξεργασία εφαρμογών ιστού"
-          },
-          {
-            "name": "Tailwind CSS",
-            "level": 85,
-            "icon": "tailwind.svg",
-            "description": "Framework Tailwind CSS utility-first"
-          },
-          {
-            "name": "JavaScript",
-            "level": 90,
-            "icon": "javascript-svgrepo-com.svg",
-            "description": "Γλώσσα προγραμματισμού JavaScript"
-          },
-          {
-            "name": "TypeScript",
-            "level": 80,
-            "icon": "typescript.png",
-            "description": "TypeScript, υπερσύνολο της JavaScript με τύπους"
-          }
-        ]
-      },
-      {
-        "name": "Back-end & Εργαλεία",
-        "items": [
-          {
-            "name": "Node.js",
-            "level": 75,
-            "icon": "node.svg",
-            "description": "Περιβάλλον εκτέλεσης Node.js για JavaScript"
-          },
-          {
-            "name": "PHP",
-            "level": 70,
-            "icon": "php.svg",
-            "description": "Γλώσσα προγραμματισμού PHP για ανάπτυξη ιστοσελίδων"
-          },
-          {
-            "name": "Python",
-            "level": 65,
-            "icon": "python.svg",
-            "description": "Γλώσσα προγραμματισμού Python για διάφορους σκοπούς"
-          },
-          {
-            "name": "Bash",
-            "level": 60,
-            "icon": "bash.svg",
-            "description": "Shell script Bash για αυτοματοποίηση εργασιών"
-          },
-          {
-            "name": "MySQL",
-            "level": 75,
-            "icon": "mysql.svg",
-            "description": "Σύστημα διαχείρισης σχεσιακών βάσεων δεδομένων MySQL"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": 70,
-            "icon": "postgresql.svg",
-            "description": "Σύστημα σχεσιακών βάσεων δεδομένων PostgreSQL"
-          },
-          {
-            "name": "Docker",
-            "level": 65,
-            "icon": "docker.svg",
-            "description": "Πλατφόρμα εμπορευματοκιβωτίων Docker"
-          },
-          {
-            "name": "Firebase",
-            "level": 80,
-            "icon": "firebase.svg",
-            "description": "Πλατφόρμα Firebase για ανάπτυξη εφαρμογών"
-          },
-          {
-            "name": "Git/GitHub",
-            "level": 85,
-            "icon": "github-color-svgrepo-com.svg",
-            "description": "Σύστημα ελέγχου εκδόσεων Git και πλατφόρμα GitHub"
-          },
-          {
-            "name": "RESTful APIs",
-            "level": 85,
-            "description": "Σχεδιασμός και κατανάλωση RESTful APIs"
-          },
-          {
-            "name": "Responsive Design",
-            "level": 95,
-            "description": "Δημιουργία αποκρίσιμων διατάξεων για όλες τις συσκευές"
-          },
-          {
-            "name": "Nuxt.js",
-            "level": 75,
-            "icon": "nuxt.png",
-            "description": "Framework Nuxt.js για εφαρμογές Vue"
-          },
-          {
-            "name": "UI/UX Design",
-            "level": 70,
-            "description": "Αρχές σχεδιασμού διεπαφής και εμπειρίας χρήστη"
-          }
-        ]
-      }
-    ]
-  },
   "featuredProjects": [
     {
       "title": "Guty Ακίνητα",
       "description": "Επαγγελματική landing page για μεσίτη ακινήτων με επίκεντρο τη μετατροπή leads. Σύγχρονος, responsive σχεδιασμός με παρουσίαση ακινήτων και των πλεονεκτημάτων του μεσίτη. Βελτιστοποιημένη για απόδοση και εμπειρία σε κινητά.",
-      "img": "guty.png",
+      img: "guty.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -182,7 +32,7 @@ export default {
     {
       "title": "Fernando Ακίνητα",
       "description": "Landing page για μεσίτη ακινήτων με επίκεντρο την προσέλκυση πελατών και τη δημιουργία ποιοτικών leads. Κομψό περιβάλλον με χαρτοφυλάκιο ακινήτων, μαρτυρίες και ενσωματωμένα κανάλια επικοινωνίας. Παραδόθηκε με υψηλή απόδοση και σχεδιασμό προσανατολισμένο στη μετατροπή.",
-      "img": "fernando.png",
+      img: "fernando.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -194,7 +44,7 @@ export default {
     {
       "title": "Προσωπικό Πορτφόλιο",
       "description": "Το προσωπικό μου πορτφόλιο φτιαγμένο με Vue 3 και Vite, που παρουσιάζει την επαγγελματική μου διαδρομή, τα έργα και τις δεξιότητές μου. Υλοποίησα σύστημα διεθνοποίησης (i18n) για 5 γλώσσες, responsive σχεδιασμό με Tailwind CSS και ομαλά animations με AOS. Μια λύση που αποδεικνύει την τεχνική μου ικανότητα και τη δημιουργικότητά μου στο frontend.",
-      "img": "garbson.png",
+      img: "garbson.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -207,7 +57,7 @@ export default {
     {
       "title": "Hostel Pachacuteq",
       "description": "Ολοκληρωμένο σύστημα κρατήσεων για ξενοδοχείο στο Περού με πολύγλωσσο περιβάλλον, ημερολόγιο διαθεσιμότητας σε πραγματικό χρόνο, επεξεργασία πληρωμών και διαχείριση επισκεπτών. Υλοποίησα responsive σχεδιασμό για ταξιδιώτες με κινητά, με ενσωματωμένες τοπικές τουριστικές πληροφορίες και σύστημα επιβεβαίωσης κρατήσεων.",
-      "img": "pachacutec.png",
+      img: "pachacutec.webp",
       "vue": true,
       "tailwind": true,
       "Quasar": true,

@@ -24,91 +24,11 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
 🇧🇷 Brasil (atual) - KNN Idiomas + Claro & Embratel | EdTech + Sistemas críticos de telecom
 `
   },
-  techStack: {
-    title: "Tech Stack",
-    categories: [
-      {
-        name: "Frontend",
-        items: [
-          { name: "Vue.js 3", level: "expert", icon: "vue-svgrepo-com.svg" },
-          { name: "Nuxt.js", level: "expert", icon: "nuxt.png" },
-          { name: "TypeScript", level: "advanced", icon: "typescript.png" },
-          { name: "React", level: "intermediate", icon: "react.svg" },
-          { name: "JavaScript (ES6+)", level: "expert", icon: "javascript-svgrepo-com.svg" }
-        ]
-      },
-      {
-        name: "Styling",
-        items: [
-          { name: "Tailwind CSS", level: "expert", icon: "tailwind.svg" },
-          { name: "SASS/SCSS", level: "advanced", icon: "css-3-svgrepo-com.svg" },
-          { name: "CSS3", level: "expert", icon: "css-3-svgrepo-com.svg" },
-          { name: "Responsive Design", level: "expert" }
-        ]
-      },
-      {
-        name: "Backend & Tools",
-        items: [
-          { name: "Node.js", level: "intermediate", icon: "node.svg" },
-          { name: "Firebase", level: "advanced", icon: "firebase.svg" },
-          { name: "Git/GitHub", level: "advanced", icon: "github-color-svgrepo-com.svg" },
-          { name: "REST APIs", level: "advanced" },
-          { name: "Agile/Scrum", level: "intermediate" }
-        ]
-      },
-      {
-        name: "Current Focus",
-        items: [
-          { name: "Aplicações empresariais", description: "Soluções de negócios em larga escala" },
-          { name: "Integração de sistemas legados", description: "Mainframe + Frontend Moderno" },
-          { name: "Otimização de performance", description: "Foco em velocidade e eficiência" }
-        ]
-      }
-    ]
-  },
-  skills: {
-    title: "Minhas Habilidades",
-    categories: [
-      {
-        name: "Front-end",
-        items: [
-          { name: "Vue.js", level: 90, icon: "vue-svgrepo-com.svg", description: "Framework Vue.js para construção de interfaces interativas" },
-          { name: "Quasar", level: 85, icon: "Quasar.svg", description: "Framework Quasar para aplicações Vue multiplataforma" },
-          { name: "React", level: 75, icon: "react.svg", description: "Biblioteca React.js para construção de interfaces de usuário" },
-          { name: "Next.js", level: 70, icon: "nextjs.svg", description: "Framework Next.js para aplicações React" },
-          { name: "Bootstrap", level: 85, icon: "bootstrap.png", description: "Framework CSS Bootstrap para desenvolvimento web responsivo" },
-          { name: "HTML5", level: 95, icon: "html.svg", description: "Linguagem de marcação HTML5 para conteúdo web" },
-          { name: "CSS3/SCSS", level: 90, icon: "css-3-svgrepo-com.svg", description: "CSS3 e SCSS para estilização de aplicações web" },
-          { name: "Tailwind CSS", level: 85, icon: "tailwind.svg", description: "Framework Tailwind CSS utility-first" },
-          { name: "JavaScript", level: 90, icon: "javascript-svgrepo-com.svg", description: "Linguagem de programação JavaScript" },
-          { name: "TypeScript", level: 80, icon: "typescript.png", description: "TypeScript, superconjunto de JavaScript com tipagem" }
-        ]
-      },
-      {
-        name: "Back-end & Ferramentas",
-        items: [
-          { name: "Node.js", level: 75, icon: "node.svg", description: "Ambiente de execução Node.js para JavaScript" },
-          { name: "PHP", level: 70, icon: "php.svg", description: "Linguagem de programação PHP para desenvolvimento web" },
-          { name: "Python", level: 65, icon: "python.svg", description: "Linguagem de programação Python para diversos fins" },
-          { name: "Bash", level: 60, icon: "bash.svg", description: "Shell script Bash para automação de tarefas" },
-          { name: "MySQL", level: 75, icon: "mysql.svg", description: "Sistema de gerenciamento de banco de dados relacional MySQL" },
-          { name: "PostgreSQL", level: 70, icon: "postgresql.svg", description: "Sistema de banco de dados relacional PostgreSQL" },
-          { name: "Docker", level: 65, icon: "docker.svg", description: "Plataforma de containerização Docker" },
-          { name: "Firebase", level: 80, icon: "firebase.svg", description: "Plataforma Firebase para desenvolvimento de aplicações" },
-          { name: "Git/GitHub", level: 85, icon: "github-color-svgrepo-com.svg", description: "Sistema de controle de versão Git e plataforma GitHub" },
-          { name: "RESTful APIs", level: 85, description: "Design e consumo de APIs RESTful" },
-          { name: "Responsive Design", level: 95, description: "Criação de layouts responsivos para todos os dispositivos" },
-          { name: "Nuxt.js", level: 75, icon: "nuxt.png", description: "Framework Nuxt.js para aplicações Vue" },
-          { name: "UI/UX Design", level: 70, description: "Princípios de design de interface e experiência do usuário" }
-        ]
-      }
-    ]
-  },
   featuredProjects: [
     {
       title: "Guty Imóveis",
       description: "Landing page profissional para corretor de imóveis focada em conversão de leads. Design moderno e responsivo com apresentação de imóveis e diferenciais do corretor. Otimizada para performance e experiência mobile.",
-      img: "guty.png",
+      img: "guty.webp",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -120,7 +40,7 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     {
       title: "Fernando Imóveis",
       description: "Landing page para corretor de imóveis focada em captação de clientes e geração de leads qualificados. Interface elegante com portfólio de imóveis, depoimentos e canais de contato integrados. Entregue com alta performance e design voltado para conversão.",
-      img: "fernando.png",
+      img: "fernando.webp",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -132,7 +52,7 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     {
       title: "Portfolio Pessoal",
       description: "Meu portfólio pessoal desenvolvido com Vue 3 e Vite, apresentando minha jornada profissional, projetos e habilidades. Implementei sistema de internacionalização (i18n) para 5 idiomas, design responsivo com Tailwind CSS, e animações fluidas com AOS. Solução que demonstra minha capacidade técnica e criatividade em desenvolvimento frontend.",
-      img: "garbson.png",
+      img: "garbson.webp",
       vue: true,
       tailwind: true,
       javascript: true,
@@ -145,7 +65,7 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     {
       title: "Hostel Pachacuteq",
       description: "Sistema completo de reservas para hotel peruano com interface multilíngue, calendário de disponibilidade em tempo real, processamento de pagamentos e gestão de hóspedes. Implementei design responsivo otimizado para viajantes mobile com informações turísticas locais integradas e sistema de confirmação de reservas.",
-      img: "pachacutec.png",
+      img: "pachacutec.webp",
       vue: true,
       tailwind: true,
       Quasar: true,

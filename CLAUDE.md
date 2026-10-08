@@ -33,23 +33,26 @@ Este é um portfólio pessoal construído com Vue 3 + Vite, usando Tailwind CSS 
 - **Prettier** para formatação de código
 
 ### Estrutura de componentes
-- `App.vue` - Componente raiz que organiza todas as seções do portfólio
-- `src/components/` - Componentes Vue organizados por funcionalidade:
-  - `NavBar.vue` - Navegação principal
-  - `Apresentacao.vue` - Seção de apresentação/hero
+- `App.vue` - Componente raiz que organiza as seções; também atualiza título, descrição e `lang` da página conforme o idioma
+- `src/components/` - Componentes Vue:
+  - `MainframeBackground.vue` - Fundo em canvas: sessão de código sendo digitada (JCL, COBOL, Vue)
+  - `BootSequence.vue` - Tela de boot (IPL) exibida uma vez por sessão
+  - `NavBar.vue` - Navegação principal (hambúrguer abaixo de 1000px)
+  - `Apresentacao.vue` - Hero no estilo terminal ISPF
   - `SobreMim.vue` - Seção sobre mim
-  - `Experiencia.vue` - Experiências profissionais
-  - `Projetos.vue` - Portfólio de projetos
-  - `Habilidades.vue` - Skills técnicas
-  - `Depoimentos.vue` - Testimonials
-  - `Certificados.vue` - Certificações
   - `SocialLinks.vue` - Links para redes sociais
-  - `BaseCard.vue` - Componente base reutilizável
+  - `Projetos.vue` + `BaseCard.vue` - Projetos em destaque (a lista "outros" só aparece se houver itens)
+  - `Experiencia.vue` + `WorldMap.vue` - Linha do tempo com mapa de pontos e pings
+  - `Backlog.vue` - Ferramentas e linguagens em formato de backlog
+  - `Depoimentos.vue` - Depoimentos (exibe os 4 primeiros)
+  - `Certificados.vue` - Certificações
+  - `CallToAction.vue` - Contato no estilo submissão de job
 
 ### Sistema de internacionalização
-- Arquivos de tradução em `src/locales/` (pt.js, en.js, es.js, ru.js, gr.js)
+- Arquivos de tradução em `src/locales/` (pt.js, en.js, es.js, ru.js, gr.js); `pt.js` é a fonte de verdade e os demais seguem a mesma estrutura
+- Todo texto visível vem do i18n (chave `ui` para a interface); não deixar texto fixo nos componentes
 - Configuração centralizada em `src/i18n.js`
-- Idioma padrão: inglês, com fallback para inglês
+- Idioma padrão: português, com fallback para inglês
 
 ### Configurações importantes
 - **Tailwind**: Breakpoints customizados, principalmente `sm: '777px'`

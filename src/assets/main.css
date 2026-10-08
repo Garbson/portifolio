@@ -37,7 +37,6 @@
     font-family: 'Fira Code', 'Courier New', monospace !important;
   }
 
-  .mainframe-app .blob { display: none; }
   .mainframe-app .glass-nav,
   .mainframe-app .glass-panel,
   .mainframe-app .glass-card,

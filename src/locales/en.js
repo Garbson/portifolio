@@ -16,265 +16,11 @@ export default {
     "title": "About Me",
     "description": "\nFrontend Developer with 3+ years building web applications for international companies across 4 countries. Currently developing critical tax compliance systems at NFCOM that serve business customers across major Brazilian telecom operators (Claro/Embratel).\n\n🌍 International Journey:\n🇬🇷 Greece (1+ year) - eBay admin panel | Nuxt.js + SSR\n🇺🇸 Miami (5 months) - Startup with 2D graphics | Vue.js + Pixi.js\n🇵🇪 Peru (project) - Hotel website | Organic networking while traveling\n🇧🇷 Brazil (current) - KNN Idiomas + Claro & Embratel | EdTech + Critical telecom systems\n  "
   },
-  "techStack": {
-    "title": "Tech Stack",
-    "categories": [
-      {
-        "name": "Frontend",
-        "items": [
-          {
-            "name": "Vue.js 3",
-            "level": "expert",
-            "icon": "vue-svgrepo-com.svg"
-          },
-          {
-            "name": "Nuxt.js",
-            "level": "expert",
-            "icon": "nuxt.png"
-          },
-          {
-            "name": "TypeScript",
-            "level": "advanced",
-            "icon": "typescript.png"
-          },
-          {
-            "name": "React",
-            "level": "intermediate",
-            "icon": "react.svg"
-          },
-          {
-            "name": "JavaScript (ES6+)",
-            "level": "expert",
-            "icon": "javascript-svgrepo-com.svg"
-          }
-        ]
-      },
-      {
-        "name": "Styling",
-        "items": [
-          {
-            "name": "Tailwind CSS",
-            "level": "expert",
-            "icon": "tailwind.svg"
-          },
-          {
-            "name": "SASS/SCSS",
-            "level": "advanced",
-            "icon": "css-3-svgrepo-com.svg"
-          },
-          {
-            "name": "CSS3",
-            "level": "expert",
-            "icon": "css-3-svgrepo-com.svg"
-          },
-          {
-            "name": "Responsive Design",
-            "level": "expert"
-          }
-        ]
-      },
-      {
-        "name": "Backend & Tools",
-        "items": [
-          {
-            "name": "Node.js",
-            "level": "intermediate",
-            "icon": "node.svg"
-          },
-          {
-            "name": "Firebase",
-            "level": "advanced",
-            "icon": "firebase.svg"
-          },
-          {
-            "name": "Git/GitHub",
-            "level": "advanced",
-            "icon": "github-color-svgrepo-com.svg"
-          },
-          {
-            "name": "REST APIs",
-            "level": "advanced"
-          },
-          {
-            "name": "Agile/Scrum",
-            "level": "intermediate"
-          }
-        ]
-      },
-      {
-        "name": "Current Focus",
-        "items": [
-          {
-            "name": "Enterprise applications",
-            "description": "Large-scale business solutions"
-          },
-          {
-            "name": "Legacy system integration",
-            "description": "Mainframe + Modern Frontend"
-          },
-          {
-            "name": "Performance optimization",
-            "description": "Speed and efficiency focus"
-          }
-        ]
-      }
-    ]
-  },
-  "skills": {
-    "title": "My Skills",
-    "categories": [
-      {
-        "name": "Front-end",
-        "items": [
-          {
-            "name": "Vue.js",
-            "level": 90,
-            "icon": "vue-svgrepo-com.svg",
-            "description": "Vue.js framework for building interactive UIs"
-          },
-          {
-            "name": "Quasar",
-            "level": 85,
-            "icon": "Quasar.svg",
-            "description": "Quasar framework for cross-platform Vue applications"
-          },
-          {
-            "name": "React",
-            "level": 75,
-            "icon": "react.svg",
-            "description": "React.js library for building user interfaces"
-          },
-          {
-            "name": "Next.js",
-            "level": 70,
-            "icon": "nextjs.svg",
-            "description": "Next.js framework for React applications"
-          },
-          {
-            "name": "Bootstrap",
-            "level": 85,
-            "icon": "bootstrap.png",
-            "description": "Bootstrap CSS framework for responsive web development"
-          },
-          {
-            "name": "HTML5",
-            "level": 95,
-            "icon": "html.svg",
-            "description": "HTML5 markup language for web content"
-          },
-          {
-            "name": "CSS3/SCSS",
-            "level": 90,
-            "icon": "css-3-svgrepo-com.svg",
-            "description": "CSS3 and SCSS for styling web applications"
-          },
-          {
-            "name": "Tailwind CSS",
-            "level": 85,
-            "icon": "tailwind.svg",
-            "description": "Tailwind CSS utility-first framework"
-          },
-          {
-            "name": "JavaScript",
-            "level": 90,
-            "icon": "javascript-svgrepo-com.svg",
-            "description": "JavaScript programming language"
-          },
-          {
-            "name": "TypeScript",
-            "level": 80,
-            "icon": "typescript.png",
-            "description": "TypeScript superset of JavaScript with types"
-          }
-        ]
-      },
-      {
-        "name": "Back-end & Tools",
-        "items": [
-          {
-            "name": "Node.js",
-            "level": 75,
-            "icon": "node.svg",
-            "description": "Node.js runtime environment for JavaScript"
-          },
-          {
-            "name": "PHP",
-            "level": 70,
-            "icon": "php.svg",
-            "description": "PHP programming language for web development"
-          },
-          {
-            "name": "Python",
-            "level": 65,
-            "icon": "python.svg",
-            "description": "Python programming language for various purposes"
-          },
-          {
-            "name": "Bash",
-            "level": 60,
-            "icon": "bash.svg",
-            "description": "Bash shell scripting for task automation"
-          },
-          {
-            "name": "MySQL",
-            "level": 75,
-            "icon": "mysql.svg",
-            "description": "MySQL relational database management system"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": 70,
-            "icon": "postgresql.svg",
-            "description": "PostgreSQL relational database system"
-          },
-          {
-            "name": "Docker",
-            "level": 65,
-            "icon": "docker.svg",
-            "description": "Docker containerization platform"
-          },
-          {
-            "name": "Firebase",
-            "level": 80,
-            "icon": "firebase.svg",
-            "description": "Firebase platform for app development"
-          },
-          {
-            "name": "Git/GitHub",
-            "level": 85,
-            "icon": "github-color-svgrepo-com.svg",
-            "description": "Git version control system and GitHub platform"
-          },
-          {
-            "name": "RESTful APIs",
-            "level": 85,
-            "description": "Design and consumption of RESTful APIs"
-          },
-          {
-            "name": "Responsive Design",
-            "level": 95,
-            "description": "Creating responsive layouts for all devices"
-          },
-          {
-            "name": "Nuxt.js",
-            "level": 75,
-            "icon": "nuxt.png",
-            "description": "Nuxt.js framework for Vue applications"
-          },
-          {
-            "name": "UI/UX Design",
-            "level": 70,
-            "description": "User interface and experience design principles"
-          }
-        ]
-      }
-    ]
-  },
   "featuredProjects": [
     {
       "title": "Guty Real Estate",
       "description": "Professional landing page for a real estate agent focused on lead conversion. Modern, responsive design showcasing properties and the agent's differentiators. Optimized for performance and mobile experience.",
-      "img": "guty.png",
+      img: "guty.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -286,7 +32,7 @@ export default {
     {
       "title": "Fernando Real Estate",
       "description": "Landing page for a real estate agent focused on attracting clients and generating qualified leads. Elegant interface with a property portfolio, testimonials and integrated contact channels. Delivered with high performance and conversion-focused design.",
-      "img": "fernando.png",
+      img: "fernando.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -298,7 +44,7 @@ export default {
     {
       "title": "Personal Portfolio",
       "description": "My personal portfolio built with Vue 3 and Vite, presenting my professional journey, projects and skills. I implemented an internationalization (i18n) system for 5 languages, responsive design with Tailwind CSS, and smooth animations with AOS. A solution that demonstrates my technical ability and creativity in frontend development.",
-      "img": "garbson.png",
+      img: "garbson.webp",
       "vue": true,
       "tailwind": true,
       "javascript": true,
@@ -311,7 +57,7 @@ export default {
     {
       "title": "Hostel Pachacuteq",
       "description": "Complete booking system for a Peruvian hotel with a multilingual interface, real-time availability calendar, payment processing and guest management. I implemented responsive design optimized for mobile travelers, with integrated local tourist information and a booking confirmation system.",
-      "img": "pachacutec.png",
+      img: "pachacutec.webp",
       "vue": true,
       "tailwind": true,
       "Quasar": true,
