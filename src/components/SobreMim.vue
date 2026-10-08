@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-[72%] mx-auto px-4 mt-10">
+  <div class="w-[90%] md:w-[80%] mx-auto mt-10">
     <div class="glass-card rounded-2xl p-6 md:p-8">
       <!-- Header -->
       <div class="flex items-center gap-3 mb-5">

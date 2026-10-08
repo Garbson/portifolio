@@ -5,17 +5,17 @@ export default {
     certificates: "Certificados",
     skills: "Habilidades",
     experience: "Experiência",
-    testimonials: "Depoimentos"
+    testimonials: "Depoimentos",
+    language: "Idioma"
   },
   introduction: {
-    greeting: "Olá, sou Garbson Souza!",
-    role: "Desenvolvedor Front-End",
-    cta: "Baixar Currículo"
+    greeting: "Garbson Souza!",
+    role: "Construo aplicações web e mobile, do frontend moderno ao Mainframe — com COBOL, Natural e CICS. Não acredito em limites técnicos: busco constantemente novos desafios, problemas complexos e o estado de flow que nasce ao resolvê-los."
   },
   biography: {
     title: "Sobre mim",
     description: `
-Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas internacionais em 4 países. Atualmente desenvolvendo sistemas críticos de compliance fiscal na NFCOM que impactam milhões de usuários nas principais operadoras brasileiras de telecom (Claro/Embratel).
+Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas internacionais em 4 países. Atualmente desenvolvendo sistemas críticos de compliance fiscal na NFCOM que atendem clientes empresariais nas principais operadoras brasileiras de telecom (Claro/Embratel).
 
 🌍 Jornada Internacional:
 🇬🇷 Grécia (1+ ano) - Painel administrativo eBay | Nuxt.js + SSR
@@ -125,21 +125,8 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       tailwind: true,
       javascript: true,
       github: "https://github.com/Garbson/fernandoimoveis",
-      link: "https://fernandoimoveis.garbsonsouza2602.workers.dev/",
+      link: "https://fernandopegoraro.com/",
       tech: "Vue.js, Tailwind CSS, JavaScript",
-      featured: true
-    },
-    {
-      title: "Atapera",
-      description: "E-commerce completo para equipamentos esportivos e outdoor com catálogo de 1000+ produtos, carrinho de compras, sistema de busca com filtros avançados, e integração com APIs de pagamento. Implementei sistema de gerenciamento de estoque, painel administrativo para gestão de pedidos, e checkout seguro. Foco em performance e SEO para conversão de vendas.",
-      img: "atapera.png",
-      tailwind: true,
-      typescript: true,
-      vue: true,
-      nuxt: true,
-      github: "https://github.com/Garbson/atapera-ecommerce",
-      link: "https://atapera.shop/",
-      tech: "Vue.js, Nuxt.js, TypeScript",
       featured: true
     },
     {
@@ -170,103 +157,10 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     },
   ],
   projects: [
-    {
-      title: "Sistema de Faturamento Telecom",
-      description: "Projeto pessoal de estudo — não é o sistema oficial usado pela Claro/Embratel. Simulação de geração de faturas nos modelos 62 e 22 da NFCom, com cálculo automático de impostos (ICMS, PIS, COFINS) e exportação de XML no padrão da Receita Federal. Desenvolvido para aprofundar o conhecimento nos processos de faturamento telecom adquiridos no trabalho.",
-      img: "nfcom.png",
-      react: true,
-      javascript: true,
-      css: true,
-      github: "https://github.com/Garbson/GeradorDeTributa--o",
-      link: "https://geradordetributa--o.pages.dev/",
-    },
-    {
-      title: "Golfim",
-      description: "Plataforma profissional para serviços de reparo e restauração de piscinas com sistema de agendamento de serviços, gestão de clientes e acompanhamento de orçamentos. Implementei fluxo completo de serviço desde contato inicial até conclusão do projeto com documentação fotográfica e tracking de progresso.",
-      img: "Golfim.png",
-      vue: true,
-      javascript: true,
-      Quasar: true,
-      github: "https://github.com/leonardo-cordeiro/golfim",
-      link: "https://golfim.pages.dev/",
-      tech: "Vue.js, Quasar, Gestão de Serviços"
-    },
-    {
-      title: "AmazonNanoForest",
-      description: "Website institucional para empresa de biotecnologia amazônica com foco em storytelling visual e apresentação de projetos inovadores. Implementei interface responsiva, catálogo interativo de produtos naturais, e sistema de apresentação de projetos sustentáveis. Projeto que aumentou engajamento e gerou leads internacionais.",
-      img: "NanoForest.png",
-      vue: true,
-      tailwind: true,
-      Quasar: true,
-      github: "https://github.com/Garbson/AMAZON-NANO-FOREST",
-      link: "https://amazonnanoforest.com/",
-      tech: "Vue.js, Tailwind CSS, Quasar"
-    },
-    {
-      title: "DizeME",
-      description: "Um site para ajudar as pessoas a dizimar e Ofertar com facilidade.",
-      img: "dizeMe.jpg",
-      typescript: true,
-      vue: true,
-      tailwind: true,
-      github: "https://github.com/Garbson/IgrejaAdventistaCentralHumaita",
-      link: "https://igreja-adventista-25-de-dezembro.pages.dev",
-    },
-    {
-      title: "Brasileiro.ninja",
-      description: "Base de dados nacional com informações úteis como CEP, ISBN, DDD e CNPJ.",
-      img: "Brasileiro.jpeg",
-      vue: true,
-      css: true,
-      javascript: true,
-      github: "https://github.com/arnonrdp/Brasileiro-Ninja",
-      link: "https://brasileiro.ninja/",
-    },
-    {
-      title: "Wedding Memories",
-      description: "Um site para guardar e compartilhar lembranças marcantes com fotos.",
-      img: "memories.jpeg",
-      vue: true,
-      typescript: true,
-      tailwind: true,
-      github: "https://github.com/Garbson/wedding-memories",
-      link: "https://wedding-memories.pages.dev/",
-    },
-    {
-      title: "Crypto Tracker",
-      description: "Ferramenta para monitorar flutuações diárias de criptomoedas em tempo real.",
-      img: "Crypto.png",
-      vue: true,
-      tailwind: true,
-      javascript: true,
-      firebase: true,
-      github: "https://github.com/leonardo-cordeiro/CryptoTracker/tree/Garbson",
-      link: "https://cryptotracker-5hk.pages.dev/",
-    },
-    {
-      title: "Conversor",
-      description: "Ferramenta eficiente para conversão de moedas internacionais.",
-      img: "Conversor.jpeg",
-      html: true,
-      css: true,
-      javascript: true,
-      github: "https://github.com/Garbson/Currency-Converter",
-      link: "https://currency-converter-cgn.pages.dev/",
-    },
-    {
-      title: "Temperature",
-      description: "Consulta global de temperatura de maneira prática e simples.",
-      img: "temperatures.jpeg",
-      html: true,
-      css: true,
-      javascript: true,
-      github: "https://github.com/Garbson/projeto-site-pra-ver-a-temperatura",
-      link: "https://temperature-9ta.pages.dev/",
-    },
   ],
   callToAction: {
     title: "Vamos Trabalhar Juntos",
-    description: "Atualmente estou aberto a novas oportunidades e projetos interessantes. Se você precisa de um desenvolvedor frontend dedicado ou quer discutir um problema desafiador, adoraria ouvir de você.",
+    description: "Atualmente estou aberto a novas oportunidades e projetos interessantes. Também estou disponível para trabalhar com front-end (Vue.js, Nuxt, TypeScript). Seja unindo web e mainframe (JSP, COBOL, Natural, CICS) em sistemas críticos ou construindo interfaces modernas, adoraria ouvir de você.",
     email: {
       text: "Email",
       link: "mailto:garbsonsouzasantos@gmail.com"
@@ -278,10 +172,6 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
     linkedin: {
       text: "LinkedIn",
       link: "https://www.linkedin.com/in/garbson-souza-0744a825a/"
-    },
-    resume: {
-      text: "Baixar Currículo",
-      link: "#resume" // Placeholder - update with actual resume link
     }
   },
   certificates: {
@@ -349,15 +239,14 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
       {
         role: "Analista Desenvolvedor",
         company: "NFCOM (Grupo Easy)",
-        location: "Rio Branco, Acre",
+        location: "Rio de Janeiro, RJ",
         period: "Jul 2025 - Atual",
-        description: "Desenvolvo sistemas críticos de compliance fiscal para grandes operadoras de telecom brasileiras (Claro/Embratel), impactando milhões de usuários finais. Trabalho nos projetos NFCOM e RGC com integração entre tecnologias mainframe IBM e frontend moderno.",
+        description: "Desenvolvo sistemas críticos de compliance fiscal para grandes operadoras de telecom brasileiras (Claro/Embratel), atendendo clientes empresariais. Trabalho nos projetos NFCOM e RGC com integração entre mainframe IBM (COBOL, CICS) e aplicações web em JSP.",
         achievements: [
-          "Implementei sistema de análise tributária que processa dados de milhões de clientes",
-          "Trabalho com tecnologias legadas (Mainframe IBM + Natural Language) integradas a frontend moderno",
+          "Implementei sistema de análise tributária que processa dados de clientes corporativos",
+          "Desenvolvo em COBOL e JSP sobre mainframe IBM, integrando sistemas legados a aplicações web",
           "Desenvolvimento de soluções para sistemas de faturamento de larga escala"
         ],
-        tech: "Vue.js, Natural Language, IBM Mainframe, Tax Systems",
         current: true
       },
       {
@@ -471,5 +360,141 @@ Desenvolvedor Frontend com 3+ anos criando aplicações web para empresas intern
         text: "É com grande satisfação que recomendo Garbson Souza para oportunidades como Frontend Developer. Tive o privilégio de trabalhar com ele na KNN Idiomas, onde ele demonstrou consistentemente suas habilidades técnicas e seu comprometimento com resultados de alta qualidade. Garbson é um profissional talentoso, com conhecimento em tecnologias como Vue.js, Quasar, Vuex/Pinia, Node.js, JavaScript, Nuxt.js, API REST, Vuetify e TypeScript. Sua capacidade de criar interfaces modernas, intuitivas e eficientes é notável, além de sua habilidade em integrar sistemas complexos com APIs REST. Durante o tempo em que trabalhamos juntos, Garbson destaca-se por sua abordagem colaborativa e solução de problemas."
       }
     ]
+  },
+  ui: {
+    "backlog": {
+      "bar": "BACKLOG — FERRAMENTAS E LINGUAGENS",
+      "label": "Stack",
+      "all": "TODOS",
+      "epics": {
+        "front": "FRONTEND",
+        "back": "BACKEND & DADOS",
+        "main": "MAINFRAME"
+      },
+      "status": "EM USO",
+      "count": "ITENS",
+      "types": {
+        "language": "Linguagem",
+        "framework": "Framework",
+        "ui": "Biblioteca UI",
+        "database": "Banco de dados",
+        "platform": "Plataforma",
+        "runtime": "Runtime",
+        "tool": "Ferramenta",
+        "library": "Biblioteca"
+      },
+      "items": {
+        "vue": "Framework progressivo para interfaces reativas",
+        "nuxt": "Vue com SSR e aplicações universais",
+        "tailwind": "CSS utility-first para interfaces rápidas",
+        "html": "Marcação semântica e acessível",
+        "pinia": "Gerenciamento de estado para Vue",
+        "git": "Versionamento e colaboração com GitHub",
+        "jcl": "Jobs e procs de processamento em lote",
+        "cics": "Transações online no mainframe",
+        "typescript": "JavaScript com tipagem para código mais seguro",
+        "javascript": "A base de toda interface web",
+        "css": "Layouts responsivos e animações",
+        "quasar": "Apps Vue multiplataforma",
+        "vuetify": "Componentes Material Design para Vue",
+        "react": "Interfaces baseadas em componentes",
+        "node": "APIs e automações no servidor",
+        "java": "Aplicações web e serviços de backend",
+        "jsp": "Telas online e segunda via em JSP",
+        "supabase": "Backend com Postgres, autenticação e storage",
+        "firebase": "Autenticação, banco em tempo real e hospedagem",
+        "mysql": "Banco relacional para dados transacionais",
+        "cobol": "Programas de faturamento em lote no mainframe",
+        "natural": "Programas Natural ONE (Software AG)",
+        "mainframe": "Jobs JCL, procs e rotinas em ambiente IBM"
+      }
+    },
+    "meta": {
+      "title": "Garbson Souza - Engenheiro de Software · Mainframe, COBOL, JSP e Vue.js",
+      "description": "Engenheiro de software do mainframe (COBOL, Natural, JCL, CICS, JSP) ao front-end (Vue.js, Nuxt, TypeScript). Experiência internacional com projetos no Brasil, Grécia, Peru e EUA."
+    },
+    "boot": {
+      "skip": "PRESSIONE QUALQUER TECLA OU CLIQUE PARA PULAR",
+      "loading": "CARREGANDO  PERFIL / EXPERIÊNCIA / PROJETOS ........ [ OK ]",
+      "auth": "RACF     USUÁRIO GARBSON AUTENTICADO  -  ACESSO LIBERADO",
+      "ready": "PRONTO."
+    },
+    "hero": {
+      "session": "GARBSON.DEV — SESSÃO DE PERFIL",
+      "menu": [
+        "Arquivo",
+        "Editar",
+        "Exibir",
+        "Utilitários",
+        "Ajuda"
+      ],
+      "online": "ONLINE",
+      "command": "Comando",
+      "welcome": "BEM-VINDO",
+      "personal": "INFORMAÇÕES PESSOAIS",
+      "about": "SOBRE / OBJETIVO",
+      "stackTitle": "STACK TECNOLÓGICA",
+      "name": "NOME",
+      "role": "CARGO",
+      "status": "STATUS",
+      "location": "LOCAL",
+      "roleValue": "ENGENHEIRO DE SOFTWARE",
+      "statusValue": "DISPONÍVEL PARA DESAFIOS",
+      "locationValue": "BRASIL / MUNDO",
+      "line1": "EXPERIÊNCIA INTERNACIONAL DETECTADA",
+      "line2": "OPERADOR DE SISTEMAS CORPORATIVOS",
+      "impactTitle": "IMPACTO / SISTEMAS CORPORATIVOS",
+      "impactNames": "NFCOM · RCL · FCD FATURAMENTO",
+      "impactDesc": "CLARO & EMBRATEL // SISTEMAS CRÍTICOS PARA CLIENTES EMPRESARIAIS",
+      "signature": "DISCIPLINA > CONSISTÊNCIA > FLOW > ENTREGA",
+      "front": "FRONTEND",
+      "legacy": "LEGADO",
+      "mode": "MODO",
+      "modeValue": "CONSTRUINDO O FUTURO",
+      "keys": [
+        "F1=AJUDA",
+        "F3=SAIR",
+        "F4=VOLTAR",
+        "F7=SOBE",
+        "F8=DESCE",
+        "F10=ESQ",
+        "F11=DIR",
+        "ENTER=SELECIONAR"
+      ]
+    },
+    "projects": {
+      "featuredLabel": "Destaque",
+      "featuredTitle": "Projetos em Destaque",
+      "otherLabel": "Portfólio",
+      "otherTitle": "Outros Projetos",
+      "visit": "Visitar site"
+    },
+    "experience": {
+      "log": "LOG DE CARREIRA",
+      "nodes": "NÓS",
+      "node": "LOCAL",
+      "places": [
+        "RIO DE JANEIRO, BR",
+        "BALNEÁRIO CAMBORIÚ, BR",
+        "ATENAS, GR",
+        "MIAMI, EUA",
+        "CUSCO, PE",
+        "RIO BRANCO, BR"
+      ]
+    },
+    "testimonials": {
+      "label": "Feedback"
+    },
+    "certificatesLabel": "Aprendizado",
+    "cta": {
+      "bar": "ENVIO DE JOB — GARBSON.DEV",
+      "ready": "PRONTO",
+      "submit": "ENVIAR",
+      "end": "IEF404I GARBSON - FINALIZADO - RC=0000 - DISPONÍVEL PARA DESAFIOS"
+    },
+    "bg": {
+      "cobolComment": "      * CALCULA O IMPOSTO DA FATURA",
+      "vueTitle": "Fatura"
+    }
   }
 };

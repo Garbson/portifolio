@@ -1,8 +1,8 @@
 <template>
-  <section id="testimonials" class="w-[90%] md:w-[72%] mx-auto mt-16 mb-10">
+  <section id="testimonials" class="w-[90%] md:w-[80%] mx-auto mt-16 mb-10">
     <!-- Header -->
     <div class="text-center mb-10">
-      <p class="text-teal-400 text-xs font-semibold tracking-widest uppercase mb-2">Feedback</p>
+      <p class="text-teal-400 text-xs font-semibold tracking-widest uppercase mb-2">{{ $t('ui.testimonials.label') }}</p>
       <h1 class="text-2xl md:text-3xl font-bold text-white mb-3">{{ $t('testimonials.title') }}</h1>
       <div class="header-line"></div>
     </div>
@@ -39,7 +39,7 @@ import { useI18n } from 'vue-i18n'
 
 const { tm } = useI18n()
 
-const testimonialItems = computed(() => tm('testimonials.items'))
+const testimonialItems = computed(() => Object.values(tm('testimonials.items')).slice(0, 4))
 </script>
 
 <style scoped>

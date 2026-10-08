@@ -21,7 +21,7 @@
             <div class="visit-badge absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span class="bg-teal-500/90 text-white text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur-sm flex items-center gap-1.5">
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                Visitar site
+                {{ $t('ui.projects.visit') }}
               </span>
             </div>
           </div>
@@ -89,14 +89,8 @@ function getTechs(project) {
 
 <style scoped>
 .content {
-  width: 72%;
+  width: 100%;
   margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-  .content {
-    width: 90%;
-  }
 }
 
 .glass-card {

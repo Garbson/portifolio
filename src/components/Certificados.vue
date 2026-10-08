@@ -1,8 +1,8 @@
 <template>
-  <section id="certificates" class="w-[90%] md:w-[72%] mx-auto mt-16">
+  <section id="certificates" class="w-[90%] md:w-[80%] mx-auto mt-16">
     <!-- Header -->
     <div class="text-center mb-10">
-      <p class="text-teal-400 text-xs font-semibold tracking-widest uppercase mb-2">Aprendizado</p>
+      <p class="text-teal-400 text-xs font-semibold tracking-widest uppercase mb-2">{{ $t('ui.certificatesLabel') }}</p>
       <h1 class="text-2xl md:text-3xl font-bold text-white mb-3">{{ $t('certificates.title') }}</h1>
       <div class="header-line"></div>
     </div>
